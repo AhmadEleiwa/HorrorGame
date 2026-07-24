@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bc0xbelbg2tad"]
+
+[ext_resource type="Script" uid="uid://c3vjuyppyrnf" path="res://scripts/objects/book.gd" id="1_07o31"]
+[ext_resource type="PackedScene" uid="uid://diqrisp7bpq84" path="res://assets/main asset/props/book2.glb" id="2_ytm06"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(0.2644043, 0.062561035, 0.2833252)
+
+[node name="Book" type="RigidBody3D" unique_id=181756625]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_07o31")
+metadata/_custom_type_script = "uid://m2x0jfjgqg6u"
+
+[node name="book22" parent="." unique_id=96522242 instance=ExtResource("2_ytm06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023205638, -1.1920929e-07, -0.042478085)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1252517982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.021362305, 0.021331787, -0.04937744)
+shape = SubResource("BoxShape3D_0jmyi")

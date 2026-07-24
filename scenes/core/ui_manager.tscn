@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://dwkdv020kdih1"]
+
+[ext_resource type="Script" uid="uid://dm823nxoqwmq4" path="res://scripts/core/UIManager.gd" id="1_r0rtm"]
+
+[node name="UIManager" type="CanvasLayer" unique_id=703174092]
+script = ExtResource("1_r0rtm")
+
+[node name="MessageLabel" type="Label" parent="." unique_id=473576807]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -103.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "MessageLabel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=151031718]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -56.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+
+[node name="ToolBar" type="HBoxContainer" parent="MarginContainer" unique_id=782036636]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="ToolBarLabel" type="Label" parent="MarginContainer/ToolBar" unique_id=1638702875]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "sdsd"
+vertical_alignment = 1
+
+[node name="ToolBarLabel2" type="Label" parent="MarginContainer/ToolBar" unique_id=295680704]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "sdsd"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ToolBarLabel3" type="Label" parent="MarginContainer/ToolBar" unique_id=1432055568]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "sdsd"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="InteractionUI" type="Label" parent="." unique_id=1046818001]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -51.5
+offset_right = 10.0
+offset_bottom = 51.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "[E]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Reader" type="Control" parent="." unique_id=791174303]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Reader" unique_id=2072750547]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="Reader/CenterContainer" unique_id=884705286]
+custom_minimum_size = Vector2(400, 565.6)
+custom_maximum_size = Vector2(400, 565.6)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="Reader/CenterContainer/Control" unique_id=1154975097]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09295484, 0.09295484, 0.09295484, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Reader/CenterContainer/Control" unique_id=1806884461]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Reader/CenterContainer/Control/MarginContainer" unique_id=913043275]
+layout_mode = 2
+
+[node name="title" type="Label" parent="Reader/CenterContainer/Control/MarginContainer/VBoxContainer" unique_id=2108585114]
+layout_mode = 2
+text = "sdsdsd"
+
+[node name="HSeparator" type="HSeparator" parent="Reader/CenterContainer/Control/MarginContainer/VBoxContainer" unique_id=575603175]
+layout_mode = 2
+
+[node name="content" type="RichTextLabel" parent="Reader/CenterContainer/Control/MarginContainer/VBoxContainer" unique_id=214935992]
+custom_minimum_size = Vector2(200, 400)
+layout_mode = 2
+text = "sdsddsaddddda
+sd
+asdsds
+sssss
+s
+
+s
+s
+s
+s
+
+s
+s
+s
+s
+s
+s
+s
+
+s
+s
+ss
+s
+
+asd
+asd"
+
+[node name="Button" type="Button" parent="Reader/CenterContainer/Control" unique_id=695200916]
+custom_minimum_size = Vector2(40, 40)
+custom_maximum_size = Vector2(40, 40)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+text = "x"
+
+[connection signal="pressed" from="Reader/CenterContainer/Control/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dha7lgbjl1mow"]
+
+[ext_resource type="PackedScene" uid="uid://d236hst7op1b" path="res://assets/my assets/couch-big.glb" id="1_7vrdj"]
+[ext_resource type="Texture2D" uid="uid://brkvxhlgosm7m" path="res://assets/my assets/couch-big_Image_0.png" id="2_ef4ag"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ef4ag"]
+size = Vector3(3.4710693, 1.2788086, 1.2364655)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wrtq4"]
+albedo_color = Color(3.2944162, 3.2944162, 3.2944162, 1)
+albedo_texture = ExtResource("2_ef4ag")
+
+[node name="CouchBig" type="StaticBody3D" unique_id=1071521287]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=686325113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.006286621, -0.1394043, 0.003578186)
+shape = SubResource("BoxShape3D_ef4ag")
+
+[node name="couch-big" parent="." unique_id=660854392 instance=ExtResource("1_7vrdj")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="geometry_0" parent="couch-big/world" parent_id_path=PackedInt32Array(660854392, 801231905) index="0" unique_id=743835082]
+material_override = SubResource("StandardMaterial3D_wrtq4")
+
+[editable path="couch-big"]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c1q4puf1xh4qm"]
+
+[ext_resource type="PackedScene" uid="uid://tu8e55v6c60c" path="res://assets/main asset/geometry/floorWood2-thick.glb" id="1_sg2ox"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(3.9910889, 0.3919736, 4)
+
+[node name="floor" type="StaticBody3D" unique_id=182391536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.450581e-09, 0)
+collision_layer = 15
+collision_mask = 15
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=390610431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0016243458, -0.04208494, -0.007)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="floorWood2-thick" parent="." unique_id=2014737594 instance=ExtResource("1_sg2ox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.450581e-09, 0)
+
+[node name="floorWood2" parent="floorWood2-thick" index="0" unique_id=1239850712]
+layers = 3
+
+[editable path="floorWood2-thick"]

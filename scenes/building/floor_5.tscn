@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://i2snd1j03fcn"]
+
+[ext_resource type="PackedScene" uid="uid://7bxnvnyqficb" path="res://assets/main asset/geometry/floorMarble.glb" id="1_ts37g"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(4, 0.01, 4)
+
+[node name="floor5" type="StaticBody3D" unique_id=182391536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.450581e-09, 0)
+collision_layer = 15
+collision_mask = 15
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=390610431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003, 0, -0.007)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="floorMarble2" parent="." unique_id=2090293754 instance=ExtResource("1_ts37g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.052165747, 0)
+
+[node name="floorMarble" parent="floorMarble2" index="0" unique_id=247906332]
+layers = 3
+
+[editable path="floorMarble2"]

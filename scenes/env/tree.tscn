@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c4ckxcnukmxju"]
+
+[ext_resource type="PackedScene" uid="uid://tylc21umfhlx" path="res://assets/tree_pack_1.1/models/tree01.fbx" id="1_r13da"]
+[ext_resource type="Texture2D" uid="uid://b882xvwl307x1" path="res://assets/tree_pack_1.1/textures/tree01.png" id="2_2x1qq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xpslg"]
+transparency = 1
+albedo_texture = ExtResource("2_2x1qq")
+
+[node name="tree" type="Node3D" unique_id=1693532950]
+
+[node name="tree01" parent="." unique_id=854056276 instance=ExtResource("1_r13da")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28022137, 0, -0.08573413)
+
+[node name="tree01" parent="tree01" index="0" unique_id=607153598]
+surface_material_override/0 = SubResource("StandardMaterial3D_xpslg")
+
+[editable path="tree01"]

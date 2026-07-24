@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bouxunadx1twf"]
+
+[ext_resource type="PackedScene" uid="uid://p4w2rsxcpk2q" path="res://assets/main asset/geometry/floorTiles.glb" id="1_6u7tu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(4, 0.01, 4)
+
+[node name="floor4" type="StaticBody3D" unique_id=182391536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.450581e-09, 0)
+collision_layer = 15
+collision_mask = 15
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=390610431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003, 0, -0.007)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="floorTiles2" parent="." unique_id=1324228062 instance=ExtResource("1_6u7tu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.085, 0)
+
+[node name="floorTiles" parent="floorTiles2" index="0" unique_id=1657698241]
+layers = 3
+
+[editable path="floorTiles2"]

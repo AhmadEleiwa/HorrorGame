@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bnrps1d8fmyfb"]
+
+[ext_resource type="PackedScene" uid="uid://dnvenugxrjve2" path="res://assets/main asset/props/wallLight.glb" id="1_qvusk"]
+
+[node name="WallLight" type="Node3D" unique_id=698238829]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=473986537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10934147, -0.103865325, 0)
+shadow_enabled = true
+shadow_bias = 0.0
+distance_fade_begin = 0.0
+
+[node name="wallLight2" parent="." unique_id=352181984 instance=ExtResource("1_qvusk")]
+
+[node name="wallLight" parent="wallLight2" index="0" unique_id=1731838639]
+cast_shadow = 0
+ignore_occlusion_culling = true
+
+[editable path="wallLight2"]

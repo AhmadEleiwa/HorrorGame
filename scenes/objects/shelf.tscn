@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://cr0m8dn5c0nis"]
+
+[ext_resource type="PackedScene" uid="uid://dp32e8rrri0nf" path="res://assets/my assets/SHELF.glb" id="1_82iq7"]
+[ext_resource type="Texture2D" uid="uid://cnfye6qkn6soc" path="res://assets/my assets/SHELF_Image_0.png" id="2_l44xw"]
+[ext_resource type="PackedScene" uid="uid://bwms84ejxfiyq" path="res://assets/main asset/props/bookStack.glb" id="3_umtoh"]
+[ext_resource type="PackedScene" uid="uid://ds1x4g1j0jp5k" path="res://assets/main asset/props/bookStack5.glb" id="4_pgkxc"]
+[ext_resource type="PackedScene" uid="uid://cr0jecbp6jmf8" path="res://assets/main asset/props/bookStack4.glb" id="5_8sepu"]
+[ext_resource type="PackedScene" uid="uid://bs2kd23kv1ule" path="res://assets/main asset/props/bookStack3.glb" id="6_onxlf"]
+[ext_resource type="PackedScene" uid="uid://b1dqyah4jlsc4" path="res://assets/main asset/props/bookStack2.glb" id="7_g80xa"]
+
+[sub_resource type="GDScript" id="GDScript_umtoh"]
+script/source = "@tool
+extends StaticBody3D
+
+@onready var books: Node3D = $Books
+
+@export var flip_books:bool = false
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	books.scale.x = 1 if flip_books else -1
+"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2f8f"]
+albedo_texture = ExtResource("2_l44xw")
+metallic_specular = 0.59
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(3.2340393, 3.697754, 0.74328613)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qog4m"]
+transparency = 1
+albedo_color = Color(0.44705883, 0.44705883, 0.44705883, 0.25490198)
+metallic = 0.19
+metallic_specular = 0.43
+roughness = 0.15
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_g6d2h"]
+
+[node name="Shelf" type="StaticBody3D" unique_id=590034998]
+script = SubResource("GDScript_umtoh")
+
+[node name="SHELF" parent="." unique_id=2133443655 instance=ExtResource("1_82iq7")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+
+[node name="geometry_0" parent="SHELF/world" parent_id_path=PackedInt32Array(2133443655, 1816043218) index="0" unique_id=919919301]
+material_override = SubResource("StandardMaterial3D_b2f8f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=205920143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07403517, 1.6528237, 0.050476074)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="Books" type="Node3D" parent="." unique_id=1434515252]
+transform = Transform3D(-1, 0, 0, 0, 1, -8.742278e-08, 0, 8.742278e-08, 1, 0.067723155, 1.7327238, 0)
+
+[node name="bookStack2" parent="Books" unique_id=1369404256 instance=ExtResource("3_umtoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2906902, 0.8144866, 0.026932418)
+
+[node name="bookStack3" parent="Books" unique_id=1836032774 instance=ExtResource("3_umtoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23720932, 0.8144866, 0.026932418)
+
+[node name="bookStack4" parent="Books" unique_id=1458169150 instance=ExtResource("3_umtoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2887411, 0.8144866, 0.026932418)
+
+[node name="bookStack5" parent="Books" unique_id=1980613952 instance=ExtResource("3_umtoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2887411, -0.111299455, 0.026932418)
+
+[node name="bookStack6" parent="Books" unique_id=1474782338 instance=ExtResource("3_umtoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58642054, -0.111299455, 0.026932418)
+
+[node name="bookStack7" parent="Books" unique_id=293263223 instance=ExtResource("3_umtoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78629684, -0.111299455, 0.026932418)
+
+[node name="bookStack8" parent="Books" unique_id=221465547 instance=ExtResource("3_umtoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22444081, -0.111299455, 0.026932418)
+
+[node name="bookStack9" parent="Books" unique_id=836861786 instance=ExtResource("3_umtoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22249007, 0.38032478, 0.026932418)
+
+[node name="bookStack52" parent="Books" unique_id=1968143181 instance=ExtResource("4_pgkxc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35619307, -0.55897576, 0.06687471)
+
+[node name="bookStack53" parent="Books" unique_id=1714683201 instance=ExtResource("4_pgkxc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3102216, -0.55897576, 0.06687471)
+
+[node name="bookStack42" parent="Books" unique_id=662892757 instance=ExtResource("5_8sepu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.300097, -0.5369763, 0.09960699)
+
+[node name="bookStack32" parent="Books" unique_id=1116950911 instance=ExtResource("6_onxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0139848, 0.35809448, 0.030522943)
+
+[node name="bookStack33" parent="Books" unique_id=1373656113 instance=ExtResource("6_onxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5119661, 0.35809448, 0.030522943)
+
+[node name="bookStack34" parent="Books" unique_id=338436050 instance=ExtResource("6_onxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2334409, 0.35809448, 0.030522943)
+
+[node name="bookStack35" parent="Books" unique_id=1777036209 instance=ExtResource("6_onxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25019252, -0.13352987, 0.030522943)
+
+[node name="bookStack36" parent="Books" unique_id=1848755721 instance=ExtResource("6_onxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2949122, -0.13352987, 0.030522943)
+
+[node name="bookStack22" parent="Books" unique_id=220068123 instance=ExtResource("7_g80xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6106133, 0.3594308, 0.073447585)
+
+[node name="bookStack23" parent="Books" unique_id=1332970676 instance=ExtResource("7_g80xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85787445, 0.3594308, 0.073447585)
+
+[node name="bookStack24" parent="Books" unique_id=1655808601 instance=ExtResource("7_g80xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92810637, -0.113039374, 0.073447585)
+
+[node name="bookStack25" parent="Books" unique_id=1071451304 instance=ExtResource("7_g80xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92810637, 0.7872078, 0.073447585)
+
+[node name="bookStack26" parent="Books" unique_id=1407899207 instance=ExtResource("7_g80xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55779177, 0.7872078, 0.073447585)
+
+[node name="bookStack27" parent="Books" unique_id=1016814018 instance=ExtResource("7_g80xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5531513, 0.7872078, 0.073447585)
+
+[node name="bookStack28" parent="Books" unique_id=2030019173 instance=ExtResource("7_g80xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.91069645, 0.7872078, 0.073447585)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=983735552]
+transform = Transform3D(1.5, 0, 0, 0, -4.371139e-08, -0.9, 0, 1, -3.934025e-08, 0.063506275, 2.0672994, 0.20521212)
+material_override = SubResource("StandardMaterial3D_qog4m")
+mesh = SubResource("PlaneMesh_g6d2h")
+
+[editable path="SHELF"]

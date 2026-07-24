@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://blvee7hiro8q6"]
+
+[ext_resource type="Script" uid="uid://vnv26hd1m76s" path="res://scripts/objects/slot.gd" id="1_cbvba"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6d2h"]
+size = Vector3(0.4138794, 0.1505127, 0.4736328)
+
+[node name="Slot" type="RigidBody3D" unique_id=1045835543]
+freeze = true
+freeze_mode = 1
+script = ExtResource("1_cbvba")
+metadata/_custom_type_script = "uid://m2x0jfjgqg6u"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=707197581]
+shape = SubResource("BoxShape3D_g6d2h")
+
+[node name="ObjectName" type="Label3D" parent="." unique_id=1635147049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14758301, 0)
+visible = false
+text = "Title"
+font_size = 16

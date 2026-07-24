@@ -1,0 +1,174 @@
+[gd_scene format=3 uid="uid://csv72re1f1dsi"]
+
+[ext_resource type="Script" uid="uid://d0flbwitytkn1" path="res://scripts/building/door.gd" id="1_mvtje"]
+[ext_resource type="Script" uid="uid://cvh4n318lge5n" path="res://scripts/building/door_wall.gd" id="1_s0ebw"]
+[ext_resource type="PackedScene" uid="uid://buma1bq6aeuwp" path="res://assets/main asset/geometry/wallDoorWood.glb" id="2_s0ebw"]
+[ext_resource type="PackedScene" uid="uid://b4pwx2uuany3a" path="res://assets/main asset/geometry/doorWood2.glb" id="3_4an73"]
+[ext_resource type="PackedScene" uid="uid://d3n3uobgjxbx4" path="res://assets/main asset/geometry/wallDoorWood-thick.glb" id="5_4an73"]
+[ext_resource type="AudioStream" uid="uid://f864567xiwut" path="res://assets/sounds/door-close.mp3" id="5_h2ptu"]
+[ext_resource type="AudioStream" uid="uid://jjj3vqm17wgt" path="res://assets/sounds/door-open.mp3" id="5_ryhjj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mvtje"]
+size = Vector3(1.7309265, 2.5769272, 0.2949829)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6d2h"]
+size = Vector3(1.1014404, 3.934021, 0.2949829)
+
+[sub_resource type="Animation" id="Animation_s0ebw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4an73"]
+resource_name = "close"
+length = 0.76666665
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.36666667),
+"transitions": PackedFloat32Array(1.8025012, 1.8025012),
+"update": 0,
+"values": [Vector3(0, 2.0943952, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../../audio/AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_h2ptu")
+}],
+"times": PackedFloat32Array(0.26666668)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="Animation" id="Animation_mvtje"]
+resource_name = "instance_open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 2.0943952, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ryhjj"]
+resource_name = "open"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1.8025011, 1.8025011),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 2.0943952, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../../audio/AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_ryhjj")
+}],
+"times": PackedFloat32Array(0.0009999999)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h2ptu"]
+_data = {
+&"RESET": SubResource("Animation_s0ebw"),
+&"close": SubResource("Animation_4an73"),
+&"instance_open": SubResource("Animation_mvtje"),
+&"open": SubResource("Animation_ryhjj")
+}
+
+[node name="DoorWall" type="StaticBody3D" unique_id=1140540205]
+script = ExtResource("1_s0ebw")
+is_open = true
+
+[node name="doorWood22" parent="." unique_id=1538283434 instance=ExtResource("3_4an73")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0023624748, 1.2384903, 0.028693795)
+
+[node name="doorWood2" parent="doorWood22" index="0" unique_id=338084335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07841492, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="doorWood22/doorWood2/doorWood2_001" parent_id_path=PackedInt32Array(1538283434, 1289598228) index="0" unique_id=2017915766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17367333, 0.022292972, -0.0762614)
+script = ExtResource("1_mvtje")
+
+[node name="doorCollision" type="CollisionShape3D" parent="doorWood22/doorWood2/doorWood2_001/StaticBody3D" unique_id=134407486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76166666, 1.3003352, 0.016693234)
+shape = SubResource("BoxShape3D_mvtje")
+
+[node name="wallDoorWood3" parent="." unique_id=1995534931 instance=ExtResource("2_s0ebw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1869066, 0)
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=972243476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4754658, 1.9893911, 0.011595368)
+shape = SubResource("BoxShape3D_g6d2h")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=775391513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4250231, 2.0144475, 0.011595368)
+shape = SubResource("BoxShape3D_g6d2h")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1356850076]
+root_node = NodePath("../doorWood22/doorWood2/doorWood2_001")
+libraries/ = SubResource("AnimationLibrary_h2ptu")
+autoplay = &"RESET"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1212623603]
+visible = false
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1922636382]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer" unique_id=1829088564]
+layout_mode = 2
+text = "[E]"
+
+[node name="wallDoorWood-thick" parent="." unique_id=885492686 instance=ExtResource("5_4an73")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2252731, 0)
+
+[node name="audio" type="Node3D" parent="." unique_id=1000870836]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="audio" unique_id=1466888644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48724365, 1.1791992, 0)
+
+[editable path="doorWood22"]

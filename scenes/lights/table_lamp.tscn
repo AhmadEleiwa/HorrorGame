@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cjdvpwxic2x6o"]
+
+[ext_resource type="PackedScene" uid="uid://dpreljpbnrnub" path="res://assets/main asset/props/tableLamp.glb" id="1_nreqh"]
+
+[node name="TableLamp" type="Node3D" unique_id=1847362987]
+
+[node name="tableLamp2" parent="." unique_id=330551554 instance=ExtResource("1_nreqh")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=468064326]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26881242, 0)

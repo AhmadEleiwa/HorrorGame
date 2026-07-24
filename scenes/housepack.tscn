@@ -1,0 +1,60 @@
+[gd_scene format=4 uid="uid://bm06ct458bmw3"]
+
+[ext_resource type="PackedScene" uid="uid://db3xpavf26md" path="res://assets/housepack/modular_house_pack.fbx" id="1_qfafn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6txbv"]
+resource_name = "ground_large7"
+vertex_color_use_as_albedo = true
+emission_enabled = true
+emission = Color(0.9063318, 0.9063318, 0.9063318, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_s1c0y"]
+_surfaces = [{
+"aabb": AABB(0, -0.01, 0.001, 0.02, 0.02, 0.001),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwABAAAAAgAEAAAAAQADAAUABQACAAEABgAEAAIAAgAFAAYABwAAAAQAAAAHAAMABAAGAAcABQADAAcABwAGAAUA"),
+"name": "ground_large7",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("CtejPArXIzxvEoM6AAAAAArXIzxvEoM6AAAAAArXI7xvEoM6AAAAAArXIzxvEgM7CtejPArXI7xvEoM6AAAAAArXI7xvEgM7CtejPArXI7xvEgM7CtejPArXIzxvEgM7")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_538eh"]
+resource_name = "Plane_031"
+_surfaces = [{
+"aabb": AABB(0, -0.01, 0.001, 0.02, 0.02, 0.001),
+"attribute_data": PackedByteArray("AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAgD8AAIA/AAAAAAAAgD8AAIA/AAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AACAPwAAgD8AAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAPwAAAAAAAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_6txbv"),
+"name": "ground_large7",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("CtejPArXIzxvEoM6AAAAAArXIzxvEoM6AAAAAArXI7xvEoM6CtejPArXI7xvEoM6CtejPArXIzxvEgM7CtejPArXI7xvEgM7AAAAAArXI7xvEgM7AAAAAArXIzxvEgM7CtejPArXIzxvEgM7CtejPArXIzxvEoM6CtejPArXI7xvEoM6CtejPArXI7xvEgM7AAAAAArXI7xvEgM7AAAAAArXI7xvEoM6AAAAAArXIzxvEoM6AAAAAArXIzxvEgM7AAAAAArXIzxvEgM7AAAAAArXIzxvEoM6CtejPArXIzxvEoM6CtejPArXIzxvEgM7CtejPArXI7xvEgM7CtejPArXI7xvEoM6AAAAAArXI7xvEoM6AAAAAArXI7xvEgM7/////////z//////////P/////////8//////////z//f/9/////v/9//3////+//3//f////7//f/9/////v////3////+/////f////7////9/////v////3////+/AAD/f////78AAP9/////vwAA/3////+/AAD/f////7//f///////v/9///////+//3///////7//f///////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_s1c0y")
+
+[node name="Node3D" type="Node3D" unique_id=1571981644]
+
+[node name="modular_house_pack" parent="." unique_id=2027527377 instance=ExtResource("1_qfafn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33705616, 0, -0.13542128)
+
+[node name="Plane_061" parent="modular_house_pack" index="0" unique_id=2076765580]
+transform = Transform3D(200.00003, 0, 0, 0, -2.3841858e-05, 100.00001, 0, -200.00002, -1.1920929e-05, 13, 0.1, 20.281136)
+
+[node name="Plane_063" type="MeshInstance3D" parent="modular_house_pack" unique_id=38210486]
+transform = Transform3D(200.00003, 0, 0, 0, -2.3841858e-05, 100.00001, 0, -200.00002, -1.1920929e-05, 16.288929, 0.1, 20.281136)
+mesh = SubResource("ArrayMesh_538eh")
+
+[node name="Plane_062" type="MeshInstance3D" parent="modular_house_pack" unique_id=1326398773]
+transform = Transform3D(200, 0, 0, 0, -2.3841858e-05, 99.99999, 0, -199.99998, -1.1920929e-05, 13, 0.1, 16.395561)
+mesh = SubResource("ArrayMesh_538eh")
+
+[editable path="modular_house_pack"]

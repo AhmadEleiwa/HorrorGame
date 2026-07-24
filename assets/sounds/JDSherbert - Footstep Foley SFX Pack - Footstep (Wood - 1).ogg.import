@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cl52wop70rh4u"
+path="res://.godot/imported/JDSherbert - Footstep Foley SFX Pack - Footstep (Wood - 1).ogg-29fbaf998bc8cf7537829ef9f68d028d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/JDSherbert - Footstep Foley SFX Pack - Footstep (Wood - 1).ogg"
+dest_files=["res://.godot/imported/JDSherbert - Footstep Foley SFX Pack - Footstep (Wood - 1).ogg-29fbaf998bc8cf7537829ef9f68d028d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

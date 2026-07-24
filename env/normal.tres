@@ -1,0 +1,20 @@
+[gd_resource type="Environment" format=3 uid="uid://dhtms468m1tw5"]
+
+[ext_resource type="Texture2D" uid="uid://bgc5rl13dopuj" path="res://addons/proton_scatter/demos/assets/textures/sky_2.png" id="1_dekby"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gbfbk"]
+panorama = ExtResource("1_dekby")
+
+[sub_resource type="Sky" id="Sky_pkg7o"]
+sky_material = SubResource("PanoramaSkyMaterial_gbfbk")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_pkg7o")
+ambient_light_source = 3
+ambient_light_color = Color(0.70796657, 0.7079665, 0.7079665, 1)
+reflected_light_source = 2
+glow_enabled = true
+fog_mode = 1
+fog_density = 1.0
+volumetric_fog_enabled = true

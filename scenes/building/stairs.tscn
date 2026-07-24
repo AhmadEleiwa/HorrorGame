@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c34te5qbycf24"]
+
+[ext_resource type="PackedScene" uid="uid://chc4280m5w0i6" path="res://assets/main asset/geometry/stairsWood4.glb" id="1_x0s3b"]
+[ext_resource type="PackedScene" uid="uid://b4nipmwiv3lgi" path="res://assets/main asset/geometry/stairsGuardWood2.glb" id="2_i2dsh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6d2h"]
+size = Vector3(2.0230255, 2.560852, 8.941437)
+
+[node name="stairs" type="StaticBody3D" unique_id=1912308853]
+
+[node name="stairsWood42" parent="." unique_id=729024881 instance=ExtResource("1_x0s3b")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1649887768]
+transform = Transform3D(1, 0, 0, 0, 0.89100647, 0.4539905, 0, -0.4539905, 0.89100647, -0.050834656, -3.0745234, -3.569619)
+shape = SubResource("BoxShape3D_g6d2h")
+
+[node name="stairsGuardWood22" parent="." unique_id=1309877927 instance=ExtResource("2_i2dsh")]

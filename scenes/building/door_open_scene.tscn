@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://kkf447wiehgs"]
+
+[ext_resource type="PackedScene" uid="uid://b4pwx2uuany3a" path="res://assets/main asset/geometry/doorWood2.glb" id="1_8fakt"]
+[ext_resource type="Script" uid="uid://cv3su1ndpam5y" path="res://scripts/static_body_3d.gd" id="2_8fakt"]
+[ext_resource type="PackedScene" uid="uid://buma1bq6aeuwp" path="res://assets/main asset/geometry/wallDoorWood.glb" id="3_0dw42"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n482j"]
+size = Vector3(1.7309265, 2.5769272, 0.2949829)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ajt2m"]
+size = Vector3(1.1014404, 3.934021, 0.2949829)
+
+[node name="DoorOpenScene" type="StaticBody3D" unique_id=1238286829]
+
+[node name="doorWood22" parent="." unique_id=1538283434 instance=ExtResource("1_8fakt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0023624748, 1.2384903, 0.028693795)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="doorWood22/doorWood2/doorWood2_001" parent_id_path=PackedInt32Array(1538283434, 1289598228) index="0" unique_id=376210829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17367333, 0.022292972, -0.0762614)
+script = ExtResource("2_8fakt")
+
+[node name="doorCollision" type="CollisionShape3D" parent="doorWood22/doorWood2/doorWood2_001/StaticBody3D" unique_id=1651104500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76166666, 1.3003352, 0.016693234)
+shape = SubResource("BoxShape3D_n482j")
+
+[node name="wallDoorWood3" parent="." unique_id=221071638 instance=ExtResource("3_0dw42")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1869066, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1822827164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4754658, 1.9893911, 0.011595368)
+shape = SubResource("BoxShape3D_ajt2m")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1364596369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4250231, 2.0144475, 0.011595368)
+shape = SubResource("BoxShape3D_ajt2m")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=946951310]
+visible = false
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=383388273]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer" unique_id=933220370]
+layout_mode = 2
+text = "[E]"
+
+[editable path="doorWood22"]

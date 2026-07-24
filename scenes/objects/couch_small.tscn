@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dfly6ydwvbv4w"]
+
+[ext_resource type="PackedScene" uid="uid://cv0hxs312kfyg" path="res://assets/my assets/couch-small.glb" id="1_hbjre"]
+[ext_resource type="Texture2D" uid="uid://ct2l3jcav3liu" path="res://assets/my assets/couch-small_Image_0.png" id="2_7exqw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p3m4x"]
+albedo_color = Color(1.1730844, 1.1730844, 1.1730844, 1)
+albedo_texture = ExtResource("2_7exqw")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(1.137207, 1.2788086, 1.1782532)
+
+[node name="CouchSmall" type="StaticBody3D" unique_id=1071521287]
+
+[node name="couch-small" parent="." unique_id=838449254 instance=ExtResource("1_hbjre")]
+transform = Transform3D(0.0015305785, 0, 0.3999971, 0, 0.4, 0, -0.3999971, 0, 0.0015305785, 0, 0, 0)
+
+[node name="geometry_0" parent="couch-small/world" parent_id_path=PackedInt32Array(838449254, 1163070224) index="0" unique_id=373249209]
+material_override = SubResource("StandardMaterial3D_p3m4x")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=686325113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.068603516, -0.1394043, -0.025527954)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[editable path="couch-small"]

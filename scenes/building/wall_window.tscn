@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c37ak2hnyq5yo"]
+
+[ext_resource type="PackedScene" uid="uid://fl6umu4j4wq3" path="res://assets/main asset/geometry/WindowWood.glb" id="1_2jl8u"]
+[ext_resource type="Texture2D" uid="uid://dvdtqd18gpay3" path="res://assets/main asset/geometry/windowWood3_albedo.png" id="2_5hjnx"]
+[ext_resource type="PackedScene" uid="uid://bktarvm4tbjfp" path="res://assets/main asset/geometry/wallWindowWood-thick.glb" id="3_wxsdt"]
+[ext_resource type="PackedScene" uid="uid://djy0qhebet3vi" path="res://assets/main asset/props/windowCurtains2.glb" id="4_5hjnx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(3.8190918, 3.7648926, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jnqru"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.9843137)
+albedo_texture = ExtResource("2_5hjnx")
+metallic = 0.78
+metallic_specular = 0.45
+roughness = 0.27
+
+[node name="wallWindow" type="StaticBody3D" unique_id=1404315363]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1413060320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05065918, 1.9276123, 0)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="WindowWood2" parent="." unique_id=313831159 instance=ExtResource("1_2jl8u")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 2)
+
+[node name="WindowWood" parent="WindowWood2" index="0" unique_id=1919744275]
+layers = 3
+
+[node name="WindowWood_001" parent="WindowWood2/WindowWood" index="0" unique_id=224632380]
+layers = 3
+cast_shadow = 2
+surface_material_override/0 = SubResource("StandardMaterial3D_jnqru")
+
+[node name="wallWindowWood-thick" parent="." unique_id=956810821 instance=ExtResource("3_wxsdt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="windowCurtains22" parent="." unique_id=737963241 instance=ExtResource("4_5hjnx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.048708618, 0.15006816, -2.156886)
+
+[editable path="WindowWood2"]

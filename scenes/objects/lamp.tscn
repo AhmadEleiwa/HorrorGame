@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://clr5fl462p58m"]
+
+[ext_resource type="Script" uid="uid://cgidj88hkmbpc" path="res://scripts/objects/lamp.gd" id="1_1ngp2"]
+[ext_resource type="PackedScene" uid="uid://623nmrfbnk4d" path="res://assets/main asset/props/lamp.glb" id="1_06rti"]
+[ext_resource type="Texture2D" uid="uid://boogfeqf72th8" path="res://assets/main asset/props/lamp_albedo.png" id="2_1ngp2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(0.5570984, 1.4087067, 0.5994568)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndgxo"]
+albedo_texture = ExtResource("2_1ngp2")
+
+[node name="Lamp" type="RigidBody3D" unique_id=2054203903]
+freeze = true
+freeze_mode = 1
+script = ExtResource("1_1ngp2")
+enable_interactivity = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=70443939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024493486, 0.7410202, -0.04516083)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="lamp2" parent="." unique_id=862801696 instance=ExtResource("1_06rti")]
+
+[node name="lamp" parent="lamp2" index="0" unique_id=1636889497]
+material_override = SubResource("StandardMaterial3D_ndgxo")
+cast_shadow = 0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2" unique_id=198783651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025523305, 1.3410535, 0.0135746)
+shadow_enabled = true
+
+[editable path="lamp2"]

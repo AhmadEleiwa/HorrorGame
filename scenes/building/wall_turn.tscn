@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bxib8244h7oww"]
+
+[ext_resource type="PackedScene" uid="uid://cx2jgs2pjugs0" path="res://assets/main asset/geometry/wallTurnWood.glb" id="1_0u4lb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(1.923851, 3.8020477, 0.2336731)
+
+[node name="wallTurn" type="StaticBody3D" unique_id=1941200583]
+
+[node name="wallTurnWood2" parent="." unique_id=86073594 instance=ExtResource("1_0u4lb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08572245, 0, -1.8978204)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1307729009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0550249, 2.06147, -0.027908325)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=494573327]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.07413053, 2.06147, 1.0992672)
+shape = SubResource("BoxShape3D_0jmyi")

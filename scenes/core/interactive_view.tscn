@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b7kps11rf3nk3"]
+
+[ext_resource type="Script" uid="uid://bbndqvvj0uc81" path="res://scripts/core/interactive_view.gd" id="1_0pyao"]
+
+[node name="InteractiveView" type="Node3D" unique_id=1818438684]
+script = ExtResource("1_0pyao")
+lerp_speed = null
+inspect_rotate_sensitivity = null

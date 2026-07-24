@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ca8358g81s7y2"]
+
+[ext_resource type="PackedScene" uid="uid://dgb7dap3hh831" path="res://assets/my assets/paper.glb" id="1_4ewj7"]
+[ext_resource type="Script" uid="uid://cdf4ou5qmeijj" path="res://scripts/objects/paper.gd" id="1_fchak"]
+[ext_resource type="Texture2D" uid="uid://dvrnuucjblrqa" path="res://assets/my assets/paper_1885v2.png" id="3_tcnds"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d4l53"]
+albedo_texture = ExtResource("3_tcnds")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(0.4366455, 0.078308105, 0.43188536)
+
+[node name="Paper" type="RigidBody3D" unique_id=1176401088 groups=["paper"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_fchak")
+
+[node name="paper" parent="." unique_id=1864424133 instance=ExtResource("1_4ewj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.018520087, 0)
+
+[node name="Plane_001" parent="paper" index="0" unique_id=1808550398]
+material_override = SubResource("StandardMaterial3D_d4l53")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1348811823]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023777187, 0.02240102, -0.0037720054)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="ObjectName" type="Label3D" parent="." unique_id=968051306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14758301, 0)
+visible = false
+text = "Title"
+font_size = 16
+
+[editable path="paper"]

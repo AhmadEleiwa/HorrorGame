@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://h2wfd31pujft"]
+
+[ext_resource type="PackedScene" uid="uid://bfst3jx1q0deq" path="res://assets/main asset/geometry/archWood.glb" id="1_l7c33"]
+[ext_resource type="PackedScene" uid="uid://dswgk6wwlg473" path="res://assets/main asset/geometry/archWood-thick.glb" id="2_uwghl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(0.6639404, 3.5464478, 0.1772461)
+
+[node name="arch" type="StaticBody3D" unique_id=1307573247]
+
+[node name="archWood2" parent="." unique_id=1924990346 instance=ExtResource("1_l7c33")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0075858943, -1.804103)
+visible = false
+
+[node name="archWood3" parent="." unique_id=39704507 instance=ExtResource("1_l7c33")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.0075858943, 1.8014773)
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=86490151]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6987915, 1.7762756, 0.09547007)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1761222667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6748934, 1.7762756, 0.06006968)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="archWood-thick" parent="." unique_id=341417372 instance=ExtResource("2_uwghl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.827, 0.02)

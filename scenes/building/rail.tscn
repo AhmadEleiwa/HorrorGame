@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bdnp8wkj4ay0"]
+
+[ext_resource type="PackedScene" uid="uid://dnyqwcro8rc4p" path="res://assets/main asset/geometry/stairsRailWood.glb" id="1_qb0h2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(1.9699707, 0.9434204, 0.19032288)
+
+[node name="Rail" type="StaticBody3D" unique_id=199825557]
+
+[node name="stairsRailWood2" parent="." unique_id=634846162 instance=ExtResource("1_qb0h2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -0.03310299, 0.059830487)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2058854715]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.041870117, 0.48544312, 0.014549255)
+shape = SubResource("BoxShape3D_0jmyi")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://5yv86yilmrig"]
+
+[ext_resource type="PackedScene" uid="uid://mor02sao2pyw" path="res://assets/main asset/geometry/wallHalfWood-thick.glb" id="1_fb6hl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(1.9569092, 3.8304138, 0.4058838)
+
+[node name="wallHalf" type="StaticBody3D" unique_id=555953486]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2025075391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10496712, 1.9385834, 0.04870522)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="wallHalfWood-thick" parent="." unique_id=1425701650 instance=ExtResource("1_fb6hl")]
