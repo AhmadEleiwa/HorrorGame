@@ -14,6 +14,8 @@ func _ready() -> void:
 	lamp_light.visible = enable
 func interact(player:Player=null)->void:
 	super.interact(player)
+	if not check_interactivity():
+		return
 	enable = !enable
 func ui_interaction() -> void:
 	UiManager.show_interaction()

@@ -2,9 +2,23 @@ extends RigidBody3D
 class_name InteractiveObject
 signal on_interact
 
-@export var enable_interactivity:bool =true
-@export var inspect_face_rotation_degrees: Vector3 = Vector3.ZERO  # e.g. (0, 90, 0) for papers lying at 0°
 
+@export_group("Hold Pose")
+@export var hold_local_position: Vector3 = Vector3(-0.5, -0.3, 0.2)
+@export var hold_local_basis: Basis = Basis.IDENTITY
+
+@export_group("Inspect Pose")
+@export var inspect_local_position: Vector3 = Vector3(0, 0.5, 0)
+@export var inspect_face_rotation_degrees: Vector3 = Vector3.ZERO
+
+@export_group("Drop")
+@export var enable_interactivity:bool =true
+
+## When it true  Rrturn to origin parent node, to local scene if false
+@export var parent_drop:Node3D = null
+func _ready() -> void:
+	if not parent_drop:
+		parent_drop = get_parent()
 var picked:bool = false
 
 func get_inspect_basis() -> Basis:

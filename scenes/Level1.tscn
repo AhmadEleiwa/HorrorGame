@@ -32,6 +32,9 @@
 [ext_resource type="Texture2D" uid="uid://7m2mnoubpjcx" path="res://assets/OFFICE/desks/desk1_alt_desk_1.jpg" id="27_7k372"]
 [ext_resource type="PackedScene" uid="uid://dgb7dap3hh831" path="res://assets/my assets/paper.glb" id="27_ak7rx"]
 [ext_resource type="PackedScene" uid="uid://diqrisp7bpq84" path="res://assets/main asset/props/book2.glb" id="27_vgt1y"]
+[ext_resource type="PackedScene" uid="uid://ejo5d23bomss" path="res://effects/fire_effect.tscn" id="29_rfxdd"]
+[ext_resource type="FontFile" uid="uid://kov7h0v13c1s" path="res://assets/my assets/fonts/PatrickHand-Regular.ttf" id="30_jrm5b"]
+[ext_resource type="FontFile" uid="uid://bve78e576wf8o" path="res://assets/my assets/fonts/Jo_wrote_a_lovesong.ttf" id="33_vgt1y"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_0jmyi"]
 size = Vector3(50, 1, 50)
@@ -136,7 +139,7 @@ path = NodePath("../../Puzzle1/Lamp")
 metadata/_custom_type_script = "uid://b8rq7vr28pjcd"
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i2gr7"]
-size = Vector3(9.441895, 1, 1)
+size = Vector3(9.441895, 1, 0.25256348)
 
 [sub_resource type="Animation" id="Animation_3m0gu"]
 length = 0.001
@@ -308,6 +311,138 @@ tracks/13/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Puzzle1/minipuzzles/1/papers:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.17, 1.906, 3.4909477)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper2:visible")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper2:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.17, 1.906, 4.456053)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper3:visible")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper3:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.17, 1.906, 5.1225967)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper4:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-2.708073, 2.336, 3.5758057)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper4:visible")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper5:visible")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper5:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.196095, 1.5032423, 4.432852)]
+}
 
 [sub_resource type="Animation" id="Animation_xgw5r"]
 resource_name = "jumbscare#1"
@@ -476,6 +611,226 @@ tracks/7/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_jrm5b"]
+resource_name = "puzzle_1_mini_puzzle_1"
+length = 16.947664
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.53, 3.9491615, 4.6795707, 4.753849, 5.3976, 5.4718785),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018, 3.4822018, 3.4822018, 3.4822018, 3.4822018, 3.4822018),
+"update": 0,
+"values": [Vector3(-0.769, 1.846, 1.049), Vector3(-0.769, 2.336, 1.049), Vector3(0, 2.336, 1.049), Vector3(0, 2.336, 1.049), Vector3(0, 2.336, 1.049), Vector3(-0.17, 1.966, 0.679), Vector3(-0.17, 1.906, 0.679)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 3.8872623, 4.753849, 5.4718785),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018, 3.4822018, 3.4822018, 3.4822018),
+"update": 0,
+"values": [Vector3(-0.392, 1.846, 1.057), Vector3(-0.392, 2.336, 1.057), Vector3(0, 2.336, 1.049), Vector3(0, 2.336, 1.049), Vector3(-0.17, 1.906, 0.679)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.4333333, 4.0110607, 4.753849, 5.4718785),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018, 3.4822018, 3.4822018, 3.4822018),
+"update": 0,
+"values": [Vector3(0.073, 1.846, 1.051), Vector3(0.073, 2.336, 1.051), Vector3(0, 2.336, 1.049), Vector3(0, 2.336, 1.049), Vector3(-0.17, 1.906, 0.679)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.8333334, 5.671098, 7.1842594),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018, 3.4822018, 3.4822018),
+"update": 0,
+"values": [Vector3(0.444, 1.846, 1.042), Vector3(0.444, 2.336, 1.042), Vector3(0.444, 2.336, 1.042), Vector3(-0.281, 2.336, 1.042)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.43329358, 0.9903853, 4.6548114, 4.7290897, 5.471879, 5.5461574),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018, 3.4822018, 3.4822018, 3.4822018, 3.4822018),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1.3089969, 0, 0), Vector3(1.3089969, 0, 0), Vector3(1.3089969, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper2:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.73040915, 1.9807707, 4.7290897, 5.5461574),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018, 3.4822018, 3.4822018),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1.3089969, 0, 0), Vector3(1.3089969, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper3:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1.077044, 2.624521, 4.7290897, 5.5461574),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018, 3.4822018, 3.4822018),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1.3089969, 0, 0), Vector3(1.3089969, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper4:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.3989192, 3.0701945, 4.7290897),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018, 3.4822018),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1.3089969, 0, 0), Vector3(1.3089969, 0, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("%Book:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(5.0509653, 8.687247),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018),
+"update": 1,
+"values": [true, false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Puzzle1/minipuzzles/1/slots:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(5.22611),
+"transitions": PackedFloat32Array(3.4822018),
+"update": 1,
+"values": [false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Puzzle1/minipuzzles/1/papers:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(6.1125083, 11.49325),
+"transitions": PackedFloat32Array(3.4822018, 3.4822018),
+"update": 1,
+"values": [true, false]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Puzzle1/minipuzzles/1/effects/FireEffect:emitting")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(9.1426, 15.643997),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Puzzle1/minipuzzles/1/effects:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0.25156575, 14.877135),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(5.768405),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper2:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(5.615033),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Puzzle1/minipuzzles/1/papers/Paper3:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(5.3680387),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Player/head/flashlight:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(15.413939),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("House/wall_doors/DoorWall5:is_open")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(15.413939),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="Animation" id="Animation_hgrhv"]
 resource_name = "reset_starting_animation"
 tracks/0/type = "value"
@@ -608,6 +963,7 @@ _data = {
 &"RESET": SubResource("Animation_3m0gu"),
 &"jumbscare#1": SubResource("Animation_xgw5r"),
 &"opening": SubResource("Animation_rwd0d"),
+&"puzzle_1_mini_puzzle_1": SubResource("Animation_jrm5b"),
 &"reset_starting_animation": SubResource("Animation_hgrhv"),
 &"starting_animation": SubResource("Animation_o7h1l")
 }
@@ -615,14 +971,47 @@ _data = {
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jrm5b"]
 transparency = 1
 cull_mode = 2
-shading_mode = 0
-albedo_color = Color(0.9201399, 0.919853, 0, 0.39607844)
+albedo_color = Color(0.92156863, 0.92156863, 0.16470589, 0.39607844)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+rim_enabled = true
+rim = 0.78
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rfxdd"]
 transparency = 1
 cull_mode = 2
-shading_mode = 0
-albedo_color = Color(0.9201399, 0.919853, 0, 0.39607844)
+albedo_color = Color(0.92156863, 0.92156863, 0.16470589, 0.39607844)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+rim_enabled = true
+rim = 0.78
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kn0xh"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.92156863, 0.92156863, 0.16470589, 0.39607844)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+rim_enabled = true
+rim = 0.78
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjrcc"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.92156863, 0.92156863, 0.16470589, 0.39607844)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+rim_enabled = true
+rim = 0.78
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t86jx"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.92156863, 0.92156863, 0.16470589, 0.39607844)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+rim_enabled = true
+rim = 0.78
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ak7rx"]
 albedo_color = Color(0.40457773, 0.19858971, 0.10087745, 1)
@@ -745,12 +1134,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9460449, 0, -0.62475586)
 shape = SubResource("BoxShape3D_2ouud")
 
 [node name="DoorOpeningFake3" type="Area3D" parent="Areas" unique_id=112977634]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32504797, 1.41429, -25.792278)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32504797, 1.41429, -26.318441)
 script = ExtResource("5_ipmer")
 actions = Array[ExtResource("6_4dyl1")]([SubResource("Resource_0ybwg"), SubResource("Resource_vbuca"), SubResource("Resource_ntbnh"), SubResource("Resource_gumju")])
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/DoorOpeningFake3" unique_id=2021745489]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81469727, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81469727, 0, -0.26062965)
 shape = SubResource("BoxShape3D_i2gr7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=792494890]
@@ -831,16 +1220,15 @@ cast_shadow = 2
 
 [node name="SpotLight3D" type="SpotLight3D" parent="chararacter/char3" unique_id=1962200673]
 transform = Transform3D(2.5, 4.7683716e-07, 1.3113022e-06, -3.2782555e-07, 2.4999995, -2.9802322e-07, -1.3113022e-06, 3.874302e-07, 2.4999998, 0.041905403, 3.9064565, 3.2502403)
-visible = false
 light_energy = 0.7
 light_cull_mask = 4294967292
 spot_range = 1.608
 spot_angle = 15.52
 
 [node name="Lamp2" parent="." unique_id=612541414 instance=ExtResource("23_0ybwg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9995513, -20.935675)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.441841, 0.9995513, -22.999205)
+enable = false
 enable_interactivity = true
-inspect_face_rotation_degrees = null
 
 [node name="Puzzle1" type="Node3D" parent="." unique_id=1885136122]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -33.688)
@@ -851,84 +1239,89 @@ script = ExtResource("21_u4kti")
 [node name="1" type="Node3D" parent="Puzzle1/minipuzzles" unique_id=1644775536]
 visible = false
 
-[node name="Book" parent="Puzzle1/minipuzzles/1" unique_id=181756625 groups=["book"] instance=ExtResource("23_um3md")]
-transform = Transform3D(0.99823123, 0, 0.059452236, 0, 1, 0, -0.059452236, 0, 0.99823123, 2.1126232, 1.911382, 2.6630402)
-
 [node name="papers" type="Node3D" parent="Puzzle1/minipuzzles/1" unique_id=1137409695]
 
 [node name="Paper" parent="Puzzle1/minipuzzles/1/papers" unique_id=858405693 instance=ExtResource("22_ntbnh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5151787, 1.0829346, 2.8198204)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17, 1.906, 3.4909477)
 title = "dated Spring, 1885"
-content = "\"Today I became his wife. The church was full of white roses — he counted them for me, all 4, and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
+content = "\"Today I became his wife. The church was full of white roses — he counted them for me, all [color=#771111]4[/color], and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
 
 [node name="Paper2" parent="Puzzle1/minipuzzles/1/papers" unique_id=1176401088 instance=ExtResource("22_ntbnh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8510882, 1.5032423, 3.8526497)
-title = "dated Spring, 1885"
-content = "\"Today I became his wife. The church was full of white roses — he counted them for me, all 4, and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.17, 1.906, 4.456053)
+title = "dated Winter, 1887"
+content = "\"Our daughter arrived just before dawn, when the house was still and cold. The midwife said she'd never seen a child so quiet. I remember it was the [color=#771111]0[/color] th hour when I first held her — the world outside hadn't even woken yet.\""
 
 [node name="Paper3" parent="Puzzle1/minipuzzles/1/papers" unique_id=367371348 instance=ExtResource("22_ntbnh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9129183, 1.5032423, 2.5969448)
-title = "dated Spring, 1885"
-content = "\"Today I became his wife. The church was full of white roses — he counted them for me, all 4, and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.17, 1.906, 5.1225967)
+title = "dated Spring, 1889"
+content = "\"Our daughter counted birds today, the way I once counted roses. She found [color=#771111]2[/color] nesting in the old oak, and laughed so hard she fell into the grass. I wished, foolishly, that this moment could last forever.\""
 
 [node name="Paper4" parent="Puzzle1/minipuzzles/1/papers" unique_id=755616707 instance=ExtResource("22_ntbnh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1415136, 1.5032423, 3.9217663)
-title = "dated Spring, 1885"
-content = "\"Today I became his wife. The church was full of white roses — he counted them for me, all 4, and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
+transform = Transform3D(1, 0, 0, 0, 0.25881907, -0.9659258, 0, 0.9659258, 0.25881907, -2.708073, 2.336, 3.5758057)
+content = "\"I don't recognize my own reflection some mornings. My hands move before I decide to move them. I hear my own voice saying things I don't remember choosing to say. Something is wrong with me, and I am afraid to say it aloud.\""
+
+[node name="Paper5" parent="Puzzle1/minipuzzles/1/papers" unique_id=1361932845 instance=ExtResource("22_ntbnh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.196095, 1.5032423, 4.432852)
+content = "\"He is a good man. Everyone says so. But lately I catch him staring out the window long after the sun has gone, as if waiting for someone who never comes. I do not ask who.\""
 
 [node name="slots" type="Node3D" parent="Puzzle1/minipuzzles/1" unique_id=2145797181]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7016718, 0.08645415, -0.4303627)
 visible = false
 
-[node name="Slot" parent="Puzzle1/minipuzzles/1/slots" unique_id=1045835543 node_paths=PackedStringArray("mesh") instance=ExtResource("22_gumju")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.632632, 1.7592666, 1.4791641)
+[node name="Slot" parent="Puzzle1/minipuzzles/1/slots" unique_id=1045835543 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.470251, 1.7592666, 1.4791641)
 group_name = "paper"
 mesh = NodePath("paper")
+parent_drop = NodePath("..")
 
 [node name="paper" parent="Puzzle1/minipuzzles/1/slots/Slot" unique_id=1675001545 instance=ExtResource("27_ak7rx")]
 
 [node name="Plane_001" parent="Puzzle1/minipuzzles/1/slots/Slot/paper" index="0" unique_id=1808550398]
 material_override = SubResource("StandardMaterial3D_jrm5b")
 
-[node name="Slot2" parent="Puzzle1/minipuzzles/1/slots" unique_id=431647925 node_paths=PackedStringArray("mesh") instance=ExtResource("22_gumju")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2564852, 1.7592666, 1.4871063)
+[node name="Slot2" parent="Puzzle1/minipuzzles/1/slots" unique_id=431647925 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0941043, 1.7592666, 1.4871063)
 group_name = "paper"
 mesh = NodePath("paper")
+parent_drop = NodePath("..")
 
 [node name="paper" parent="Puzzle1/minipuzzles/1/slots/Slot2" unique_id=439915154 instance=ExtResource("27_ak7rx")]
 
 [node name="Plane_001" parent="Puzzle1/minipuzzles/1/slots/Slot2/paper" index="0" unique_id=1808550398]
-material_override = SubResource("StandardMaterial3D_jrm5b")
-
-[node name="BookSlot" parent="Puzzle1/minipuzzles/1/slots" unique_id=427621611 node_paths=PackedStringArray("mesh") instance=ExtResource("22_gumju")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8676596, 1.7592666, 1.1110153)
-group_name = "book"
-mesh = NodePath("book22")
-
-[node name="book22" parent="Puzzle1/minipuzzles/1/slots/BookSlot" unique_id=96522242 instance=ExtResource("27_vgt1y")]
-
-[node name="book2" parent="Puzzle1/minipuzzles/1/slots/BookSlot/book22" index="0" unique_id=1878868410]
 material_override = SubResource("StandardMaterial3D_rfxdd")
 
-[node name="Slot3" parent="Puzzle1/minipuzzles/1/slots" unique_id=1726194578 node_paths=PackedStringArray("mesh") instance=ExtResource("22_gumju")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3506994, 1.7592666, 1.4818306)
+[node name="Slot3" parent="Puzzle1/minipuzzles/1/slots" unique_id=1726194578 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6286548, 1.7592666, 1.4818306)
 group_name = "paper"
 mesh = NodePath("paper")
+parent_drop = NodePath("..")
 
 [node name="paper" parent="Puzzle1/minipuzzles/1/slots/Slot3" unique_id=1820933086 instance=ExtResource("27_ak7rx")]
 
 [node name="Plane_001" parent="Puzzle1/minipuzzles/1/slots/Slot3/paper" index="0" unique_id=1808550398]
-material_override = SubResource("StandardMaterial3D_jrm5b")
+material_override = SubResource("StandardMaterial3D_kn0xh")
 
-[node name="Slot4" parent="Puzzle1/minipuzzles/1/slots" unique_id=1292940924 node_paths=PackedStringArray("mesh") instance=ExtResource("22_gumju")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9797467, 1.7592666, 1.4726181)
+[node name="Slot4" parent="Puzzle1/minipuzzles/1/slots" unique_id=1292940924 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2577021, 1.7592666, 1.4726181)
 group_name = "paper"
 mesh = NodePath("paper")
+parent_drop = NodePath("..")
 
 [node name="paper" parent="Puzzle1/minipuzzles/1/slots/Slot4" unique_id=564632589 instance=ExtResource("27_ak7rx")]
 
 [node name="Plane_001" parent="Puzzle1/minipuzzles/1/slots/Slot4/paper" index="0" unique_id=1808550398]
-material_override = SubResource("StandardMaterial3D_jrm5b")
+material_override = SubResource("StandardMaterial3D_tjrcc")
+
+[node name="BookSlot" parent="Puzzle1/minipuzzles/1/slots" unique_id=427621611 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8676596, 1.7592666, 1.1110153)
+group_name = "book"
+mesh = NodePath("book22")
+parent_drop = NodePath("..")
+
+[node name="book22" parent="Puzzle1/minipuzzles/1/slots/BookSlot" unique_id=96522242 instance=ExtResource("27_vgt1y")]
+
+[node name="book2" parent="Puzzle1/minipuzzles/1/slots/BookSlot/book22" index="0" unique_id=1878868410]
+material_override = SubResource("StandardMaterial3D_t86jx")
 
 [node name="desk1_alt22" parent="Puzzle1/minipuzzles/1" unique_id=1463613786 instance=ExtResource("26_qwon6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11266017, 0.93364286, 0.79626465)
@@ -936,8 +1329,53 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11266017, 0.93364286, 0.79
 [node name="desk1_alt2" parent="Puzzle1/minipuzzles/1/desk1_alt22" index="0" unique_id=1537706999]
 surface_material_override/0 = SubResource("StandardMaterial3D_ak7rx")
 
+[node name="effects" type="Node3D" parent="Puzzle1/minipuzzles/1" unique_id=228998324]
+
+[node name="FireEffect" parent="Puzzle1/minipuzzles/1/effects" unique_id=1418959475 instance=ExtResource("29_rfxdd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28080225, 2.125737, 0.9963951)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Puzzle1/minipuzzles/1/effects" unique_id=1087384810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08412981, 2.062096, 0.8321495)
+light_color = Color(2, 1.2, 0.6, 1)
+light_energy = 0.1
+omni_range = 1.1719593
+
 [node name="2" type="Node3D" parent="Puzzle1/minipuzzles" unique_id=5278412]
 visible = false
+
+[node name="Label3D" type="Label3D" parent="Puzzle1/minipuzzles/2" unique_id=497781712]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.6725564, 3.5599213, 7.5846233)
+text = "I. 1855"
+font = ExtResource("30_jrm5b")
+font_size = 42
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="Puzzle1/minipuzzles/2" unique_id=847267999]
+transform = Transform3D(0.7085789, 0, 0.70563155, 0, 1, 0, -0.70563155, 0, 0.7085789, -2.7953196, 1.2398164, 0.8441582)
+text = "II. 1856"
+font = ExtResource("30_jrm5b")
+font_size = 42
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="Puzzle1/minipuzzles/2" unique_id=1449466490]
+transform = Transform3D(-4.3711385e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -4.3711385e-08, 3.7037497, 1.2398164, 3.934492)
+text = "III. 1857"
+font = ExtResource("30_jrm5b")
+font_size = 42
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="Puzzle1/minipuzzles/2" unique_id=1409255821]
+transform = Transform3D(-4.3711385e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -4.3711385e-08, 3.7037497, 3.240931, 7.6091022)
+text = "IV. 1858"
+font = ExtResource("30_jrm5b")
+font_size = 42
+outline_size = 0
+
+[node name="Book" parent="Puzzle1/minipuzzles/2" unique_id=181756625 node_paths=PackedStringArray("parent_drop") groups=["book"] instance=ExtResource("23_um3md")]
+unique_name_in_owner = true
+transform = Transform3D(0.9982398, 0.057285544, 0.015349621, 0, 0.258819, -0.9659258, -0.059306376, 0.96422535, 0.25836352, -0.148, 1.844374, 2.1120644)
+visible = false
+parent_drop = NodePath("../../1")
 
 [node name="3" type="Node3D" parent="Puzzle1/minipuzzles" unique_id=1273436571]
 visible = false
@@ -974,7 +1412,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19077826, 0.9995513, 4.2194
 visible = false
 enable = false
 enable_interactivity = true
-inspect_face_rotation_degrees = null
+
+[node name="Label3D" type="Label3D" parent="Puzzle1" unique_id=697080431]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.7305608, 3.5683935, 4.7962875)
+text = "memories . . .  memories
+"
+font = ExtResource("33_vgt1y")
+font_size = 39
+outline_size = 0
 
 [connection signal="body_entered" from="Areas/StartingPoint" to="." method="_on_starting_point_body_entered"]
 [connection signal="body_entered" from="Areas/StartingPoint2" to="." method="_on_starting_point_body_entered"]
@@ -1001,13 +1446,16 @@ inspect_face_rotation_degrees = null
 [editable path="House/obestacels/library/Shelf5/SHELF"]
 [editable path="House/Node3D/CouchSmall2"]
 [editable path="House/Node3D/CouchSmall2/couch-small"]
+[editable path="House/Node3D/carpet3"]
+[editable path="House/tableLamp3"]
+[editable path="House/console-table"]
 [editable path="Player"]
 [editable path="Player/Character_01"]
 [editable path="chararacter/char2"]
 [editable path="chararacter/char3"]
 [editable path="Puzzle1/minipuzzles/1/slots/Slot/paper"]
 [editable path="Puzzle1/minipuzzles/1/slots/Slot2/paper"]
-[editable path="Puzzle1/minipuzzles/1/slots/BookSlot/book22"]
 [editable path="Puzzle1/minipuzzles/1/slots/Slot3/paper"]
 [editable path="Puzzle1/minipuzzles/1/slots/Slot4/paper"]
+[editable path="Puzzle1/minipuzzles/1/slots/BookSlot/book22"]
 [editable path="Puzzle1/minipuzzles/1/desk1_alt22"]

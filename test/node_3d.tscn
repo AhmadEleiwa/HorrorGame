@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://clr5fl462p58m" path="res://scenes/objects/lamp.tscn" id="2_kb28u"]
 [ext_resource type="PackedScene" uid="uid://ca8358g81s7y2" path="res://scenes/objects/paper.tscn" id="3_kb28u"]
 [ext_resource type="PackedScene" uid="uid://blvee7hiro8q6" path="res://scenes/objects/slot.tscn" id="5_fg56f"]
+[ext_resource type="PackedScene" uid="uid://5cljii0avnq0" path="res://scenes/objects/chest.tscn" id="6_hbo4u"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_0jmyi"]
 size = Vector3(10.868103, 1, 8.793243)
@@ -18,7 +19,6 @@ script = ExtResource("1_irbvn")
 [node name="Lamp" parent="." unique_id=130736851 instance=ExtResource("2_kb28u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4306333, -2.9768484)
 enable_interactivity = true
-inspect_face_rotation_degrees = null
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2060144348]
 collision_layer = 3
@@ -35,6 +35,9 @@ shape = SubResource("BoxShape3D_0jmyi")
 [node name="Player" parent="." unique_id=1008851204 instance=ExtResource("2_e2mbt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8043952, 0)
 
+[node name="HoldPosition" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="3" unique_id=1247300566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
 [node name="HoldPosition2" type="Node3D" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="4" unique_id=1764069871]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.566407)
 
@@ -45,9 +48,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13500643, 0.50451607, -1.4
 title = "dated Spring, 1885"
 content = "\"Today I became his wife. The church was full of white roses — he counted them for me, all 4, and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
 
-[node name="Slot" parent="." unique_id=1045835543 instance=ExtResource("5_fg56f")]
+[node name="Slot" parent="." unique_id=1045835543 node_paths=PackedStringArray("parent_drop") instance=ExtResource("5_fg56f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69635916, -2.1738124)
 group_name = "paper"
+parent_drop = NodePath("..")
+
+[node name="Chest" parent="." unique_id=992608840 instance=ExtResource("6_hbo4u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4213054, 0, -2.0635896)
+secret_code = Array[int]([4, 0, 2])
 
 [editable path="Player"]
 [editable path="Player/Character_01"]

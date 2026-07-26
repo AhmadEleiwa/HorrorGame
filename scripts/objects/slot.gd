@@ -1,5 +1,6 @@
 @tool
 extends InteractiveObject
+class_name Slot
 var holding_object:InteractiveObject = null
 @onready var object_name: Label3D = $ObjectName
 #@onready var mesh: MeshInstance3D = $MeshInstance3D
@@ -14,6 +15,7 @@ func interact(_player: Player = null) -> void:
 		return
 	var obj = _player.holding_object()
 	if holding_object and  obj:
+		
 		_player.drop_object()
 		_player.pickup_object(holding_object)
 		obj.global_position = global_position
@@ -48,7 +50,7 @@ func interact(_player: Player = null) -> void:
 	holding_object = obj
 		
 func hide_mesh():
-	print(mesh)
+	#print(mesh)
 	mesh.visible = false
 
 func hide_ui_interaction() -> void:

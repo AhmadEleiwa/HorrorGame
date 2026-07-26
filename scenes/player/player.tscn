@@ -45,7 +45,6 @@ script = ExtResource("1_onrkg")
 
 [node name="Character_01" parent="." unique_id=880499678 instance=ExtResource("1_4flbx")]
 transform = Transform3D(-0.39999238, 0, 0.0024716824, 0, 0.4, 0, -0.0024716824, 0, -0.39999238, 0, 0, 0)
-visible = false
 
 [node name="Skeleton3D" parent="Character_01/Armature" parent_id_path=PackedInt32Array(880499678, 213290725) index="0" unique_id=1062237029]
 bones/0/position = Vector3(-4.2185784e-05, 2.7363553, -0.0033301134)

@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://cbjxpte0cqngp"]
+
+[ext_resource type="Script" uid="uid://dfeupvcl7p2ns" path="res://scripts/objects/lock.gd" id="1_rs7nd"]
+[ext_resource type="PackedScene" uid="uid://u1kcmvseupy2" path="res://assets/my assets/lock.glb" id="2_rs7nd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(0.22182465, 0.05618286, 0.25964355)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rs7nd"]
+size = Vector3(0.22182465, 0.05618286, 0.25964355)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i40c6"]
+size = Vector3(0.22182465, 0.05618286, 0.25964355)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6d2h"]
+size = Vector3(0.16699219, 0.51586914, 0.21777344)
+
+[sub_resource type="Animation" id="Animation_rs7nd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lock/Torus_001:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 4.10442, 0.010180563)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("lock/Torus_001:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -1.5707966)]
+}
+
+[sub_resource type="Animation" id="Animation_i40c6"]
+resource_name = "open"
+length = 0.56
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lock/Torus_001:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.11696853, 0.21251519),
+"transitions": PackedFloat32Array(2.07053, 2.07053, 2.07053),
+"update": 0,
+"values": [Vector3(0, 4.104, 0), Vector3(0, 4.404, 0), Vector3(-0.66, 4.404, -0.28)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("lock/Torus_001:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.107968494, 0.2025152),
+"transitions": PackedFloat32Array(2.07053, 2.07053),
+"update": 0,
+"values": [Vector3(0, 0, -1.5707966), Vector3(0, -0.89884454, -1.5707964)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rq24o"]
+_data = {
+&"RESET": SubResource("Animation_rs7nd"),
+&"unlocked": SubResource("Animation_i40c6")
+}
+
+[node name="Lock" type="RigidBody3D" unique_id=773556315]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_rs7nd")
+hold_local_position = Vector3(-0.1, -0.5, -0.2)
+inspect_local_position = Vector3(-0.1, -0.5, -0.5)
+inspect_face_rotation_degrees = Vector3(0, 180, 0)
+metadata/_custom_type_script = "uid://m2x0jfjgqg6u"
+
+[node name="row1" type="Area3D" parent="." unique_id=279426566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2727735, -0.032864213)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="row1" unique_id=771656729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0033302307, -0.004623413, -0.0025024414)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="Label3D" type="Label3D" parent="row1" unique_id=1074788619]
+transform = Transform3D(-0.060813833, 0, 0.9981491, 0, 1, 0, -0.9981491, 0, -0.060813833, 0, 0, -0.30563784)
+visible = false
+text = "Here"
+font_size = 16
+
+[node name="row2" type="Area3D" parent="." unique_id=646396584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19829997, -0.032864213)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="row2" unique_id=21610381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0033302307, -0.004623413, -0.0025024414)
+shape = SubResource("BoxShape3D_rs7nd")
+
+[node name="Label3D" type="Label3D" parent="row2" unique_id=1605871905]
+transform = Transform3D(-0.060813833, 0, 0.9981491, 0, 1, 0, -0.9981491, 0, -0.060813833, 0, 0, -0.30563784)
+visible = false
+text = "Here"
+font_size = 16
+
+[node name="row3" type="Area3D" parent="." unique_id=157130245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13505755, -0.032864213)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="row3" unique_id=329276394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0033302307, -0.004623413, -0.0025024414)
+shape = SubResource("BoxShape3D_i40c6")
+
+[node name="Label3D" type="Label3D" parent="row3" unique_id=2006703635]
+transform = Transform3D(-0.060813833, 0, 0.9981491, 0, 1, 0, -0.9981491, 0, -0.060813833, 0, 0, -0.30563784)
+visible = false
+text = "Here"
+font_size = 16
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1569354706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024834275, 0.3242067, -0.016068697)
+shape = SubResource("BoxShape3D_g6d2h")
+
+[node name="lock" parent="." unique_id=1721818264 instance=ExtResource("2_rs7nd")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, -0.09689182, 0)
+
+[node name="Torus_001" parent="lock" index="2" unique_id=607916332]
+transform = Transform3D(-2.4192653e-07, 0.85750026, 0, -0.85750026, -2.4192653e-07, 0, 0, 0, 0.85750026, 0, 4.10442, 0.010180563)
+
+[node name="text-1781213964465_003" parent="lock" index="3" unique_id=1430319635]
+transform = Transform3D(0.15768874, -0.020378372, 8.9076657e-10, 0, -6.9501125e-09, -0.159, 0.020378372, 0.15768874, -6.892792e-09, 0.010590345, 3.6169724, -0.7242054)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1326628131]
+libraries/ = SubResource("AnimationLibrary_rq24o")
+
+[connection signal="input_event" from="row1" to="." method="_on_row_1_input_event"]
+[connection signal="input_event" from="row2" to="." method="_on_row_2_input_event"]
+[connection signal="input_event" from="row3" to="." method="_on_row_3_input_event"]
+
+[editable path="lock"]

@@ -1,6 +1,14 @@
 [gd_scene format=3 uid="uid://dwkdv020kdih1"]
 
 [ext_resource type="Script" uid="uid://dm823nxoqwmq4" path="res://scripts/core/UIManager.gd" id="1_r0rtm"]
+[ext_resource type="Texture2D" uid="uid://1hmo2ru5jgys" path="res://assets/my assets/images/UI/paper-background.png" id="2_g1hhn"]
+[ext_resource type="FontFile" uid="uid://kov7h0v13c1s" path="res://assets/my assets/fonts/PatrickHand-Regular.ttf" id="3_w5yle"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0jmyi"]
+texture = ExtResource("2_g1hhn")
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_6jrpf"]
+color = Color(0, 0, 0, 0.14117648)
 
 [node name="UIManager" type="CanvasLayer" unique_id=703174092]
 script = ExtResource("1_r0rtm")
@@ -92,19 +100,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Control" type="Control" parent="Reader/CenterContainer" unique_id=884705286]
+[node name="Control" type="Panel" parent="Reader/CenterContainer" unique_id=1456772475]
 custom_minimum_size = Vector2(400, 565.6)
 custom_maximum_size = Vector2(400, 565.6)
 layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="Reader/CenterContainer/Control" unique_id=1154975097]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.09295484, 0.09295484, 0.09295484, 1)
+theme_override_styles/panel = SubResource("StyleBoxTexture_0jmyi")
 
 [node name="MarginContainer" type="MarginContainer" parent="Reader/CenterContainer/Control" unique_id=1806884461]
 layout_mode = 1
@@ -123,40 +123,21 @@ layout_mode = 2
 
 [node name="title" type="Label" parent="Reader/CenterContainer/Control/MarginContainer/VBoxContainer" unique_id=2108585114]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w5yle")
 text = "sdsdsd"
 
 [node name="HSeparator" type="HSeparator" parent="Reader/CenterContainer/Control/MarginContainer/VBoxContainer" unique_id=575603175]
 layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_6jrpf")
 
 [node name="content" type="RichTextLabel" parent="Reader/CenterContainer/Control/MarginContainer/VBoxContainer" unique_id=214935992]
 custom_minimum_size = Vector2(200, 400)
 layout_mode = 2
-text = "sdsddsaddddda
-sd
-asdsds
-sssss
-s
-
-s
-s
-s
-s
-
-s
-s
-s
-s
-s
-s
-s
-
-s
-s
-ss
-s
-
-asd
-asd"
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_w5yle")
+bbcode_enabled = true
+text = "\"Today I became his wife. The church was full of white roses — hecounted them for me, all [u][color=#ff4444]4[/color][/u] , and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
 
 [node name="Button" type="Button" parent="Reader/CenterContainer/Control" unique_id=695200916]
 custom_minimum_size = Vector2(40, 40)
@@ -169,5 +150,6 @@ offset_left = -40.0
 offset_bottom = 40.0
 grow_horizontal = 0
 text = "x"
+flat = true
 
 [connection signal="pressed" from="Reader/CenterContainer/Control/Button" to="." method="_on_button_pressed"]

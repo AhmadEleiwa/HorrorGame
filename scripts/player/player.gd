@@ -338,6 +338,8 @@ func _clear_previous_interaction() -> void:
 	last_interacted_object = null
 
 func pickup_object(object:InteractiveObject):
+	if interactive_view.held_object:
+		interactive_view.drop_object()
 	on_picked_object.emit(object)
 	interactive_view.pickup_object(object)
 func drop_object():

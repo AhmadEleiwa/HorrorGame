@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://ced7txyufi4f8"]
+
+[ext_resource type="Texture2D" uid="uid://dyue72h3u6usx" path="res://assets/effects/T_fire01.png" id="2_huput"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_loivn"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+albedo_texture = ExtResource("2_huput")
+albedo_texture_force_srgb = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+grow_amount = 1.259
+
+[sub_resource type="Gradient" id="Gradient_huput"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2dees"]
+gradient = SubResource("Gradient_huput")
+
+[sub_resource type="Curve" id="Curve_4lub3"]
+_data = [Vector2(0.0076923072, 0.39303476), 0.0, 1.7766036, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_fvucu"]
+curve = SubResource("Curve_4lub3")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uequp"]
+lifetime_randomness = 0.05
+particle_flag_rotate_y = true
+emission_shape = 1
+emission_sphere_radius = 0.2
+angle_min = -179.99998
+angle_max = 180.00002
+direction = Vector3(0, 1, 0)
+spread = 16.443
+initial_velocity_min = 1.0
+initial_velocity_max = 2.0
+radial_velocity_min = -2.2351742e-05
+radial_velocity_max = 0.49997765
+gravity = Vector3(0, 0, 0)
+scale_min = 0.79999995
+scale_max = 1.4
+scale_curve = SubResource("CurveTexture_fvucu")
+color = Color(2, 1.206, 0.503, 1)
+color_ramp = SubResource("GradientTexture1D_2dees")
+
+[sub_resource type="QuadMesh" id="QuadMesh_2uw38"]
+
+[node name="AbsorptionVFX" type="Node3D" unique_id=1147980455]
+
+[node name="Sparkles" type="GPUParticles3D" parent="." unique_id=1366036833]
+material_override = SubResource("StandardMaterial3D_loivn")
+emitting = false
+amount = 50
+lifetime = 1.2
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_uequp")
+draw_pass_1 = SubResource("QuadMesh_2uw38")
