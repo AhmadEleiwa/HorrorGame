@@ -5,6 +5,7 @@ class_name Door
 ## Reference to the main DoorWall controller.
 ## Automatically found if left empty.
 @export var wall: DoorWall
+@onready var key_lock_sound: AudioStreamPlayer3D = $"../../../../audio/key-lock-sound"
 
 func _ready() -> void:
 	if not wall:
@@ -21,7 +22,6 @@ func update() -> void:
 		wall = _find_parent_wall(get_parent())
 	if not wall or not wall.anim_player:
 		return
-
 	if wall.is_open:
 		wall.anim_player.play("open")
 	else:
@@ -30,6 +30,10 @@ func update() -> void:
 func interact(_player: Player = null) -> void:
 	if not wall or not wall.interactable:
 		return
+	if wall.open_with_key != "" and GameState.has_item(wall.open_with_key ) and  wall.locked:
+		key_lock_sound.play()
+		wall.locked  = false
+		await get_tree().create_timer(1.1).timeout
 	if wall.locked:
 		#if wall.lockedUIMessage:
 		UiManager.show_message(wall.lockedUIMessage) if wall.lockedUIMessage else UiManager.show_message("It's locked!") 

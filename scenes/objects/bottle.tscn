@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b88uctikkhmvi"]
+
+[ext_resource type="Script" uid="uid://bqrljf8d6kg4s" path="res://scripts/objects/bottle.gd" id="1_doawc"]
+[ext_resource type="PackedScene" uid="uid://i1xlb2tn6d3a" path="res://assets/main asset/props/product3.glb" id="2_doawc"]
+[ext_resource type="AudioStream" uid="uid://dm65sauhly642" path="res://assets/sounds/freesound_community-glass-bottle-clink-90671.mp3" id="3_iasn0"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0jmyi"]
+bounce = 0.3
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_g6d2h"]
+height = 0.22616577
+radius = 0.11621094
+
+[node name="Bottle" type="RigidBody3D" unique_id=2039087111]
+physics_material_override = SubResource("PhysicsMaterial_0jmyi")
+gravity_scale = 4.823
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_doawc")
+metadata/_custom_type_script = "uid://m2x0jfjgqg6u"
+
+[node name="product32" parent="." unique_id=2137794579 instance=ExtResource("2_doawc")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=862185121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010436252, 0.11391264, 0.004754856)
+shape = SubResource("CylinderShape3D_g6d2h")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1040397683]
+stream = ExtResource("3_iasn0")

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dgb7dap3hh831" path="res://assets/my assets/paper.glb" id="1_4ewj7"]
 [ext_resource type="Script" uid="uid://cdf4ou5qmeijj" path="res://scripts/objects/paper.gd" id="1_fchak"]
 [ext_resource type="Texture2D" uid="uid://dvrnuucjblrqa" path="res://assets/my assets/paper_1885v2.png" id="3_tcnds"]
+[ext_resource type="AudioStream" uid="uid://wvhko5xs5axs" path="res://assets/sounds/oxidvideos-paper-slide-short-478835.mp3" id="4_d4l53"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d4l53"]
 albedo_texture = ExtResource("3_tcnds")
@@ -33,5 +34,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14758301, 0)
 visible = false
 text = "Title"
 font_size = 16
+
+[node name="Sounds" type="Node3D" parent="." unique_id=1647798090]
+
+[node name="paper_sound" type="AudioStreamPlayer" parent="Sounds" unique_id=587095378]
+stream = ExtResource("4_d4l53")
 
 [editable path="paper"]

@@ -1,10 +1,9 @@
 [gd_resource type="Environment" format=3 uid="uid://bptgslbs5mf5i"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aqk2v"]
-load_path = "res://.godot/imported/Skybox.png-a45b33e5f47795d2a84cd86e108d372d.s3tc.ctex"
+[ext_resource type="Texture2D" uid="uid://f6mrdie0et3v" path="res://assets/my assets/images/sky/sky_night.jpg" id="1_r82pc"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_kiokp"]
-panorama = SubResource("CompressedTexture2D_aqk2v")
+panorama = ExtResource("1_r82pc")
 
 [sub_resource type="Sky" id="Sky_qog4m"]
 sky_material = SubResource("PanoramaSkyMaterial_kiokp")

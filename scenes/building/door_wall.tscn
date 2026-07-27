@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d3n3uobgjxbx4" path="res://assets/main asset/geometry/wallDoorWood-thick.glb" id="5_4an73"]
 [ext_resource type="AudioStream" uid="uid://f864567xiwut" path="res://assets/sounds/door-close.mp3" id="5_h2ptu"]
 [ext_resource type="AudioStream" uid="uid://jjj3vqm17wgt" path="res://assets/sounds/door-open.mp3" id="5_ryhjj"]
+[ext_resource type="AudioStream" uid="uid://bhu2foiivbcg1" path="res://assets/sounds/key_lock.wav" id="8_kr51c"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mvtje"]
 size = Vector3(1.7309265, 2.5769272, 0.2949829)
@@ -172,6 +173,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2252731, 0)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="audio" unique_id=1466888644]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48724365, 1.1791992, 0)
+volume_db = -15.522
+
+[node name="key-lock-sound" type="AudioStreamPlayer3D" parent="audio" unique_id=1570551078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48724365, 1.1791992, 0)
+stream = ExtResource("8_kr51c")
 volume_db = -15.522
 
 [editable path="doorWood22"]

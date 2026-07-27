@@ -10,6 +10,7 @@ class_name Lamp
 		#if enable:
 		if is_inside_tree():
 			lamp_light.visible = enable
+			play_switch_sound()
 func _ready() -> void:
 	lamp_light.visible = enable
 func interact(player:Player=null)->void:
@@ -18,6 +19,16 @@ func interact(player:Player=null)->void:
 		return
 	enable = !enable
 func ui_interaction() -> void:
+	if not check_interactivity():
+		return
 	UiManager.show_interaction()
 func hide_ui_interaction() -> void:
+	if not check_interactivity():
+		return
 	UiManager.hide_interaction()
+func play_switch_sound():
+	if enable:
+		$Audio/SwitchSounds1.play()
+	else:
+		$Audio/SwitchSounds2.play()
+		

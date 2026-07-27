@@ -14,8 +14,12 @@ extends CanvasLayer
 var _message_tween: Tween
 
 func _input(event: InputEvent) -> void:
+	
+	if get_tree().current_scene.name == "MainMenu":
+		return
 	if event is InputEventKey and event.pressed  and event.keycode == KEY_ESCAPE or event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT :
 		close_reader()
+	
 func _ready() -> void:
 	message_label.visible = false
 	message_label.modulate.a = 0.0
@@ -75,4 +79,8 @@ func show_tool_bar(slot1:String="",slot2:String="",slot3:String=""):
 	tool_bar.show()
 func hide_tool_bar():
 	tool_bar.hide()
-	
+
+func open_menu():
+	if get_tree().current_scene.name != "MainMenu":
+		get_tree().paused = true
+		$menu.show()

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="horrorgame"
-run/main_scene="uid://beqjxqgymh3lm"
+run/main_scene="uid://cjyvaxdj6j8ba"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

@@ -14,6 +14,7 @@ func interact(player:Player=null)->void:
 	if not check_interactivity():
 		return
 	player.pickup_object(self)
+	paper_sound()
 func ui_interaction() -> void:
 	if not check_interactivity():
 		return
@@ -32,4 +33,8 @@ func tool_bar_ui():
 	UiManager.show_tool_bar("[LMB] READ", "[RMB] Drop", "[I] Inspect")
 func hide_tool_bar_ui():
 	UiManager.hide_tool_bar()
-	
+
+
+func paper_sound():
+	$Sounds/paper_sound.pitch_scale = randf_range(0.8,1.2)
+	$Sounds/paper_sound.play()

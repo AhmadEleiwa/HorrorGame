@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://clr5fl462p58m" path="res://scenes/objects/lamp.tscn" id="2_kb28u"]
 [ext_resource type="PackedScene" uid="uid://ca8358g81s7y2" path="res://scenes/objects/paper.tscn" id="3_kb28u"]
 [ext_resource type="PackedScene" uid="uid://blvee7hiro8q6" path="res://scenes/objects/slot.tscn" id="5_fg56f"]
-[ext_resource type="PackedScene" uid="uid://5cljii0avnq0" path="res://scenes/objects/chest.tscn" id="6_hbo4u"]
+[ext_resource type="PackedScene" uid="uid://5cljii0avnq0" path="res://scenes/objects/trunk.tscn" id="6_hbo4u"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_0jmyi"]
 size = Vector3(10.868103, 1, 8.793243)
@@ -18,7 +18,6 @@ script = ExtResource("1_irbvn")
 
 [node name="Lamp" parent="." unique_id=130736851 instance=ExtResource("2_kb28u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4306333, -2.9768484)
-enable_interactivity = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2060144348]
 collision_layer = 3
@@ -54,8 +53,8 @@ group_name = "paper"
 parent_drop = NodePath("..")
 
 [node name="Chest" parent="." unique_id=992608840 instance=ExtResource("6_hbo4u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4213054, 0, -2.0635896)
-secret_code = Array[int]([4, 0, 2])
+transform = Transform3D(-0.44769028, 0, -0.8941887, 0, 1, 0, 0.8941887, 0, -0.44769028, 1.4213054, 0.44323945, -2.0635896)
+secret_code = Array[int]([1, 0, 0])
 
 [editable path="Player"]
 [editable path="Player/Character_01"]

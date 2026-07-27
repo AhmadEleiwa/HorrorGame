@@ -9,6 +9,10 @@ func interact(_player: Player = null) -> void:
 	_player.pickup_object(self)
 	UiManager.show_message("A Book...seems it missing some pages!")
 func ui_interaction() -> void:
+	if not check_interactivity():
+		return
 	UiManager.show_interaction(title+'\n[E]')
 func hide_ui_interaction() -> void:
+	if not check_interactivity():
+		return
 	UiManager.hide_interaction()

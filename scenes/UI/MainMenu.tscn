@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cjyvaxdj6j8ba"]
+
+[ext_resource type="Script" uid="uid://b5yx3y6ws7s7s" path="res://scripts/UI/main_menu.gd" id="1_3h7gc"]
+[ext_resource type="Texture2D" uid="uid://djxf4jdq8dm15" path="res://assets/my assets/images/UI/bg.png" id="2_4vh8y"]
+[ext_resource type="FontFile" uid="uid://bve78e576wf8o" path="res://assets/my assets/fonts/Jo_wrote_a_lovesong.ttf" id="3_3h7gc"]
+
+[node name="MainMenu" type="Control" unique_id=234971049]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3h7gc")
+
+[node name="Panel" type="Panel" parent="." unique_id=1272980771]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel" unique_id=955008402]
+layout_mode = 0
+offset_left = -384.0
+offset_top = -216.0
+offset_right = 1536.0
+offset_bottom = 864.0
+texture = ExtResource("2_4vh8y")
+
+[node name="ColorRect" type="ColorRect" parent="Panel" unique_id=689021218]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.2, 0.2, 0.43529412)
+
+[node name="menu" type="CenterContainer" parent="Panel" unique_id=1116575592]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 67.0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/menu" unique_id=1359830713]
+layout_mode = 2
+theme_override_constants/separation = 9
+
+[node name="Start" type="Button" parent="Panel/menu/VBoxContainer" unique_id=2126806354]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_3h7gc")
+text = "start demo"
+
+[node name="Exit" type="Button" parent="Panel/menu/VBoxContainer" unique_id=1456279608]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_3h7gc")
+text = "exit"
+
+[connection signal="pressed" from="Panel/menu/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Panel/menu/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

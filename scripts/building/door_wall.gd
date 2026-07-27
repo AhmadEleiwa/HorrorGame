@@ -24,7 +24,7 @@ class_name DoorWall
 		if locked and is_open:
 			is_open = false
 			_sync_state()
-
+@export var open_with_key:String = ""
 func _ready() -> void:
 	# Fallback auto-discovery if exports aren't manually set
 	if not door_node:

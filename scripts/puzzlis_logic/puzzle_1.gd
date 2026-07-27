@@ -5,19 +5,20 @@ extends Node3D
 
 #@onready var minipuzzle_1: Node3D = $minipuzzle
 @onready var minipuzzles: Node3D = $minipuzzles
-@onready var slots: Node3D = $"minipuzzles/1/slots"
-@onready var book: InteractiveObject = $"minipuzzles/2/Book"
-@onready var slot: Slot = $"minipuzzles/1/slots/Slot"
-@onready var slot_2: Slot = $"minipuzzles/1/slots/Slot2"
-@onready var slot_3: Slot = $"minipuzzles/1/slots/Slot3"
-@onready var slot_4: Slot = $"minipuzzles/1/slots/Slot4"
-@onready var paper: InteractivePaper = $"minipuzzles/1/papers/Paper"
-@onready var paper_2: InteractivePaper = $"minipuzzles/1/papers/Paper2"
-@onready var paper_3: InteractivePaper = $"minipuzzles/1/papers/Paper3"
-@onready var paper_4: InteractivePaper = $"minipuzzles/1/papers/Paper4"
-@onready var paper_5: InteractivePaper = $"minipuzzles/1/papers/Paper5"
+@onready var slots: Node3D = $"minipuzzles/2/slots"
+@onready var book: InteractiveObject = $"minipuzzles/1/Book"
+@onready var slot: Slot = $"minipuzzles/2/slots/Slot"
+@onready var slot_2: Slot = $"minipuzzles/2/slots/Slot2"
+@onready var slot_3: Slot = $"minipuzzles/2/slots/Slot3"
+@onready var slot_4: Slot = $"minipuzzles/2/slots/Slot4"
+@onready var paper: InteractivePaper = $"minipuzzles/2/papers/Paper"
+@onready var paper_2: InteractivePaper = $"minipuzzles/2/papers/Paper2"
+@onready var paper_3: InteractivePaper = $"minipuzzles/2/papers/Paper3"
+@onready var paper_5: InteractivePaper = $"minipuzzles/2/papers/Paper5"
 @onready var animation_player: AnimationPlayer = $"../AnimationPlayer"
-@onready var book_slot: Slot = $"minipuzzles/1/slots/BookSlot"
+@onready var book_slot: Slot = $"minipuzzles/2/slots/BookSlot"
+
+@onready var paper_4: InteractivePaper = $"minipuzzles/3/Paper4"
 
 var current_index = -1
 var length  = 3
@@ -40,6 +41,7 @@ func _on_lamp_on_interact() -> void:
 		shadows.get_child(current_index).visible = true
 		minipuzzles.get_child(current_index).visible = true
 		book.parent_drop = minipuzzles.get_child(current_index) 
+		paper_4.parent_drop =  minipuzzles.get_child(current_index)
 		if last_shadow != null:
 			last_shadow.visible = false
 		if last_puzzle != null:

@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://5cljii0avnq0"]
+
+[ext_resource type="Script" uid="uid://clfb4rxeuufpd" path="res://scripts/objects/trunk.gd" id="1_opa1x"]
+[ext_resource type="PackedScene" uid="uid://cbjxpte0cqngp" path="res://scenes/objects/lock.tscn" id="2_acra8"]
+[ext_resource type="PackedScene" uid="uid://ucw17kxuvww" path="res://assets/my assets/trunk.glb" id="3_acra8"]
+[ext_resource type="Texture2D" uid="uid://dt03fxx7h6u8b" path="res://assets/my assets/trunk_Image_0.png" id="4_pev8c"]
+[ext_resource type="AudioStream" uid="uid://b2yoi0pibtsdg" path="res://assets/sounds/LockOpen.wav" id="5_j74ey"]
+[ext_resource type="AudioStream" uid="uid://cxa4kqfw4yp8g" path="res://assets/sounds/chest_opening.mp3" id="6_kana3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
+size = Vector3(0.08605957, 1.0959473, 1.9533081)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pev8c"]
+size = Vector3(0.08605957, 1.0959473, 1.9533081)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nj372"]
+size = Vector3(0.08605957, 1.0959473, 0.9423523)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nj372"]
+cull_mode = 2
+albedo_texture = ExtResource("4_pev8c")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vikd"]
+cull_mode = 2
+albedo_texture = ExtResource("4_pev8c")
+
+[sub_resource type="Animation" id="Animation_acra8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("trunk/geometry_0_001:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_pev8c"]
+resource_name = "open"
+length = 1.2836417
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("trunk/geometry_0_001:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.32898426, 1.0039842),
+"transitions": PackedFloat32Array(3.1383357, 3.1383357),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-1.2095132, 0, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Audio/AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.29551464,
+"stream": ExtResource("5_j74ey")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Audio/AudioStreamPlayer3D2")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("6_kana3")
+}],
+"times": PackedFloat32Array(0.16622692)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nj372"]
+_data = {
+&"RESET": SubResource("Animation_acra8"),
+&"open": SubResource("Animation_pev8c")
+}
+
+[node name="Trunk" type="RigidBody3D" unique_id=992608840]
+collision_layer = 3
+collision_mask = 3
+freeze = true
+script = ExtResource("1_opa1x")
+metadata/_custom_type_script = "uid://m2x0jfjgqg6u"
+
+[node name="Lock" parent="." unique_id=773556315 instance=ExtResource("2_acra8")]
+visible = false
+collision_layer = 0
+collision_mask = 0
+
+[node name="Lock2" parent="." unique_id=2106957688 instance=ExtResource("2_acra8")]
+transform = Transform3D(0.9947521, -0.10231313, -5.929185e-08, 0.10231313, 0.9947522, -6.0983383e-09, 5.960464e-08, 0, 0.9999999, 0.57442707, 0.27608466, 0.12829578)
+freeze = true
+freeze_mode = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1453076987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4569702, 0.5562744, 0.096954346)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." unique_id=1818878365]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.02392304, 0.12795305, 0.096954346)
+shape = SubResource("BoxShape3D_pev8c")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=2092691272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5240551, 0.5562744, 0.096954346)
+shape = SubResource("BoxShape3D_0jmyi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1063112413]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.04850769, 0.5562744, -0.7956536)
+shape = SubResource("BoxShape3D_nj372")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=355641013]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.04850769, 0.5562744, 1.0673766)
+shape = SubResource("BoxShape3D_nj372")
+
+[node name="trunk" parent="." unique_id=1698187561 instance=ExtResource("3_acra8")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.020364642, 0.5773667, 0.13079739)
+
+[node name="geometry_0" parent="trunk" index="0" unique_id=1900849]
+material_override = SubResource("StandardMaterial3D_nj372")
+
+[node name="geometry_0_001" parent="trunk" index="1" unique_id=1660048968]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.016871646, 0.2261135, -0.534934)
+material_override = SubResource("StandardMaterial3D_5vikd")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1382069714]
+libraries/ = SubResource("AnimationLibrary_nj372")
+
+[node name="Audio" type="Node3D" parent="." unique_id=387465599]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Audio" unique_id=1205606720]
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="Audio" unique_id=664173065]
+
+[connection signal="combination_changed" from="Lock" to="." method="_on_lock_combination_changed"]
+[connection signal="lock_unlocked" from="Lock" to="." method="_on_lock_lock_unlocked"]
+
+[editable path="Lock"]
+[editable path="Lock/lock"]
+[editable path="Lock2"]
+[editable path="Lock2/lock"]
+[editable path="trunk"]

@@ -127,7 +127,7 @@ func drop_object() -> void:
 func inspect_object(object: InteractiveObject) -> void:
 	if held_object != null:
 		return
-
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	held_object = object
 	original_parent = object.get_parent()
 	original_scale = object.scale

@@ -114,6 +114,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED
 			else Input.MOUSE_MODE_CAPTURED
 		)
+		UiManager.open_menu()
 
 
 func _physics_process(delta: float) -> void:
