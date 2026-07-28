@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://brpmvtsjtk0g0" path="res://scripts/core/Actions/ActionArea.gd" id="5_ipmer"]
 [ext_resource type="Script" uid="uid://dxamuuk3qlrsa" path="res://scripts/core/ActionEffect/ActionEffect.gd" id="6_4dyl1"]
 [ext_resource type="Script" uid="uid://dgspbcdd1gunr" path="res://scripts/core/ActionEffect/PlayAnimationEffect.gd" id="6_av1gt"]
-[ext_resource type="Environment" uid="uid://dhtms468m1tw5" path="res://env/normal.tres" id="6_hv2un"]
+[ext_resource type="Environment" uid="uid://bptgslbs5mf5i" path="res://env/scary.tres" id="6_gasb8"]
 [ext_resource type="Script" uid="uid://dp45a3gnjbvfq" path="res://scripts/core/ActionEffect/ShowUIMessageEffect.gd" id="7_jxjwb"]
 [ext_resource type="AudioStream" uid="uid://jjj3vqm17wgt" path="res://assets/sounds/door-open.mp3" id="8_2ouud"]
 [ext_resource type="AudioStream" uid="uid://f864567xiwut" path="res://assets/sounds/door-close.mp3" id="9_i2gr7"]
@@ -261,7 +261,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0.041, -1.306, -0.411)]
+"values": [Vector3(0.152, -0.553, -0.109)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -695,7 +695,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(4.6038966, 5.2333336),
 "transitions": PackedFloat32Array(2.2191393, 2.2191393),
 "update": 0,
-"values": [Vector3(0.041, -1.306, -0.411), Vector3(0.041101217, -0.30630922, -0.4114787)]
+"values": [Vector3(0.152, -0.478, -0.329), Vector3(0.1517402, -0.28778076, -0.10882479)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -1415,10 +1415,11 @@ collision_layer = 15
 collision_mask = 15
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1586742560]
-environment = ExtResource("6_hv2un")
+environment = ExtResource("6_gasb8")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=982874518]
 transform = Transform3D(1, 0, 0, 0, 0.7734358, 0.63387465, 0, -0.63387465, 0.7734358, 0, 12.100501, 21.100727)
+visible = false
 light_volumetric_fog_energy = 5.0
 shadow_enabled = true
 sky_mode = 1
@@ -1560,11 +1561,15 @@ parameters/looping = true
 [node name="Player" parent="." unique_id=1008851204 instance=ExtResource("11_thv4y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8808476, -2.5119662)
 
+[node name="flashlight" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="0" unique_id=392834258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24887228, -0.3365109, -0.36830235)
+spot_angle = 37.43
+
 [node name="Camera3D" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="1" unique_id=1825175030]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10351026, -0.08525622, 0.1772371)
 
 [node name="flashlight2" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="2" unique_id=1367800476]
-transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0.041, -1.306, -0.411)
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0.152, -0.553, -0.109)
 
 [node name="HoldPosition" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="3" unique_id=1247300566]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)

@@ -23,6 +23,7 @@ buses/default_bus_layout="uid://bsroffcvmsy1l"
 
 GameState="*uid://bvlrlku3n3xbp"
 UiManager="*uid://dwkdv020kdih1"
+GraphicSettings="*uid://765cc58rre3d"
 
 [display]
 
@@ -76,3 +77,6 @@ zoom_inspect={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+lights_and_shadows/directional_shadow/size=512
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=0
+lights_and_shadows/positional_shadow/atlas_size=512

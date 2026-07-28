@@ -3,9 +3,22 @@
 [ext_resource type="Script" uid="uid://clfb4rxeuufpd" path="res://scripts/objects/trunk.gd" id="1_opa1x"]
 [ext_resource type="PackedScene" uid="uid://cbjxpte0cqngp" path="res://scenes/objects/lock.tscn" id="2_acra8"]
 [ext_resource type="PackedScene" uid="uid://ucw17kxuvww" path="res://assets/my assets/trunk.glb" id="3_acra8"]
+[ext_resource type="Texture2D" uid="uid://c0hvrcdxetimo" path="res://assets/my assets/lock_Metal009_1K-JPG_Color.jpg" id="3_kana3"]
 [ext_resource type="Texture2D" uid="uid://dt03fxx7h6u8b" path="res://assets/my assets/trunk_Image_0.png" id="4_pev8c"]
 [ext_resource type="AudioStream" uid="uid://b2yoi0pibtsdg" path="res://assets/sounds/LockOpen.wav" id="5_j74ey"]
 [ext_resource type="AudioStream" uid="uid://cxa4kqfw4yp8g" path="res://assets/sounds/chest_opening.mp3" id="6_kana3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xxuli"]
+shading_mode = 0
+albedo_texture = ExtResource("3_kana3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ovtxm"]
+shading_mode = 0
+albedo_texture = ExtResource("3_kana3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eb2kr"]
+shading_mode = 0
+albedo_texture = ExtResource("3_kana3")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
 size = Vector3(0.08605957, 1.0959473, 1.9533081)
@@ -99,9 +112,18 @@ script = ExtResource("1_opa1x")
 metadata/_custom_type_script = "uid://m2x0jfjgqg6u"
 
 [node name="Lock" parent="." unique_id=773556315 instance=ExtResource("2_acra8")]
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6444938, 0.38413, 0.16015291)
 collision_layer = 0
 collision_mask = 0
+
+[node name="text-1781213964465_003" parent="Lock/lock" parent_id_path=PackedInt32Array(773556315, 1721818264) index="3" unique_id=1430319635]
+material_overlay = SubResource("StandardMaterial3D_xxuli")
+
+[node name="text-1781213964465_001" parent="Lock/lock" parent_id_path=PackedInt32Array(773556315, 1721818264) index="4" unique_id=1244960460]
+material_overlay = SubResource("StandardMaterial3D_ovtxm")
+
+[node name="text-1781213964465_002" parent="Lock/lock" parent_id_path=PackedInt32Array(773556315, 1721818264) index="5" unique_id=1966834646]
+material_overlay = SubResource("StandardMaterial3D_eb2kr")
 
 [node name="Lock2" parent="." unique_id=2106957688 instance=ExtResource("2_acra8")]
 transform = Transform3D(0.9947521, -0.10231313, -5.929185e-08, 0.10231313, 0.9947522, -6.0983383e-09, 5.960464e-08, 0, 0.9999999, 0.57442707, 0.27608466, 0.12829578)

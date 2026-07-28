@@ -163,7 +163,7 @@ shape = SubResource("CapsuleShape3D_0jmyi")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09404957, 1.7398959, -0.3034656)
 
 [node name="flashlight" type="SpotLight3D" parent="head" unique_id=392834258]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.22912931, -0.6145253)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14111596, -0.3365109, -0.4802639)
 light_energy = 2.159
 light_volumetric_fog_energy = 1.577
 light_cull_mask = 4294967291
@@ -184,7 +184,7 @@ target_position = Vector3(0, 0, -2)
 collision_mask = 15
 
 [node name="flashlight2" parent="head" unique_id=1367800476 instance=ExtResource("3_i3pqv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.041101217, -0.22291446, -0.4114787)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18221718, -0.33029604, -0.27721727)
 
 [node name="HoldPosition" type="Node3D" parent="head" unique_id=1247300566]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)

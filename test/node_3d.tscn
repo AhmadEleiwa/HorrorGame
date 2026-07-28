@@ -2,13 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dqavo6856xu6s" path="res://test/node_3d.gd" id="1_irbvn"]
 [ext_resource type="PackedScene" uid="uid://ctbg1gt2b3kqy" path="res://scenes/player/player.tscn" id="2_e2mbt"]
-[ext_resource type="PackedScene" uid="uid://clr5fl462p58m" path="res://scenes/objects/lamp.tscn" id="2_kb28u"]
 [ext_resource type="PackedScene" uid="uid://ca8358g81s7y2" path="res://scenes/objects/paper.tscn" id="3_kb28u"]
 [ext_resource type="PackedScene" uid="uid://blvee7hiro8q6" path="res://scenes/objects/slot.tscn" id="5_fg56f"]
 [ext_resource type="PackedScene" uid="uid://5cljii0avnq0" path="res://scenes/objects/trunk.tscn" id="6_hbo4u"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_0jmyi"]
-size = Vector3(10.868103, 1, 8.793243)
+[ext_resource type="PackedScene" uid="uid://crjpbe7ayuj8v" path="res://scenes/house.tscn" id="8_57i8q"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
 size = Vector3(10.873962, 1, 9.00415)
@@ -16,16 +13,9 @@ size = Vector3(10.873962, 1, 9.00415)
 [node name="Node3D" type="Node3D" unique_id=1385390944]
 script = ExtResource("1_irbvn")
 
-[node name="Lamp" parent="." unique_id=130736851 instance=ExtResource("2_kb28u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4306333, -2.9768484)
-
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2060144348]
 collision_layer = 3
 collision_mask = 3
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=2100815549]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6031189, 0, -1.6418915)
-mesh = SubResource("BoxMesh_0jmyi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1972378342]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5728455, 0, -1.9251709)
@@ -33,6 +23,13 @@ shape = SubResource("BoxShape3D_0jmyi")
 
 [node name="Player" parent="." unique_id=1008851204 instance=ExtResource("2_e2mbt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8043952, 0)
+
+[node name="flashlight" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="0" unique_id=392834258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.110638976, -0.29399562, -0.3118714)
+spot_angle = 51.14
+
+[node name="flashlight2" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="2" unique_id=1367800476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1517402, -0.28778076, -0.10882479)
 
 [node name="HoldPosition" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="3" unique_id=1247300566]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -42,11 +39,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.566407)
 
 [node name="Node3D" type="Node3D" parent="." unique_id=1829017849]
 
-[node name="Paper" parent="Node3D" unique_id=858405693 instance=ExtResource("3_kb28u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13500643, 0.50451607, -1.4201231)
-title = "dated Spring, 1885"
-content = "\"Today I became his wife. The church was full of white roses — he counted them for me, all 4, and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
-
 [node name="Slot" parent="." unique_id=1045835543 node_paths=PackedStringArray("parent_drop") instance=ExtResource("5_fg56f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69635916, -2.1738124)
 group_name = "paper"
@@ -55,6 +47,14 @@ parent_drop = NodePath("..")
 [node name="Chest" parent="." unique_id=992608840 instance=ExtResource("6_hbo4u")]
 transform = Transform3D(-0.44769028, 0, -0.8941887, 0, 1, 0, 0.8941887, 0, -0.44769028, 1.4213054, 0.44323945, -2.0635896)
 secret_code = Array[int]([1, 0, 0])
+
+[node name="Paper" parent="." unique_id=858405693 instance=ExtResource("3_kb28u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1520882, 0.5943181, -2.0068696)
+title = "dated Spring, 1885"
+content = "\"Today I became his wife. The church was full of white roses — he counted them for me, all 4, and said each one was a promise. I have never felt so certain of anything as I did standing beside him.\""
+
+[node name="House" parent="." unique_id=1858405442 instance=ExtResource("8_57i8q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.011939)
 
 [editable path="Player"]
 [editable path="Player/Character_01"]

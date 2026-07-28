@@ -9,6 +9,7 @@ extends CanvasLayer
 @onready var tool_bar_label_2: Label = $MarginContainer/ToolBar/ToolBarLabel2
 @onready var tool_bar_label_3: Label = $MarginContainer/ToolBar/ToolBarLabel3
 @onready var tool_bar: HBoxContainer = $MarginContainer/ToolBar
+@onready var fps: Label = $FPS
 
 
 var _message_tween: Tween
@@ -24,7 +25,8 @@ func _ready() -> void:
 	message_label.visible = false
 	message_label.modulate.a = 0.0
 
-
+func _process(delta: float) -> void:
+	fps.text = "FPS " + str(Engine.get_frames_per_second())
 ## Shows a message for `duration` seconds, then fades out.
 ## Safe to call repeatedly — a new call interrupts/replaces the current one.
 func show_message(text: String, duration: float = 2.5) -> void:
@@ -84,3 +86,4 @@ func open_menu():
 	if get_tree().current_scene.name != "MainMenu":
 		get_tree().paused = true
 		$menu.show()
+		$SettingsMenu.show()

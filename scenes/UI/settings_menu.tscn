@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://clf2h03a2q8ac"]
+
+[ext_resource type="Script" uid="uid://dbvllyx7bkjxb" path="res://scripts/core/settings_controll.gd" id="1_dvq1v"]
+
+[node name="SettingsMenu" type="Control" unique_id=360806078]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dvq1v")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=219695985]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -180.0
+offset_right = 200.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1815169243]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1179393263]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TitleLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=592692240]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Graphics Settings"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1154125465]
+layout_mode = 2
+columns = 2
+
+[node name="BrightnessLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=793869004]
+layout_mode = 2
+text = "Brightness"
+
+[node name="BrightnessSlider" type="HSlider" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1091118546]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 4
+min_value = 0.5
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="ResolutionLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1085107956]
+layout_mode = 2
+text = "3D Resolution Scale"
+
+[node name="ResolutionSlider" type="HSlider" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1364639459]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 4
+min_value = 0.5
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="ShadowLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=2033082026]
+layout_mode = 2
+text = "Shadow Quality"
+
+[node name="ShadowOption" type="OptionButton" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=490761859]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="SSAOLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1900282620]
+layout_mode = 2
+text = "SSAO Quality"
+
+[node name="SSAOOption" type="OptionButton" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1419246269]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="FogLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1104301922]
+layout_mode = 2
+text = "Fog Quality"
+
+[node name="FogOption" type="OptionButton" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=918909373]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AALabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1804497147]
+layout_mode = 2
+text = "Anti-Aliasing"
+
+[node name="AAOption" type="OptionButton" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=271372789]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1530264392]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Close"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]
