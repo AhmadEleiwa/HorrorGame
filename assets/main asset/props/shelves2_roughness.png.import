@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwu3g4fmjhksi"
 path.s3tc="res://.godot/imported/shelves2_roughness.png-5cf912ceb3f54225c357383dc0c7487e.s3tc.ctex"
+path.etc2="res://.godot/imported/shelves2_roughness.png-5cf912ceb3f54225c357383dc0c7487e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/shelves2_roughness.png"
-dest_files=["res://.godot/imported/shelves2_roughness.png-5cf912ceb3f54225c357383dc0c7487e.s3tc.ctex"]
+dest_files=["res://.godot/imported/shelves2_roughness.png-5cf912ceb3f54225c357383dc0c7487e.s3tc.ctex", "res://.godot/imported/shelves2_roughness.png-5cf912ceb3f54225c357383dc0c7487e.etc2.ctex"]
 
 [params]
 

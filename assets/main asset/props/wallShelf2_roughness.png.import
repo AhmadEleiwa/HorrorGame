@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4ikoaslyjax4"
 path.s3tc="res://.godot/imported/wallShelf2_roughness.png-b494adb7a18e802c5aa39c5b260b25b8.s3tc.ctex"
+path.etc2="res://.godot/imported/wallShelf2_roughness.png-b494adb7a18e802c5aa39c5b260b25b8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/wallShelf2_roughness.png"
-dest_files=["res://.godot/imported/wallShelf2_roughness.png-b494adb7a18e802c5aa39c5b260b25b8.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallShelf2_roughness.png-b494adb7a18e802c5aa39c5b260b25b8.s3tc.ctex", "res://.godot/imported/wallShelf2_roughness.png-b494adb7a18e802c5aa39c5b260b25b8.etc2.ctex"]
 
 [params]
 

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://t4bl3w00d123"]
+
+[ext_resource type="PackedScene" uid="uid://dywwvn0k8b1ys" path="res://assets/main asset/props/table2.glb" id="1_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tbl"]
+size = Vector3(1.933, 0.832, 1.266)
+
+[node name="TableWood" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.416, 0)
+shape = SubResource("BoxShape3D_tbl")
+
+[node name="table2" parent="." instance=ExtResource("1_mesh")]

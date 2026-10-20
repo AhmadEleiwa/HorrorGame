@@ -42,7 +42,7 @@ script = SubResource("GDScript_umtoh")
 [node name="SHELF" parent="." unique_id=2133443655 instance=ExtResource("1_82iq7")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
 
-[node name="geometry_0" parent="SHELF/world" parent_id_path=PackedInt32Array(2133443655, 1816043218) index="0" unique_id=919919301]
+[node name="geometry_0" parent="SHELF/world" parent_id_path=PackedInt32Array(2133443655, 1025886015) index="0" unique_id=43864060]
 material_override = SubResource("StandardMaterial3D_b2f8f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=205920143]
@@ -50,7 +50,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07403517, 1.6528237, 0.0504
 shape = SubResource("BoxShape3D_0jmyi")
 
 [node name="Books" type="Node3D" parent="." unique_id=1434515252]
-transform = Transform3D(-1, 0, 0, 0, 1, -8.742278e-08, 0, 8.742278e-08, 1, 0.067723155, 1.7327238, 0)
+transform = Transform3D(-1, 0, 0, 0, 1, -1.509958e-07, 0, 1.509958e-07, 1, 0.067723155, 1.7327238, 0)
 
 [node name="bookStack2" parent="Books" unique_id=1369404256 instance=ExtResource("3_umtoh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2906902, 0.8144866, 0.026932418)

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo2qrfgsrcgpp"
 path.s3tc="res://.godot/imported/wallWood-thick_roughness.png-d3252f13e8cb1b2b6357f1b86104aa52.s3tc.ctex"
+path.etc2="res://.godot/imported/wallWood-thick_roughness.png-d3252f13e8cb1b2b6357f1b86104aa52.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallWood-thick_roughness.png"
-dest_files=["res://.godot/imported/wallWood-thick_roughness.png-d3252f13e8cb1b2b6357f1b86104aa52.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallWood-thick_roughness.png-d3252f13e8cb1b2b6357f1b86104aa52.s3tc.ctex", "res://.godot/imported/wallWood-thick_roughness.png-d3252f13e8cb1b2b6357f1b86104aa52.etc2.ctex"]
 
 [params]
 

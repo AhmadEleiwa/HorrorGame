@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvjc472xaetoj"
 path.s3tc="res://.godot/imported/stairsRailWood2_roughness.png-02cfe1cc11830a233ef145903cd63a9f.s3tc.ctex"
+path.etc2="res://.godot/imported/stairsRailWood2_roughness.png-02cfe1cc11830a233ef145903cd63a9f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/stairsRailWood2_roughness.png"
-dest_files=["res://.godot/imported/stairsRailWood2_roughness.png-02cfe1cc11830a233ef145903cd63a9f.s3tc.ctex"]
+dest_files=["res://.godot/imported/stairsRailWood2_roughness.png-02cfe1cc11830a233ef145903cd63a9f.s3tc.ctex", "res://.godot/imported/stairsRailWood2_roughness.png-02cfe1cc11830a233ef145903cd63a9f.etc2.ctex"]
 
 [params]
 

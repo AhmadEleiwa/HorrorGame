@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://coqbgkiq8m68p"
 path.s3tc="res://.godot/imported/ceilingLight2_albedo.png-4ee9b43e2da827f8856f28a9e1db430f.s3tc.ctex"
+path.etc2="res://.godot/imported/ceilingLight2_albedo.png-4ee9b43e2da827f8856f28a9e1db430f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/ceilingLight2_albedo.png"
-dest_files=["res://.godot/imported/ceilingLight2_albedo.png-4ee9b43e2da827f8856f28a9e1db430f.s3tc.ctex"]
+dest_files=["res://.godot/imported/ceilingLight2_albedo.png-4ee9b43e2da827f8856f28a9e1db430f.s3tc.ctex", "res://.godot/imported/ceilingLight2_albedo.png-4ee9b43e2da827f8856f28a9e1db430f.etc2.ctex"]
 
 [params]
 

@@ -4,13 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://u1kcmvseupy2" path="res://assets/my assets/lock.glb" id="2_rs7nd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0jmyi"]
-size = Vector3(0.22182465, 0.05618286, 0.25964355)
+size = Vector3(0.25, 0.072, 0.26)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rs7nd"]
-size = Vector3(0.22182465, 0.05618286, 0.25964355)
+size = Vector3(0.25, 0.072, 0.26)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i40c6"]
-size = Vector3(0.22182465, 0.05618286, 0.25964355)
+size = Vector3(0.25, 0.072, 0.26)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g6d2h"]
 size = Vector3(0.16699219, 0.51586914, 0.21777344)
@@ -79,6 +79,7 @@ _data = {
 [node name="Lock" type="RigidBody3D" unique_id=773556315]
 collision_layer = 2
 collision_mask = 2
+input_ray_pickable = false
 script = ExtResource("1_rs7nd")
 hold_local_position = Vector3(-0.1, -0.5, -0.2)
 inspect_local_position = Vector3(-0.1, -0.5, -0.5)

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://420x0dfxjh7g"
 path.s3tc="res://.godot/imported/floorCarpet2_albedo.png-448b98cc7e4da2daac58ff6018a68a15.s3tc.ctex"
+path.etc2="res://.godot/imported/floorCarpet2_albedo.png-448b98cc7e4da2daac58ff6018a68a15.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/floorCarpet2_albedo.png"
-dest_files=["res://.godot/imported/floorCarpet2_albedo.png-448b98cc7e4da2daac58ff6018a68a15.s3tc.ctex"]
+dest_files=["res://.godot/imported/floorCarpet2_albedo.png-448b98cc7e4da2daac58ff6018a68a15.s3tc.ctex", "res://.godot/imported/floorCarpet2_albedo.png-448b98cc7e4da2daac58ff6018a68a15.etc2.ctex"]
 
 [params]
 

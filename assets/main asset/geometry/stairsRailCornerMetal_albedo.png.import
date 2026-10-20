@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://btl2doespstkc"
 path.s3tc="res://.godot/imported/stairsRailCornerMetal_albedo.png-812b0fc51b07d7b64a5f694d5e07ed85.s3tc.ctex"
+path.etc2="res://.godot/imported/stairsRailCornerMetal_albedo.png-812b0fc51b07d7b64a5f694d5e07ed85.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/stairsRailCornerMetal_albedo.png"
-dest_files=["res://.godot/imported/stairsRailCornerMetal_albedo.png-812b0fc51b07d7b64a5f694d5e07ed85.s3tc.ctex"]
+dest_files=["res://.godot/imported/stairsRailCornerMetal_albedo.png-812b0fc51b07d7b64a5f694d5e07ed85.s3tc.ctex", "res://.godot/imported/stairsRailCornerMetal_albedo.png-812b0fc51b07d7b64a5f694d5e07ed85.etc2.ctex"]
 
 [params]
 

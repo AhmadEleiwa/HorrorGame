@@ -8,11 +8,11 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10934147, -0.103865325, 0)
 shadow_enabled = true
 shadow_bias = 0.0
-distance_fade_begin = 0.0
+distance_fade_enabled = true
 
 [node name="wallLight2" parent="." unique_id=352181984 instance=ExtResource("1_qvusk")]
 
-[node name="wallLight" parent="wallLight2" index="0" unique_id=1731838639]
+[node name="wallLight" parent="wallLight2" index="0" unique_id=1090411166]
 cast_shadow = 0
 ignore_occlusion_culling = true
 

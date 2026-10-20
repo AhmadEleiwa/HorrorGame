@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3orrrch7gx0f"
 path.s3tc="res://.godot/imported/office_chair_fancy_leather_office_chair.jpg-e5f3c78b3d0f7206f50965af28e0f846.s3tc.ctex"
+path.etc2="res://.godot/imported/office_chair_fancy_leather_office_chair.jpg-e5f3c78b3d0f7206f50965af28e0f846.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/OFFICE/chairs/office_chair_fancy_leather_office_chair.jpg"
-dest_files=["res://.godot/imported/office_chair_fancy_leather_office_chair.jpg-e5f3c78b3d0f7206f50965af28e0f846.s3tc.ctex"]
+dest_files=["res://.godot/imported/office_chair_fancy_leather_office_chair.jpg-e5f3c78b3d0f7206f50965af28e0f846.s3tc.ctex", "res://.godot/imported/office_chair_fancy_leather_office_chair.jpg-e5f3c78b3d0f7206f50965af28e0f846.etc2.ctex"]
 
 [params]
 

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://s1d3b0ardtv12"]
+
+[ext_resource type="PackedScene" path="res://assets/main asset/props/sideboard.glb" id="1_sideboard"]
+[ext_resource type="PackedScene" path="res://assets/main asset/props/tv.glb" id="2_tv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tvstand"]
+size = Vector3(1.65, 1.45, 0.6)
+
+[node name="SideboardTV" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.725, 0)
+shape = SubResource("BoxShape3D_tvstand")
+
+[node name="sideboard" parent="." instance=ExtResource("1_sideboard")]
+
+[node name="tv" parent="." instance=ExtResource("2_tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.93, 0)

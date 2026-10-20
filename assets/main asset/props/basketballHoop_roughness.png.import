@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6uxswofxwr4e"
 path.s3tc="res://.godot/imported/basketballHoop_roughness.png-09bc350955d0c131627fc4bd96bad0da.s3tc.ctex"
+path.etc2="res://.godot/imported/basketballHoop_roughness.png-09bc350955d0c131627fc4bd96bad0da.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/basketballHoop_roughness.png"
-dest_files=["res://.godot/imported/basketballHoop_roughness.png-09bc350955d0c131627fc4bd96bad0da.s3tc.ctex"]
+dest_files=["res://.godot/imported/basketballHoop_roughness.png-09bc350955d0c131627fc4bd96bad0da.s3tc.ctex", "res://.godot/imported/basketballHoop_roughness.png-09bc350955d0c131627fc4bd96bad0da.etc2.ctex"]
 
 [params]
 

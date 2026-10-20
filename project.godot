@@ -24,6 +24,7 @@ buses/default_bus_layout="uid://bsroffcvmsy1l"
 GameState="*uid://bvlrlku3n3xbp"
 UiManager="*uid://dwkdv020kdih1"
 GraphicSettings="*uid://765cc58rre3d"
+CrazyGamesSDK="*res://scripts/core/CrazyGamesSDK.gd"
 
 [display]
 
@@ -33,13 +34,15 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/proton_scatter/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
+enabled=PackedStringArray()
 
 [global_group]
 
 player=""
 paper=""
 book=""
+relic=""
+key=""
 
 [input]
 
@@ -68,15 +71,9 @@ zoom_inspect={
 ]
 }
 
-[physics]
-
-3d/physics_engine="Jolt Physics"
-
 [rendering]
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-lights_and_shadows/directional_shadow/size=512
-lights_and_shadows/positional_shadow/soft_shadow_filter_quality=0
-lights_and_shadows/positional_shadow/atlas_size=512
+textures/vram_compression/import_etc2_astc=true

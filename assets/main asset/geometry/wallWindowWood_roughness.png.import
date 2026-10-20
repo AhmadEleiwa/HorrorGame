@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3grwq3e045ha"
 path.s3tc="res://.godot/imported/wallWindowWood_roughness.png-4bc97e6ea3fe2930d38721ba3f51ead4.s3tc.ctex"
+path.etc2="res://.godot/imported/wallWindowWood_roughness.png-4bc97e6ea3fe2930d38721ba3f51ead4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallWindowWood_roughness.png"
-dest_files=["res://.godot/imported/wallWindowWood_roughness.png-4bc97e6ea3fe2930d38721ba3f51ead4.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallWindowWood_roughness.png-4bc97e6ea3fe2930d38721ba3f51ead4.s3tc.ctex", "res://.godot/imported/wallWindowWood_roughness.png-4bc97e6ea3fe2930d38721ba3f51ead4.etc2.ctex"]
 
 [params]
 

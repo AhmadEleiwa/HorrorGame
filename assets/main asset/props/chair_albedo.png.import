@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://q4ns1axmhg2d"
 path.s3tc="res://.godot/imported/chair_albedo.png-43702c4b8219bf9f4218330cd58a3bf2.s3tc.ctex"
+path.etc2="res://.godot/imported/chair_albedo.png-43702c4b8219bf9f4218330cd58a3bf2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/chair_albedo.png"
-dest_files=["res://.godot/imported/chair_albedo.png-43702c4b8219bf9f4218330cd58a3bf2.s3tc.ctex"]
+dest_files=["res://.godot/imported/chair_albedo.png-43702c4b8219bf9f4218330cd58a3bf2.s3tc.ctex", "res://.godot/imported/chair_albedo.png-43702c4b8219bf9f4218330cd58a3bf2.etc2.ctex"]
 
 [params]
 

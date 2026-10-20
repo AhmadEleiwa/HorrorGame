@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://t01l3t0bj123"]
+
+[ext_resource type="PackedScene" uid="uid://ch06gmxs7mrha" path="res://assets/main asset/props/toilet.glb" id="1_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tlt"]
+size = Vector3(1.483, 1.292, 0.724)
+
+[node name="Toilet" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.072, 0.643, 0)
+shape = SubResource("BoxShape3D_tlt")
+
+[node name="toilet" parent="." instance=ExtResource("1_mesh")]

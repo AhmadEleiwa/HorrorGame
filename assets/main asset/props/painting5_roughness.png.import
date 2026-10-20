@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://budo8ulewd8br"
 path.s3tc="res://.godot/imported/painting5_roughness.png-4c4671069969dcc94e550588ecd689af.s3tc.ctex"
+path.etc2="res://.godot/imported/painting5_roughness.png-4c4671069969dcc94e550588ecd689af.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/painting5_roughness.png"
-dest_files=["res://.godot/imported/painting5_roughness.png-4c4671069969dcc94e550588ecd689af.s3tc.ctex"]
+dest_files=["res://.godot/imported/painting5_roughness.png-4c4671069969dcc94e550588ecd689af.s3tc.ctex", "res://.godot/imported/painting5_roughness.png-4c4671069969dcc94e550588ecd689af.etc2.ctex"]
 
 [params]
 

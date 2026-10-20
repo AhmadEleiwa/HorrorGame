@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://deh3ec4h2u4mo"
 path.s3tc="res://.godot/imported/wallNibMarble_roughness.png-4b267ca5b258ab6dc973904b17e508b5.s3tc.ctex"
+path.etc2="res://.godot/imported/wallNibMarble_roughness.png-4b267ca5b258ab6dc973904b17e508b5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallNibMarble_roughness.png"
-dest_files=["res://.godot/imported/wallNibMarble_roughness.png-4b267ca5b258ab6dc973904b17e508b5.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallNibMarble_roughness.png-4b267ca5b258ab6dc973904b17e508b5.s3tc.ctex", "res://.godot/imported/wallNibMarble_roughness.png-4b267ca5b258ab6dc973904b17e508b5.etc2.ctex"]
 
 [params]
 

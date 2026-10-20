@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8pudktbf3khq"
 path.s3tc="res://.godot/imported/archPlaster3_albedo.png-bcc81fd150a1e92dfb0bf7737b83b632.s3tc.ctex"
+path.etc2="res://.godot/imported/archPlaster3_albedo.png-bcc81fd150a1e92dfb0bf7737b83b632.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/archPlaster3_albedo.png"
-dest_files=["res://.godot/imported/archPlaster3_albedo.png-bcc81fd150a1e92dfb0bf7737b83b632.s3tc.ctex"]
+dest_files=["res://.godot/imported/archPlaster3_albedo.png-bcc81fd150a1e92dfb0bf7737b83b632.s3tc.ctex", "res://.godot/imported/archPlaster3_albedo.png-bcc81fd150a1e92dfb0bf7737b83b632.etc2.ctex"]
 
 [params]
 

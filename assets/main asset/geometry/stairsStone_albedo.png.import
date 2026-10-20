@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ficyqabasqjn"
 path.s3tc="res://.godot/imported/stairsStone_albedo.png-d891850245f8b14de4f1b27464205d53.s3tc.ctex"
+path.etc2="res://.godot/imported/stairsStone_albedo.png-d891850245f8b14de4f1b27464205d53.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/stairsStone_albedo.png"
-dest_files=["res://.godot/imported/stairsStone_albedo.png-d891850245f8b14de4f1b27464205d53.s3tc.ctex"]
+dest_files=["res://.godot/imported/stairsStone_albedo.png-d891850245f8b14de4f1b27464205d53.s3tc.ctex", "res://.godot/imported/stairsStone_albedo.png-d891850245f8b14de4f1b27464205d53.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://5nqme2preylo"
 path.s3tc="res://.godot/imported/capRoofMetal_roughness.png-3ac6d3b6288947ed6e57f094df65919b.s3tc.ctex"
+path.etc2="res://.godot/imported/capRoofMetal_roughness.png-3ac6d3b6288947ed6e57f094df65919b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/capRoofMetal_roughness.png"
-dest_files=["res://.godot/imported/capRoofMetal_roughness.png-3ac6d3b6288947ed6e57f094df65919b.s3tc.ctex"]
+dest_files=["res://.godot/imported/capRoofMetal_roughness.png-3ac6d3b6288947ed6e57f094df65919b.s3tc.ctex", "res://.godot/imported/capRoofMetal_roughness.png-3ac6d3b6288947ed6e57f094df65919b.etc2.ctex"]
 
 [params]
 

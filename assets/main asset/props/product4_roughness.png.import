@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://baxxsmfro2cuf"
 path.s3tc="res://.godot/imported/product4_roughness.png-23978e82538b6e5ed20282ff71af104c.s3tc.ctex"
+path.etc2="res://.godot/imported/product4_roughness.png-23978e82538b6e5ed20282ff71af104c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/product4_roughness.png"
-dest_files=["res://.godot/imported/product4_roughness.png-23978e82538b6e5ed20282ff71af104c.s3tc.ctex"]
+dest_files=["res://.godot/imported/product4_roughness.png-23978e82538b6e5ed20282ff71af104c.s3tc.ctex", "res://.godot/imported/product4_roughness.png-23978e82538b6e5ed20282ff71af104c.etc2.ctex"]
 
 [params]
 

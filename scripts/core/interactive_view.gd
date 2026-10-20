@@ -133,7 +133,6 @@ func inspect_object(object: InteractiveObject) -> void:
 	original_scale = object.scale
 	original_global_transform = object.global_transform   # <-- capture exact pose before touching anything
 	original_global_visbility = object.visible   # <-- capture exact pose before touching anything
-	print(original_global_visbility)
 	is_direct_inspect = true
 
 	object.freeze = true
@@ -141,6 +140,7 @@ func inspect_object(object: InteractiveObject) -> void:
 	UiManager.hide_interaction()
 
 	object.reparent(hold_position)
+	object.tool_bar_ui()
 
 	_enter_inspect_mode()
 
@@ -162,6 +162,7 @@ func inspect_object_copy(object: InteractiveObject) -> void:
 	UiManager.hide_interaction()
 
 	copy.reparent(hold_position)
+	copy.tool_bar_ui()
 
 	_enter_inspect_mode()
 
@@ -171,6 +172,7 @@ func _finish_direct_inspect() -> void:
 		return
 
 	var obj := held_object
+	obj.hide_tool_bar_ui()
 
 	if is_copy_inspect:
 		obj.queue_free()   # discard the duplicate entirely, original untouched
@@ -201,13 +203,15 @@ func _enter_inspect_mode() -> void:
 
 
 func _exit_inspect_mode() -> void:
+	var was_direct := is_direct_inspect
 	is_inspecting = false
 
 	if player:
 		player.suppress_look = false
 
-	if is_direct_inspect:
+	if was_direct:
 		_finish_direct_inspect()
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 
 # ============================================================
@@ -233,7 +237,9 @@ func _physics_process(delta: float) -> void:
 		held_object.basis = (face_basis * inspect_spin_basis).orthonormalized()
 	else:
 		var target_local_basis: Basis = held_object.hold_local_basis if "hold_local_basis" in held_object else Basis.IDENTITY
-		held_object.basis = held_object.basis.slerp(target_local_basis, weight)
+		var q_cur := held_object.basis.get_rotation_quaternion()
+		var q_tgt := target_local_basis.get_rotation_quaternion()
+		held_object.basis = Basis(q_cur.slerp(q_tgt, weight))
 
 	var target_scale = original_scale * (inspect_scale_mult if is_inspecting else 1.0)
 	held_object.scale = held_object.scale.lerp(target_scale, weight)

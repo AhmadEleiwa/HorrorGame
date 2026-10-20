@@ -8,8 +8,8 @@ class_name Player
 @onready var flashlight: SpotLight3D = $head/flashlight
 @onready var camera: Camera3D = $head/Camera3D
 @onready var head: Node3D = $head
-@onready var footstep: AudioStreamPlayer3D = $audio/Footstep
-@onready var ambience: AudioStreamPlayer = $audio/Ambience  # optional
+@onready var footstep: AudioStreamPlayer3D = get_node_or_null("audio/Footstep")
+@onready var ambience: AudioStreamPlayer = get_node_or_null("audio/Ambience")  # optional
 @onready var interactive_view: InteractiveView = $InteractiveView
 @onready var ray_cast_3d: RayCast3D = %RayCast3D
 
@@ -107,6 +107,11 @@ func _unhandled_input(event: InputEvent) -> void:
 		rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
 		head.rotate_x(-event.relative.y * MOUSE_SENSITIVITY)
 		head.rotation.x = clamp(head.rotation.x, deg_to_rad(-89), deg_to_rad(89))
+
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+			if not (interactive_view and interactive_view.is_inspecting) and not (UiManager.reader and UiManager.reader.visible) and not (UiManager.has_node("menu") and UiManager.get_node("menu").visible):
+				Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = (

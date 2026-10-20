@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://k1tch3ns1nk1"]
+
+[ext_resource type="PackedScene" uid="uid://e1q0erq22ltu" path="res://assets/main asset/props/cabinetSink.glb" id="1_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_snk"]
+size = Vector3(0.92, 0.95, 1.0)
+
+[node name="KitchenSink" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.458, 0.48, 0)
+shape = SubResource("BoxShape3D_snk")
+
+[node name="cabinetSink" parent="." instance=ExtResource("1_mesh")]

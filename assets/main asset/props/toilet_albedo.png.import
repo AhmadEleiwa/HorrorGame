@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://buvxltd0x71j8"
 path.s3tc="res://.godot/imported/toilet_albedo.png-4b02250bfbd76ae43a9de1c605332c84.s3tc.ctex"
+path.etc2="res://.godot/imported/toilet_albedo.png-4b02250bfbd76ae43a9de1c605332c84.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/toilet_albedo.png"
-dest_files=["res://.godot/imported/toilet_albedo.png-4b02250bfbd76ae43a9de1c605332c84.s3tc.ctex"]
+dest_files=["res://.godot/imported/toilet_albedo.png-4b02250bfbd76ae43a9de1c605332c84.s3tc.ctex", "res://.godot/imported/toilet_albedo.png-4b02250bfbd76ae43a9de1c605332c84.etc2.ctex"]
 
 [params]
 

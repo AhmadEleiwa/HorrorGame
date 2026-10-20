@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ttf5diy8bmyj"
 path.s3tc="res://.godot/imported/windowCurtains4_albedo.png-0a1624c436d65a88d3333f4a9c0398be.s3tc.ctex"
+path.etc2="res://.godot/imported/windowCurtains4_albedo.png-0a1624c436d65a88d3333f4a9c0398be.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/windowCurtains4_albedo.png"
-dest_files=["res://.godot/imported/windowCurtains4_albedo.png-0a1624c436d65a88d3333f4a9c0398be.s3tc.ctex"]
+dest_files=["res://.godot/imported/windowCurtains4_albedo.png-0a1624c436d65a88d3333f4a9c0398be.s3tc.ctex", "res://.godot/imported/windowCurtains4_albedo.png-0a1624c436d65a88d3333f4a9c0398be.etc2.ctex"]
 
 [params]
 

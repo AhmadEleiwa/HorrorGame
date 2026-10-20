@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cioqgl8h4m5gf"
 path.s3tc="res://.godot/imported/product_albedo.png-4fc0a8148541d0e7ca6cf29aea3900af.s3tc.ctex"
+path.etc2="res://.godot/imported/product_albedo.png-4fc0a8148541d0e7ca6cf29aea3900af.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/product_albedo.png"
-dest_files=["res://.godot/imported/product_albedo.png-4fc0a8148541d0e7ca6cf29aea3900af.s3tc.ctex"]
+dest_files=["res://.godot/imported/product_albedo.png-4fc0a8148541d0e7ca6cf29aea3900af.s3tc.ctex", "res://.godot/imported/product_albedo.png-4fc0a8148541d0e7ca6cf29aea3900af.etc2.ctex"]
 
 [params]
 

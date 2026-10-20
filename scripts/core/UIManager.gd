@@ -16,7 +16,7 @@ var _message_tween: Tween
 
 func _input(event: InputEvent) -> void:
 	
-	if get_tree().current_scene.name == "MainMenu":
+	if get_tree().current_scene and get_tree().current_scene.name == "MainMenu":
 		return
 	if event is InputEventKey and event.pressed  and event.keycode == KEY_ESCAPE or event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT :
 		close_reader()
@@ -87,3 +87,46 @@ func open_menu():
 		get_tree().paused = true
 		$menu.show()
 		$SettingsMenu.show()
+
+func trigger_ending(escaped: bool = true, custom_title: String = "", custom_desc: String = "") -> void:
+	var flash: ColorRect = get_node_or_null("JumpscareFlash")
+	var ending: Control = get_node_or_null("EndingScreen")
+	var title_lbl: Label = get_node_or_null("EndingScreen/CenterContainer/VBoxContainer/Title")
+	var desc_lbl: Label = get_node_or_null("EndingScreen/CenterContainer/VBoxContainer/Desc")
+
+	if flash:
+		flash.visible = true
+		flash.color = Color(1.0, 0.05, 0.05, 0.95)
+		var t = create_tween()
+		t.tween_property(flash, "color", Color(0, 0, 0, 1.0), 1.2)
+		await t.finished
+	else:
+		await get_tree().create_timer(1.2).timeout
+
+	if ending:
+		if title_lbl:
+			title_lbl.text = custom_title if custom_title != "" else "THE NIGHTMARE WILL NEVER LET YOU GO"
+		if desc_lbl:
+			desc_lbl.text = custom_desc if custom_desc != "" else "You uncovered the secret passage... but you were never meant to leave.\nThank you for playing!"
+		ending.visible = true
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+func _on_play_again_pressed() -> void:
+	get_tree().paused = false
+	var ending: Control = get_node_or_null("EndingScreen")
+	if ending: ending.visible = false
+	var flash: ColorRect = get_node_or_null("JumpscareFlash")
+	if flash: flash.visible = false
+	GameState._inventory.clear()
+	GameState._flags.clear()
+	get_tree().change_scene_to_file("res://scenes/Level1.tscn")
+
+func _on_main_menu_pressed() -> void:
+	get_tree().paused = false
+	var ending: Control = get_node_or_null("EndingScreen")
+	if ending: ending.visible = false
+	var flash: ColorRect = get_node_or_null("JumpscareFlash")
+	if flash: flash.visible = false
+	GameState._inventory.clear()
+	GameState._flags.clear()
+	get_tree().change_scene_to_file("res://scenes/UI/MainMenu.tscn")

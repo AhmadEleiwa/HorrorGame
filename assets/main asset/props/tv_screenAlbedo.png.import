@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bidplqoehpmo"
 path.s3tc="res://.godot/imported/tv_screenAlbedo.png-9b8f799a8613c60d0bcb05f8565b0823.s3tc.ctex"
+path.etc2="res://.godot/imported/tv_screenAlbedo.png-9b8f799a8613c60d0bcb05f8565b0823.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/tv_screenAlbedo.png"
-dest_files=["res://.godot/imported/tv_screenAlbedo.png-9b8f799a8613c60d0bcb05f8565b0823.s3tc.ctex"]
+dest_files=["res://.godot/imported/tv_screenAlbedo.png-9b8f799a8613c60d0bcb05f8565b0823.s3tc.ctex", "res://.godot/imported/tv_screenAlbedo.png-9b8f799a8613c60d0bcb05f8565b0823.etc2.ctex"]
 
 [params]
 

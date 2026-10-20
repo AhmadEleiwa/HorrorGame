@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgmyv62xuchj5"
 path.s3tc="res://.godot/imported/couchSmall_albedo.png-314a115dc28fc123a32ec9822d0884bf.s3tc.ctex"
+path.etc2="res://.godot/imported/couchSmall_albedo.png-314a115dc28fc123a32ec9822d0884bf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/couchSmall_albedo.png"
-dest_files=["res://.godot/imported/couchSmall_albedo.png-314a115dc28fc123a32ec9822d0884bf.s3tc.ctex"]
+dest_files=["res://.godot/imported/couchSmall_albedo.png-314a115dc28fc123a32ec9822d0884bf.s3tc.ctex", "res://.godot/imported/couchSmall_albedo.png-314a115dc28fc123a32ec9822d0884bf.etc2.ctex"]
 
 [params]
 

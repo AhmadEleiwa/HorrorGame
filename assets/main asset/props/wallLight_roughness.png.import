@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbnsrbuh62y7v"
 path.s3tc="res://.godot/imported/wallLight_roughness.png-0c53db0ad4bd6aa9139c7ded9343021c.s3tc.ctex"
+path.etc2="res://.godot/imported/wallLight_roughness.png-0c53db0ad4bd6aa9139c7ded9343021c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/wallLight_roughness.png"
-dest_files=["res://.godot/imported/wallLight_roughness.png-0c53db0ad4bd6aa9139c7ded9343021c.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallLight_roughness.png-0c53db0ad4bd6aa9139c7ded9343021c.s3tc.ctex", "res://.godot/imported/wallLight_roughness.png-0c53db0ad4bd6aa9139c7ded9343021c.etc2.ctex"]
 
 [params]
 

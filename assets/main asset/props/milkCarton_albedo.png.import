@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6i6mf2qnmho0"
 path.s3tc="res://.godot/imported/milkCarton_albedo.png-5084f8a2ab2fa84545362085b655bf67.s3tc.ctex"
+path.etc2="res://.godot/imported/milkCarton_albedo.png-5084f8a2ab2fa84545362085b655bf67.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/milkCarton_albedo.png"
-dest_files=["res://.godot/imported/milkCarton_albedo.png-5084f8a2ab2fa84545362085b655bf67.s3tc.ctex"]
+dest_files=["res://.godot/imported/milkCarton_albedo.png-5084f8a2ab2fa84545362085b655bf67.s3tc.ctex", "res://.godot/imported/milkCarton_albedo.png-5084f8a2ab2fa84545362085b655bf67.etc2.ctex"]
 
 [params]
 

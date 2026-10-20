@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://qxrsc4r7qebo"
 path.s3tc="res://.godot/imported/wallDiagonalPlaster3_roughness.png-79244aabcc6824f8b83300c92318edea.s3tc.ctex"
+path.etc2="res://.godot/imported/wallDiagonalPlaster3_roughness.png-79244aabcc6824f8b83300c92318edea.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallDiagonalPlaster3_roughness.png"
-dest_files=["res://.godot/imported/wallDiagonalPlaster3_roughness.png-79244aabcc6824f8b83300c92318edea.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallDiagonalPlaster3_roughness.png-79244aabcc6824f8b83300c92318edea.s3tc.ctex", "res://.godot/imported/wallDiagonalPlaster3_roughness.png-79244aabcc6824f8b83300c92318edea.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn3q4t2lbt0nd"
 path.s3tc="res://.godot/imported/floorHalfTiles_roughness.png-98960ddb7d35b05b02d00c4bd082a4c1.s3tc.ctex"
+path.etc2="res://.godot/imported/floorHalfTiles_roughness.png-98960ddb7d35b05b02d00c4bd082a4c1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/floorHalfTiles_roughness.png"
-dest_files=["res://.godot/imported/floorHalfTiles_roughness.png-98960ddb7d35b05b02d00c4bd082a4c1.s3tc.ctex"]
+dest_files=["res://.godot/imported/floorHalfTiles_roughness.png-98960ddb7d35b05b02d00c4bd082a4c1.s3tc.ctex", "res://.godot/imported/floorHalfTiles_roughness.png-98960ddb7d35b05b02d00c4bd082a4c1.etc2.ctex"]
 
 [params]
 

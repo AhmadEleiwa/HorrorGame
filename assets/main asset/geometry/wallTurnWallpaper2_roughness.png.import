@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://df2inkkyqqggo"
 path.s3tc="res://.godot/imported/wallTurnWallpaper2_roughness.png-f63e072dbd6b985f429a5e1a95d1fc54.s3tc.ctex"
+path.etc2="res://.godot/imported/wallTurnWallpaper2_roughness.png-f63e072dbd6b985f429a5e1a95d1fc54.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallTurnWallpaper2_roughness.png"
-dest_files=["res://.godot/imported/wallTurnWallpaper2_roughness.png-f63e072dbd6b985f429a5e1a95d1fc54.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallTurnWallpaper2_roughness.png-f63e072dbd6b985f429a5e1a95d1fc54.s3tc.ctex", "res://.godot/imported/wallTurnWallpaper2_roughness.png-f63e072dbd6b985f429a5e1a95d1fc54.etc2.ctex"]
 
 [params]
 

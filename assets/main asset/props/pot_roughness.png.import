@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo4c8kggakdsc"
 path.s3tc="res://.godot/imported/pot_roughness.png-411577d34fc0b7e56749bca51ffb9661.s3tc.ctex"
+path.etc2="res://.godot/imported/pot_roughness.png-411577d34fc0b7e56749bca51ffb9661.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/pot_roughness.png"
-dest_files=["res://.godot/imported/pot_roughness.png-411577d34fc0b7e56749bca51ffb9661.s3tc.ctex"]
+dest_files=["res://.godot/imported/pot_roughness.png-411577d34fc0b7e56749bca51ffb9661.s3tc.ctex", "res://.godot/imported/pot_roughness.png-411577d34fc0b7e56749bca51ffb9661.etc2.ctex"]
 
 [params]
 

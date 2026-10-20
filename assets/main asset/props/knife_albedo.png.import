@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5opld52oomk5"
 path.s3tc="res://.godot/imported/knife_albedo.png-e5efb77a5ec369f47ccad2f82b6648f8.s3tc.ctex"
+path.etc2="res://.godot/imported/knife_albedo.png-e5efb77a5ec369f47ccad2f82b6648f8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/knife_albedo.png"
-dest_files=["res://.godot/imported/knife_albedo.png-e5efb77a5ec369f47ccad2f82b6648f8.s3tc.ctex"]
+dest_files=["res://.godot/imported/knife_albedo.png-e5efb77a5ec369f47ccad2f82b6648f8.s3tc.ctex", "res://.godot/imported/knife_albedo.png-e5efb77a5ec369f47ccad2f82b6648f8.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqmhul004b846"
 path.s3tc="res://.godot/imported/fridge_emission.png-98ae4d209948a1a50b1b36cba6a8ed4b.s3tc.ctex"
+path.etc2="res://.godot/imported/fridge_emission.png-98ae4d209948a1a50b1b36cba6a8ed4b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/fridge_emission.png"
-dest_files=["res://.godot/imported/fridge_emission.png-98ae4d209948a1a50b1b36cba6a8ed4b.s3tc.ctex"]
+dest_files=["res://.godot/imported/fridge_emission.png-98ae4d209948a1a50b1b36cba6a8ed4b.s3tc.ctex", "res://.godot/imported/fridge_emission.png-98ae4d209948a1a50b1b36cba6a8ed4b.etc2.ctex"]
 
 [params]
 

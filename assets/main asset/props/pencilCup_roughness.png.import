@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpd2l8namcu1d"
 path.s3tc="res://.godot/imported/pencilCup_roughness.png-899993cb07b68abf847357fd7e601aea.s3tc.ctex"
+path.etc2="res://.godot/imported/pencilCup_roughness.png-899993cb07b68abf847357fd7e601aea.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/pencilCup_roughness.png"
-dest_files=["res://.godot/imported/pencilCup_roughness.png-899993cb07b68abf847357fd7e601aea.s3tc.ctex"]
+dest_files=["res://.godot/imported/pencilCup_roughness.png-899993cb07b68abf847357fd7e601aea.s3tc.ctex", "res://.godot/imported/pencilCup_roughness.png-899993cb07b68abf847357fd7e601aea.etc2.ctex"]
 
 [params]
 

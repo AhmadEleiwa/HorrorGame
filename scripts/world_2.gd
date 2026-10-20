@@ -16,12 +16,10 @@ const NORMAL = preload("uid://dhtms468m1tw5")
 var current_animation = "None"
 
 func _ready() -> void:
-	
 	$WorldEnvironment.environment  = SCARY	
 	GraphicSettings.world_env = $WorldEnvironment
 	animation_player.play("opening")
-	
-	#await  player.play_open_door_cutscene(Vector3(-6,0,0),null)
+	CrazyGamesSDK.gameplay_start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

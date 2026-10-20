@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://drmgqdrsdblwg"
 path.s3tc="res://.godot/imported/hanger_roughness.png-b3d7c58dd011c02b5e1761485cdb69d8.s3tc.ctex"
+path.etc2="res://.godot/imported/hanger_roughness.png-b3d7c58dd011c02b5e1761485cdb69d8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/hanger_roughness.png"
-dest_files=["res://.godot/imported/hanger_roughness.png-b3d7c58dd011c02b5e1761485cdb69d8.s3tc.ctex"]
+dest_files=["res://.godot/imported/hanger_roughness.png-b3d7c58dd011c02b5e1761485cdb69d8.s3tc.ctex", "res://.godot/imported/hanger_roughness.png-b3d7c58dd011c02b5e1761485cdb69d8.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvmfjp0wtukje"
 path.s3tc="res://.godot/imported/stairsGuardMetal2_roughness.png-9fd06944e68e8ab7285fc6f19181bdc9.s3tc.ctex"
+path.etc2="res://.godot/imported/stairsGuardMetal2_roughness.png-9fd06944e68e8ab7285fc6f19181bdc9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/stairsGuardMetal2_roughness.png"
-dest_files=["res://.godot/imported/stairsGuardMetal2_roughness.png-9fd06944e68e8ab7285fc6f19181bdc9.s3tc.ctex"]
+dest_files=["res://.godot/imported/stairsGuardMetal2_roughness.png-9fd06944e68e8ab7285fc6f19181bdc9.s3tc.ctex", "res://.godot/imported/stairsGuardMetal2_roughness.png-9fd06944e68e8ab7285fc6f19181bdc9.etc2.ctex"]
 
 [params]
 

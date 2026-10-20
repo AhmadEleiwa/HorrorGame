@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://crjpbe7ayuj8v" path="res://scenes/house.tscn" id="2_jxjwb"]
 [ext_resource type="PackedScene" uid="uid://bnrps1d8fmyfb" path="res://scenes/building/wall_light.tscn" id="3_0xqs2"]
 [ext_resource type="PackedScene" uid="uid://ykb3a1wabyt5" path="res://scenes/table.tscn" id="3_p72f1"]
-[ext_resource type="Texture2D" uid="uid://be4yn04g4sxyk" path="res://assets/textures/Grass/Grass_01/Grass_01_basecolor.png" id="4_0xqs2"]
 [ext_resource type="PackedScene" uid="uid://b88uctikkhmvi" path="res://scenes/objects/bottle.tscn" id="4_hv2un"]
 [ext_resource type="Script" uid="uid://brpmvtsjtk0g0" path="res://scripts/core/Actions/ActionArea.gd" id="5_ipmer"]
 [ext_resource type="Script" uid="uid://dxamuuk3qlrsa" path="res://scripts/core/ActionEffect/ActionEffect.gd" id="6_4dyl1"]
@@ -47,14 +46,9 @@
 [ext_resource type="PackedScene" uid="uid://5cljii0avnq0" path="res://scenes/objects/trunk.tscn" id="32_kn0xh"]
 [ext_resource type="FontFile" uid="uid://bve78e576wf8o" path="res://assets/my assets/fonts/Jo_wrote_a_lovesong.ttf" id="33_vgt1y"]
 [ext_resource type="PackedScene" uid="uid://dg74ip6rv1atp" path="res://scenes/objects/key.tscn" id="40_hv2un"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_0jmyi"]
-size = Vector3(50, 1, 50)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6d2h"]
-albedo_texture = ExtResource("4_0xqs2")
-metallic_specular = 0.0
-uv1_scale = Vector3(20, 20, 20)
+[ext_resource type="PackedScene" uid="uid://bv2n3m4k5l6p7" path="res://scenes/puzzles/puzzle_2_room.tscn" id="41_puzzle2"]
+[ext_resource type="PackedScene" uid="uid://df7h8kak0l1m2" path="res://scenes/puzzles/puzzle_3_room.tscn" id="42_puzzle3"]
+[ext_resource type="Script" uid="uid://nja5t46fqpdy" path="res://scripts/core/horror_director.gd" id="43_director"]
 
 [sub_resource type="Resource" id="Resource_r0rtm"]
 script = ExtResource("7_jxjwb")
@@ -176,6 +170,15 @@ metadata/_custom_type_script = "uid://b8rq7vr28pjcd"
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i2gr7"]
 size = Vector3(9.441895, 1, 0.25256348)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_corridor"]
+size = Vector3(3, 2, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bedroom"]
+size = Vector3(3, 2, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_study"]
+size = Vector3(3, 2, 3)
 
 [sub_resource type="Animation" id="Animation_3m0gu"]
 length = 0.001
@@ -1383,16 +1386,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8402996, 0)
 locked = true
 
 [node name="DoorWall6" parent="House/wall_doors" parent_id_path=PackedInt32Array(1858405442, 605022259) index="1" unique_id=951000609]
+lockedUIMessage = "Locked! Requires an Old Brass Key."
 locked = true
 open_with_key = "key_1"
 
+[node name="DoorWall9" parent="House/wall_doors" parent_id_path=PackedInt32Array(1858405442, 605022259) index="3" unique_id=1108388505]
+lockedUIMessage = "The door seems jammed from within..."
+
 [node name="DoorWall4" parent="House/wall_doors" parent_id_path=PackedInt32Array(1858405442, 605022259) index="9" unique_id=380122695]
-lockedUIMessage = "It's Locked, 
-i need a way to open it"
+lockedUIMessage = "Locked! Requires Father's Silver Key."
 locked = true
+open_with_key = "key_2"
 
 [node name="DoorWall12" parent="House/wall_doors" parent_id_path=PackedInt32Array(1858405442, 605022259) index="10" unique_id=1636437634]
 locked = true
+
+[node name="DoorWall" parent="House/wall_doors" parent_id_path=PackedInt32Array(1858405442, 605022259) index="11" unique_id=1140540205]
+lockedUIMessage = "The front door is chained! I need the Master Key!"
+locked = true
+open_with_key = "key_final"
 
 [node name="tableSmall22" parent="House/obestacels" parent_id_path=PackedInt32Array(1858405442, 1995860196) index="0" unique_id=1186683714]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -3.44978)
@@ -1423,11 +1435,6 @@ visible = false
 light_volumetric_fog_energy = 5.0
 shadow_enabled = true
 sky_mode = 1
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=372122209]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.539497, 0.28361177, 0)
-mesh = SubResource("BoxMesh_0jmyi")
-surface_material_override/0 = SubResource("StandardMaterial3D_g6d2h")
 
 [node name="Areas" type="Node3D" parent="." unique_id=1031291841]
 
@@ -1495,6 +1502,24 @@ actions = Array[ExtResource("6_4dyl1")]([SubResource("Resource_0ybwg"), SubResou
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81469727, 0, -0.26062965)
 shape = SubResource("BoxShape3D_i2gr7")
 
+[node name="AreaCorridor" type="Area3D" parent="Areas" unique_id=1982736451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1.5, -26)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/AreaCorridor" unique_id=988439240]
+shape = SubResource("BoxShape3D_corridor")
+
+[node name="AreaBedroom" type="Area3D" parent="Areas" unique_id=1982736452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.5, -30)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/AreaBedroom" unique_id=529307873]
+shape = SubResource("BoxShape3D_bedroom")
+
+[node name="AreaStudy" type="Area3D" parent="Areas" unique_id=1982736453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1.5, -18)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/AreaStudy" unique_id=1577812524]
+shape = SubResource("BoxShape3D_study")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=792494890]
 libraries/ = SubResource("AnimationLibrary_rwd0d")
 
@@ -1561,17 +1586,20 @@ parameters/looping = true
 [node name="Player" parent="." unique_id=1008851204 instance=ExtResource("11_thv4y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8808476, -2.5119662)
 
-[node name="flashlight" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="0" unique_id=392834258]
+[node name="head" parent="Player" index="2" unique_id=1484739687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09404957, 1.7398959, -0.3034656)
+
+[node name="flashlight" parent="Player/head" index="0" unique_id=392834258]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24887228, -0.3365109, -0.36830235)
 spot_angle = 37.43
 
-[node name="Camera3D" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="1" unique_id=1825175030]
+[node name="Camera3D" parent="Player/head" index="1" unique_id=1825175030]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10351026, -0.08525622, 0.1772371)
 
-[node name="flashlight2" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="2" unique_id=1367800476]
+[node name="flashlight2" parent="Player/head" index="2" unique_id=1367800476]
 transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0.152, -0.553, -0.109)
 
-[node name="HoldPosition" parent="Player/head" parent_id_path=PackedInt32Array(1008851204, 1484739687) index="3" unique_id=1247300566]
+[node name="HoldPosition" parent="Player/head" index="3" unique_id=1247300566]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="chararacter" type="Node3D" parent="." unique_id=226908054]
@@ -1580,7 +1608,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 transform = Transform3D(0.31821603, -0.15253685, -0.1883377, 0.07041445, 0.35561892, -0.16904731, 0.23190598, 0.10132968, 0.30976105, 5.831744, 5.978199, -20.303043)
 visible = false
 
-[node name="geometry_0" parent="chararacter/char2/world" parent_id_path=PackedInt32Array(1608581453, 2134081670) index="0" unique_id=1577797506]
+[node name="geometry_0" parent="chararacter/char2/world" parent_id_path=PackedInt32Array(1608581453, 2140898730) index="0" unique_id=873586013]
 layers = 4
 cast_shadow = 2
 
@@ -1595,7 +1623,7 @@ spot_angle = 15.52
 [node name="char3" parent="chararacter" unique_id=1910237406 instance=ExtResource("13_2meft")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 2.4453735, -37.303)
 
-[node name="geometry_0" parent="chararacter/char3/world" parent_id_path=PackedInt32Array(1910237406, 2134081670) index="0" unique_id=1577797506]
+[node name="geometry_0" parent="chararacter/char3/world" parent_id_path=PackedInt32Array(1910237406, 2140898730) index="0" unique_id=873586013]
 layers = 4
 cast_shadow = 2
 
@@ -1661,7 +1689,7 @@ parent_drop = NodePath("..")
 
 [node name="paper" parent="Puzzle1/minipuzzles/2/slots/Slot" unique_id=1675001545 instance=ExtResource("27_ak7rx")]
 
-[node name="Plane_001" parent="Puzzle1/minipuzzles/2/slots/Slot/paper" index="0" unique_id=1808550398]
+[node name="Plane_001" parent="Puzzle1/minipuzzles/2/slots/Slot/paper" index="0" unique_id=2112878434]
 material_override = SubResource("StandardMaterial3D_jrm5b")
 
 [node name="Slot2" parent="Puzzle1/minipuzzles/2/slots" unique_id=431647925 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
@@ -1672,7 +1700,7 @@ parent_drop = NodePath("..")
 
 [node name="paper" parent="Puzzle1/minipuzzles/2/slots/Slot2" unique_id=439915154 instance=ExtResource("27_ak7rx")]
 
-[node name="Plane_001" parent="Puzzle1/minipuzzles/2/slots/Slot2/paper" index="0" unique_id=1808550398]
+[node name="Plane_001" parent="Puzzle1/minipuzzles/2/slots/Slot2/paper" index="0" unique_id=2112878434]
 material_override = SubResource("StandardMaterial3D_rfxdd")
 
 [node name="Slot3" parent="Puzzle1/minipuzzles/2/slots" unique_id=1726194578 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
@@ -1683,7 +1711,7 @@ parent_drop = NodePath("..")
 
 [node name="paper" parent="Puzzle1/minipuzzles/2/slots/Slot3" unique_id=1820933086 instance=ExtResource("27_ak7rx")]
 
-[node name="Plane_001" parent="Puzzle1/minipuzzles/2/slots/Slot3/paper" index="0" unique_id=1808550398]
+[node name="Plane_001" parent="Puzzle1/minipuzzles/2/slots/Slot3/paper" index="0" unique_id=2112878434]
 material_override = SubResource("StandardMaterial3D_kn0xh")
 
 [node name="Slot4" parent="Puzzle1/minipuzzles/2/slots" unique_id=1292940924 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
@@ -1694,7 +1722,7 @@ parent_drop = NodePath("..")
 
 [node name="paper" parent="Puzzle1/minipuzzles/2/slots/Slot4" unique_id=564632589 instance=ExtResource("27_ak7rx")]
 
-[node name="Plane_001" parent="Puzzle1/minipuzzles/2/slots/Slot4/paper" index="0" unique_id=1808550398]
+[node name="Plane_001" parent="Puzzle1/minipuzzles/2/slots/Slot4/paper" index="0" unique_id=2112878434]
 material_override = SubResource("StandardMaterial3D_tjrcc")
 
 [node name="BookSlot" parent="Puzzle1/minipuzzles/2/slots" unique_id=427621611 node_paths=PackedStringArray("mesh", "parent_drop") instance=ExtResource("22_gumju")]
@@ -1705,13 +1733,13 @@ parent_drop = NodePath("..")
 
 [node name="book22" parent="Puzzle1/minipuzzles/2/slots/BookSlot" unique_id=96522242 instance=ExtResource("27_vgt1y")]
 
-[node name="book2" parent="Puzzle1/minipuzzles/2/slots/BookSlot/book22" index="0" unique_id=1878868410]
+[node name="book2" parent="Puzzle1/minipuzzles/2/slots/BookSlot/book22" index="0" unique_id=706368276]
 material_override = SubResource("StandardMaterial3D_t86jx")
 
 [node name="desk1_alt22" parent="Puzzle1/minipuzzles/2" unique_id=1463613786 instance=ExtResource("26_qwon6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11266017, 0.93364286, 0.79626465)
 
-[node name="desk1_alt2" parent="Puzzle1/minipuzzles/2/desk1_alt22" index="0" unique_id=1537706999]
+[node name="desk1_alt2" parent="Puzzle1/minipuzzles/2/desk1_alt22" index="0" unique_id=199602845]
 surface_material_override/0 = SubResource("StandardMaterial3D_ak7rx")
 
 [node name="effects" type="Node3D" parent="Puzzle1/minipuzzles/2" unique_id=228998324]
@@ -1817,6 +1845,17 @@ font = ExtResource("33_vgt1y")
 font_size = 39
 outline_size = 0
 
+[node name="Puzzle2Room" parent="." unique_id=653219098 instance=ExtResource("41_puzzle2")]
+door_path = NodePath("House/wall_doors/DoorWall9")
+
+[node name="Puzzle3Room" parent="." unique_id=1781697365 instance=ExtResource("42_puzzle3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0047784, 0, 0)
+door_path = NodePath("House/wall_doors/DoorWall4")
+
+[node name="HorrorDirector" type="Node" parent="." unique_id=772854911 node_paths=PackedStringArray("level_root")]
+script = ExtResource("43_director")
+level_root = NodePath(".")
+
 [connection signal="body_entered" from="Areas/StartingPoint" to="." method="_on_starting_point_body_entered"]
 [connection signal="body_entered" from="Areas/object_moving" to="." method="_on_starting_point_body_entered"]
 [connection signal="body_entered" from="Areas/room2" to="." method="_on_starting_point_body_entered"]
@@ -1824,6 +1863,9 @@ outline_size = 0
 [connection signal="body_entered" from="Areas/DoorOpeningFake2" to="." method="_on_starting_point_body_entered"]
 [connection signal="body_entered" from="Areas/DoorOpeningFake4" to="." method="_on_starting_point_body_entered"]
 [connection signal="body_entered" from="Areas/DoorOpeningFake3" to="." method="_on_starting_point_body_entered"]
+[connection signal="body_entered" from="Areas/AreaCorridor" to="HorrorDirector" method="_on_area_corridor_body_entered"]
+[connection signal="body_entered" from="Areas/AreaBedroom" to="HorrorDirector" method="_on_area_bedroom_body_entered"]
+[connection signal="body_entered" from="Areas/AreaStudy" to="HorrorDirector" method="_on_area_study_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="on_drop_object" from="Player" to="Puzzle1" method="_on_player_on_drop_object"]
 [connection signal="on_picked_object" from="Player" to="Puzzle1" method="_on_player_on_picked_object"]

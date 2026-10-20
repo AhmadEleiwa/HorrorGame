@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1eogcattqis2"
 path.s3tc="res://.godot/imported/fridge_roughness.png-48756008d6a8e2a6a104281daa6af1df.s3tc.ctex"
+path.etc2="res://.godot/imported/fridge_roughness.png-48756008d6a8e2a6a104281daa6af1df.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/fridge_roughness.png"
-dest_files=["res://.godot/imported/fridge_roughness.png-48756008d6a8e2a6a104281daa6af1df.s3tc.ctex"]
+dest_files=["res://.godot/imported/fridge_roughness.png-48756008d6a8e2a6a104281daa6af1df.s3tc.ctex", "res://.godot/imported/fridge_roughness.png-48756008d6a8e2a6a104281daa6af1df.etc2.ctex"]
 
 [params]
 

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c0ff33t4bl123"]
+
+[ext_resource type="PackedScene" uid="uid://c4uhl6re3pk4o" path="res://assets/main asset/props/tableSmall2.glb" id="1_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cftbl"]
+size = Vector3(1.21, 0.64, 0.63)
+
+[node name="CoffeeTable" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32, 0)
+shape = SubResource("BoxShape3D_cftbl")
+
+[node name="tableSmall2" parent="." instance=ExtResource("1_mesh")]

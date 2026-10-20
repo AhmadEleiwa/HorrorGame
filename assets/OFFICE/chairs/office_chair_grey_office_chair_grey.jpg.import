@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://csroxad4aol4m"
 path.s3tc="res://.godot/imported/office_chair_grey_office_chair_grey.jpg-923b73bcb0442c9331ad8bd99cd415cb.s3tc.ctex"
+path.etc2="res://.godot/imported/office_chair_grey_office_chair_grey.jpg-923b73bcb0442c9331ad8bd99cd415cb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/OFFICE/chairs/office_chair_grey_office_chair_grey.jpg"
-dest_files=["res://.godot/imported/office_chair_grey_office_chair_grey.jpg-923b73bcb0442c9331ad8bd99cd415cb.s3tc.ctex"]
+dest_files=["res://.godot/imported/office_chair_grey_office_chair_grey.jpg-923b73bcb0442c9331ad8bd99cd415cb.s3tc.ctex", "res://.godot/imported/office_chair_grey_office_chair_grey.jpg-923b73bcb0442c9331ad8bd99cd415cb.etc2.ctex"]
 
 [params]
 

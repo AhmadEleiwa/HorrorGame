@@ -1,6 +1,6 @@
 [gd_resource type="Environment" format=3 uid="uid://dhtms468m1tw5"]
 
-[ext_resource type="Texture2D" uid="uid://bgc5rl13dopuj" path="res://addons/proton_scatter/demos/assets/textures/sky_2.png" id="1_dekby"]
+[ext_resource type="Texture2D" uid="uid://f6mrdie0et3v" path="res://assets/my assets/images/sky/sky_night.jpg" id="1_dekby"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gbfbk"]
 panorama = ExtResource("1_dekby")

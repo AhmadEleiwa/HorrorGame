@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d25v6h4i1eoyx"
 path.s3tc="res://.godot/imported/plate3_roughness.png-d716e0243c8bdd6ff7d44a43217267d7.s3tc.ctex"
+path.etc2="res://.godot/imported/plate3_roughness.png-d716e0243c8bdd6ff7d44a43217267d7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/plate3_roughness.png"
-dest_files=["res://.godot/imported/plate3_roughness.png-d716e0243c8bdd6ff7d44a43217267d7.s3tc.ctex"]
+dest_files=["res://.godot/imported/plate3_roughness.png-d716e0243c8bdd6ff7d44a43217267d7.s3tc.ctex", "res://.godot/imported/plate3_roughness.png-d716e0243c8bdd6ff7d44a43217267d7.etc2.ctex"]
 
 [params]
 

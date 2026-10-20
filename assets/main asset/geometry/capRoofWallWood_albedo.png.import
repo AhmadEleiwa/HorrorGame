@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dng544q5rd5kk"
 path.s3tc="res://.godot/imported/capRoofWallWood_albedo.png-f7d332d175e68d9e20c1b7ba8d64d835.s3tc.ctex"
+path.etc2="res://.godot/imported/capRoofWallWood_albedo.png-f7d332d175e68d9e20c1b7ba8d64d835.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/capRoofWallWood_albedo.png"
-dest_files=["res://.godot/imported/capRoofWallWood_albedo.png-f7d332d175e68d9e20c1b7ba8d64d835.s3tc.ctex"]
+dest_files=["res://.godot/imported/capRoofWallWood_albedo.png-f7d332d175e68d9e20c1b7ba8d64d835.s3tc.ctex", "res://.godot/imported/capRoofWallWood_albedo.png-f7d332d175e68d9e20c1b7ba8d64d835.etc2.ctex"]
 
 [params]
 

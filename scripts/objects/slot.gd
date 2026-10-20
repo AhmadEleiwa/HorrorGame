@@ -6,8 +6,14 @@ var holding_object:InteractiveObject = null
 #@onready var mesh: MeshInstance3D = $MeshInstance3D
 
 @export var group_name:String
-
+@export var slot_label:String = ""
 @export var mesh:Node3D = null
+
+func _ready() -> void:
+	super._ready()
+	if slot_label != "" and object_name:
+		object_name.text = slot_label
+		object_name.show()
 
 func interact(_player: Player = null) -> void:
 	super.interact(_player)
@@ -19,7 +25,7 @@ func interact(_player: Player = null) -> void:
 		_player.drop_object()
 		_player.pickup_object(holding_object)
 		obj.global_position = global_position
-		obj.rotation = rotation
+		obj.global_basis = global_basis
 		
 		obj.freeze_mode = RigidBody3D.FREEZE_MODE_KINEMATIC
 		obj.freeze = true
@@ -30,7 +36,8 @@ func interact(_player: Player = null) -> void:
 	if holding_object  :
 		_player.pickup_object(holding_object)
 		holding_object = null
-		mesh.show()
+		if mesh:
+			mesh.show()
 		
 		return
 	if _player.holding_object() == null:
@@ -41,7 +48,7 @@ func interact(_player: Player = null) -> void:
 		return 
 	_player.drop_object()
 	obj.global_position = global_position
-	obj.rotation = rotation
+	obj.global_basis = global_basis
 	
 	obj.freeze_mode = RigidBody3D.FREEZE_MODE_KINEMATIC
 	obj.freeze = true
@@ -50,18 +57,31 @@ func interact(_player: Player = null) -> void:
 	holding_object = obj
 		
 func hide_mesh():
-	#print(mesh)
-	mesh.visible = false
+	if mesh:
+		mesh.visible = false
 
 func hide_ui_interaction() -> void:
 	if not check_interactivity():
 		return
-	object_name.hide()
+	if slot_label != "" and object_name:
+		object_name.text = slot_label
+		object_name.show()
+	elif object_name and not holding_object:
+		object_name.hide()
 	UiManager.hide_interaction()
+
 func ui_interaction() -> void:
 	if not check_interactivity():
 		return
 	if holding_object:
-		object_name.text = holding_object.title
-		object_name.show()
-	UiManager.show_interaction()
+		if object_name:
+			object_name.text = holding_object.title if "title" in holding_object else holding_object.name
+			object_name.show()
+		var item_name = holding_object.title if "title" in holding_object else "Item"
+		UiManager.show_interaction("[E] Take " + item_name)
+	else:
+		if slot_label != "" and object_name:
+			object_name.text = slot_label
+			object_name.show()
+		var prompt = "[E] Place " + slot_label if slot_label != "" else "[E] Place"
+		UiManager.show_interaction(prompt)

@@ -17,7 +17,7 @@ signal on_interact
 ## When it true  Rrturn to origin parent node, to local scene if false
 @export var parent_drop:Node3D = null
 func _ready() -> void:
-	if not parent_drop:
+	if not parent_drop and get_parent() is Node3D:
 		parent_drop = get_parent()
 var picked:bool = false
 

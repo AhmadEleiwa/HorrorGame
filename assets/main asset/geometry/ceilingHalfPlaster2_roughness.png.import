@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://wqa3xo54upa8"
 path.s3tc="res://.godot/imported/ceilingHalfPlaster2_roughness.png-6a0a1a92d46edb83968c6b635cac62f7.s3tc.ctex"
+path.etc2="res://.godot/imported/ceilingHalfPlaster2_roughness.png-6a0a1a92d46edb83968c6b635cac62f7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/ceilingHalfPlaster2_roughness.png"
-dest_files=["res://.godot/imported/ceilingHalfPlaster2_roughness.png-6a0a1a92d46edb83968c6b635cac62f7.s3tc.ctex"]
+dest_files=["res://.godot/imported/ceilingHalfPlaster2_roughness.png-6a0a1a92d46edb83968c6b635cac62f7.s3tc.ctex", "res://.godot/imported/ceilingHalfPlaster2_roughness.png-6a0a1a92d46edb83968c6b635cac62f7.etc2.ctex"]
 
 [params]
 

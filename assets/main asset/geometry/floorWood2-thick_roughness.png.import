@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7s464wigijsj"
 path.s3tc="res://.godot/imported/floorWood2-thick_roughness.png-b507bab0906a06c237ae065b867fec2c.s3tc.ctex"
+path.etc2="res://.godot/imported/floorWood2-thick_roughness.png-b507bab0906a06c237ae065b867fec2c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/floorWood2-thick_roughness.png"
-dest_files=["res://.godot/imported/floorWood2-thick_roughness.png-b507bab0906a06c237ae065b867fec2c.s3tc.ctex"]
+dest_files=["res://.godot/imported/floorWood2-thick_roughness.png-b507bab0906a06c237ae065b867fec2c.s3tc.ctex", "res://.godot/imported/floorWood2-thick_roughness.png-b507bab0906a06c237ae065b867fec2c.etc2.ctex"]
 
 [params]
 

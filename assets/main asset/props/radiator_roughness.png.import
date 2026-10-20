@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://crhmu0w105xyv"
 path.s3tc="res://.godot/imported/radiator_roughness.png-195cd700989a8bf9bdaf6e475a7f8799.s3tc.ctex"
+path.etc2="res://.godot/imported/radiator_roughness.png-195cd700989a8bf9bdaf6e475a7f8799.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/radiator_roughness.png"
-dest_files=["res://.godot/imported/radiator_roughness.png-195cd700989a8bf9bdaf6e475a7f8799.s3tc.ctex"]
+dest_files=["res://.godot/imported/radiator_roughness.png-195cd700989a8bf9bdaf6e475a7f8799.s3tc.ctex", "res://.godot/imported/radiator_roughness.png-195cd700989a8bf9bdaf6e475a7f8799.etc2.ctex"]
 
 [params]
 

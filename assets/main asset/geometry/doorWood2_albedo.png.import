@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0j3b260s7yce"
 path.s3tc="res://.godot/imported/doorWood2_albedo.png-fe16c971037b0a9759891b46d05e25ab.s3tc.ctex"
+path.etc2="res://.godot/imported/doorWood2_albedo.png-fe16c971037b0a9759891b46d05e25ab.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/doorWood2_albedo.png"
-dest_files=["res://.godot/imported/doorWood2_albedo.png-fe16c971037b0a9759891b46d05e25ab.s3tc.ctex"]
+dest_files=["res://.godot/imported/doorWood2_albedo.png-fe16c971037b0a9759891b46d05e25ab.s3tc.ctex", "res://.godot/imported/doorWood2_albedo.png-fe16c971037b0a9759891b46d05e25ab.etc2.ctex"]
 
 [params]
 

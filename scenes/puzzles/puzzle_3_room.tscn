@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://df7h8kak0l1m2"]
+
+[ext_resource type="Script" uid="uid://dxagdr7sb4y5n" path="res://scripts/puzzlis_logic/puzzle_3.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://cr0m8dn5c0nis" path="res://scenes/objects/shelf.tscn" id="2_shelf"]
+[ext_resource type="PackedScene" uid="uid://drecurd0e8jph" path="res://assets/main asset/props/tableSmall.glb" id="3_smalltable"]
+[ext_resource type="PackedScene" uid="uid://c6p7o8lam0l1n" path="res://scenes/objects/push_book.tscn" id="8_book"]
+[ext_resource type="FontFile" uid="uid://kov7h0v13c1s" path="res://assets/my assets/fonts/PatrickHand-Regular.ttf" id="9_font"]
+[ext_resource type="PackedScene" uid="uid://bmk54m7wtbh64" path="res://assets/main asset/char2.glb" id="10_monster"]
+[ext_resource type="AudioStream" uid="uid://cxa4kqfw4yp8g" path="res://assets/sounds/chest_opening.mp3" id="11_grind"]
+[ext_resource type="AudioStream" uid="uid://b2yoi0pibtsdg" path="res://assets/sounds/LockOpen.wav" id="12_success"]
+[ext_resource type="AudioStream" uid="uid://5lf5kri7rcgb" path="res://assets/sounds/SwitchSounds_2.wav" id="13_error"]
+[ext_resource type="AudioStream" uid="uid://doejjwbesb18u" path="res://assets/sounds/freesound_community-fuzzy-jumpscare-80560.mp3" id="14_scare"]
+[ext_resource type="AudioStream" uid="uid://deq4mwdidxhow" path="res://assets/sounds/dragon-studio-dog-barking-406629.mp3" id="15_snarl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_desk"]
+size = Vector3(0.65, 0.65, 0.65)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_trigger"]
+size = Vector3(1.5, 2, 1.5)
+
+[node name="Puzzle3Room" type="Node3D" unique_id=957934675 node_paths=PackedStringArray("books")]
+script = ExtResource("1_script")
+door_path = NodePath("../House/wall_doors/DoorWall4")
+secret_bookshelf_path = NodePath("SecretBookshelf")
+secret_doorway_trigger_path = NodePath("SecretDoorwayTrigger")
+monster_jumpscare_path = NodePath("MonsterJumpscare")
+grind_audio_path = NodePath("GrindAudio")
+success_sound_path = NodePath("SuccessAudio")
+error_sound_path = NodePath("ErrorAudio")
+scare_audio_path = NodePath("ScareAudio")
+snarl_audio_path = NodePath("SnarlAudio")
+secret_light_path = NodePath("SecretPassage/SecretLight")
+books = [NodePath("SecretBookshelf/Book1"), NodePath("SecretBookshelf/Book2"), NodePath("SecretBookshelf/Book3"), NodePath("SecretBookshelf/Book4")]
+
+[node name="ReadingStand" type="StaticBody3D" parent="." unique_id=2087392494]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0.84, -19.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ReadingStand" unique_id=1924543041]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325, 0)
+shape = SubResource("BoxShape3D_desk")
+
+[node name="tableSmall" parent="ReadingStand" unique_id=2070963685 instance=ExtResource("3_smalltable")]
+
+[node name="PedestalLight" type="OmniLight3D" parent="ReadingStand" unique_id=900497115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+light_color = Color(1, 0.85, 0.55, 1)
+light_energy = 0.85
+omni_range = 4.0
+
+[node name="JournalClue" type="Label3D" parent="ReadingStand" unique_id=914227338]
+transform = Transform3D(0, 0, 1, 0.5, 0.8660254, 0, -0.8660254, 0.5, 0, 0, 0.72, 0)
+modulate = Color(0.92, 0.82, 0.65, 1)
+text = "THE CHRONICLES OF BLOOD & LIGHT
+\"Push the four grimoires upon the shelf in their true order:
+
+ 1. In the beginning, tears filled the AZURE SEA... [II. Azure]
+ 2. Then was spilled the CRIMSON SACRIFICE...      [I. Crimson]
+ 3. From the ashes sprouted the EMERALD ROT...     [III. Emerald]
+ 4. Until only the GILDED VOID remained silent.    [IV. Gilded]\""
+font = ExtResource("9_font")
+font_size = 18
+outline_size = 0
+
+[node name="SecretBookshelf" parent="." unique_id=1498380425 instance=ExtResource("2_shelf")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 13.5, 0.84, -18.5)
+collision_mask = 2
+
+[node name="geometry_0" parent="SecretBookshelf/SHELF/world" parent_id_path=PackedInt32Array(1498380425, 2133443655, 1025886015) index="0" unique_id=43864060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.000834465)
+
+[node name="CollisionShape3D" parent="SecretBookshelf" index="1" unique_id=205920143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.074035645, 1.6528237, -0.529974)
+
+[node name="Books" parent="SecretBookshelf" index="2" unique_id=1434515252]
+visible = false
+
+[node name="MeshInstance3D" parent="SecretBookshelf" index="3" unique_id=983735552]
+visible = false
+
+[node name="Book1" parent="SecretBookshelf" unique_id=1842497816 instance=ExtResource("8_book")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7334118, 1.6725833, 0.21705437)
+book_id = 1
+book_title = "Crimson"
+spine_color = Color(0.9, 0.15, 0.15, 1)
+
+[node name="Book2" parent="SecretBookshelf" unique_id=1439370453 instance=ExtResource("8_book")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24074745, 1.7242198, 0.27742577)
+book_id = 2
+book_title = "Azure"
+roman_numeral = "II"
+spine_color = Color(0.2, 0.5, 0.95, 1)
+
+[node name="Book3" parent="SecretBookshelf" unique_id=1382351040 instance=ExtResource("8_book")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3659706, 1.6664033, 0.28325462)
+book_id = 3
+book_title = "Emerald"
+roman_numeral = "III"
+spine_color = Color(0.2, 0.8, 0.3, 1)
+
+[node name="Book4" parent="SecretBookshelf" unique_id=727409475 instance=ExtResource("8_book")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8753872, 1.7067771, 0.2280798)
+book_id = 4
+book_title = "Gilded"
+roman_numeral = "IV"
+spine_color = Color(0.95, 0.75, 0.2, 1)
+
+[node name="SecretPassage" type="Node3D" parent="." unique_id=2005351273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.2, 0.84, -18.5)
+
+[node name="SecretLight" type="OmniLight3D" parent="SecretPassage" unique_id=388567930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.8, 0)
+light_color = Color(1, 0.05, 0.05, 1)
+light_energy = 1.2
+omni_range = 6.0
+
+[node name="SecretDoorwayTrigger" type="Area3D" parent="." unique_id=1083791855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8, 1.5, -18.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SecretDoorwayTrigger" unique_id=1722024431]
+shape = SubResource("BoxShape3D_trigger")
+
+[node name="MonsterJumpscare" type="Node3D" parent="." unique_id=1595716374]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 6.8, 0.84, -18)
+visible = false
+
+[node name="char2" parent="MonsterJumpscare" unique_id=90071276 instance=ExtResource("10_monster")]
+
+[node name="MonsterRedGlow" type="OmniLight3D" parent="MonsterJumpscare" unique_id=1737545350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0.8)
+light_color = Color(1, 0.1, 0.1, 1)
+light_energy = 1.5
+omni_range = 4.0
+
+[node name="GrindAudio" type="AudioStreamPlayer3D" parent="." unique_id=24623530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5, 1.5, -18.5)
+stream = ExtResource("11_grind")
+volume_db = 2.0
+max_distance = 25.0
+
+[node name="SuccessAudio" type="AudioStreamPlayer3D" parent="." unique_id=1138389295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5, 1.5, -18.5)
+stream = ExtResource("12_success")
+max_distance = 20.0
+
+[node name="ErrorAudio" type="AudioStreamPlayer3D" parent="." unique_id=1134645222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5, 1.5, -18.5)
+stream = ExtResource("13_error")
+volume_db = -2.0
+max_distance = 15.0
+
+[node name="ScareAudio" type="AudioStreamPlayer3D" parent="." unique_id=1298127455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1.5, -18)
+stream = ExtResource("14_scare")
+volume_db = 6.0
+max_distance = 30.0
+
+[node name="SnarlAudio" type="AudioStreamPlayer3D" parent="." unique_id=1876493298]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1.5, -18)
+stream = ExtResource("15_snarl")
+volume_db = 2.0
+max_distance = 25.0
+
+[editable path="SecretBookshelf"]
+[editable path="SecretBookshelf/SHELF"]

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2dxbm2j282qq"
 path.s3tc="res://.godot/imported/cornerPillarStone_albedo.png-3534c68ad9610b48dde868ead874e151.s3tc.ctex"
+path.etc2="res://.godot/imported/cornerPillarStone_albedo.png-3534c68ad9610b48dde868ead874e151.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/cornerPillarStone_albedo.png"
-dest_files=["res://.godot/imported/cornerPillarStone_albedo.png-3534c68ad9610b48dde868ead874e151.s3tc.ctex"]
+dest_files=["res://.godot/imported/cornerPillarStone_albedo.png-3534c68ad9610b48dde868ead874e151.s3tc.ctex", "res://.godot/imported/cornerPillarStone_albedo.png-3534c68ad9610b48dde868ead874e151.etc2.ctex"]
 
 [params]
 

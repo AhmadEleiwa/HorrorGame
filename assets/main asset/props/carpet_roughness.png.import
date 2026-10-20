@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cce4bafw7tept"
 path.s3tc="res://.godot/imported/carpet_roughness.png-a1695d35dd452920f3cdf4f7580e46a6.s3tc.ctex"
+path.etc2="res://.godot/imported/carpet_roughness.png-a1695d35dd452920f3cdf4f7580e46a6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/carpet_roughness.png"
-dest_files=["res://.godot/imported/carpet_roughness.png-a1695d35dd452920f3cdf4f7580e46a6.s3tc.ctex"]
+dest_files=["res://.godot/imported/carpet_roughness.png-a1695d35dd452920f3cdf4f7580e46a6.s3tc.ctex", "res://.godot/imported/carpet_roughness.png-a1695d35dd452920f3cdf4f7580e46a6.etc2.ctex"]
 
 [params]
 

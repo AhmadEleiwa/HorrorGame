@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://df2gf4lh5gu0c"
 path.s3tc="res://.godot/imported/chessboard_roughness.png-f8bdf17d7687097db370a055b783b2cc.s3tc.ctex"
+path.etc2="res://.godot/imported/chessboard_roughness.png-f8bdf17d7687097db370a055b783b2cc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/chessboard_roughness.png"
-dest_files=["res://.godot/imported/chessboard_roughness.png-f8bdf17d7687097db370a055b783b2cc.s3tc.ctex"]
+dest_files=["res://.godot/imported/chessboard_roughness.png-f8bdf17d7687097db370a055b783b2cc.s3tc.ctex", "res://.godot/imported/chessboard_roughness.png-f8bdf17d7687097db370a055b783b2cc.etc2.ctex"]
 
 [params]
 

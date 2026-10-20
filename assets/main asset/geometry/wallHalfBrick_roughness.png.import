@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhe0ngd2aeat6"
 path.s3tc="res://.godot/imported/wallHalfBrick_roughness.png-7ab9fe5b7cc3bd17cc473bae666bdd26.s3tc.ctex"
+path.etc2="res://.godot/imported/wallHalfBrick_roughness.png-7ab9fe5b7cc3bd17cc473bae666bdd26.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallHalfBrick_roughness.png"
-dest_files=["res://.godot/imported/wallHalfBrick_roughness.png-7ab9fe5b7cc3bd17cc473bae666bdd26.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallHalfBrick_roughness.png-7ab9fe5b7cc3bd17cc473bae666bdd26.s3tc.ctex", "res://.godot/imported/wallHalfBrick_roughness.png-7ab9fe5b7cc3bd17cc473bae666bdd26.etc2.ctex"]
 
 [params]
 

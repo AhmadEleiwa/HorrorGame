@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d30r3cvsshuqr"
 path.s3tc="res://.godot/imported/capRoofWallMetal_albedo.png-f35a1aff7cb0792624affabce3b4b2cc.s3tc.ctex"
+path.etc2="res://.godot/imported/capRoofWallMetal_albedo.png-f35a1aff7cb0792624affabce3b4b2cc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/capRoofWallMetal_albedo.png"
-dest_files=["res://.godot/imported/capRoofWallMetal_albedo.png-f35a1aff7cb0792624affabce3b4b2cc.s3tc.ctex"]
+dest_files=["res://.godot/imported/capRoofWallMetal_albedo.png-f35a1aff7cb0792624affabce3b4b2cc.s3tc.ctex", "res://.godot/imported/capRoofWallMetal_albedo.png-f35a1aff7cb0792624affabce3b4b2cc.etc2.ctex"]
 
 [params]
 

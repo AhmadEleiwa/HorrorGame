@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://btnmu8uwa0ep2"
 path.s3tc="res://.godot/imported/cornerPillarMetal_roughness.png-9e5b51f11c09b643b053b2c81cb9abf6.s3tc.ctex"
+path.etc2="res://.godot/imported/cornerPillarMetal_roughness.png-9e5b51f11c09b643b053b2c81cb9abf6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/cornerPillarMetal_roughness.png"
-dest_files=["res://.godot/imported/cornerPillarMetal_roughness.png-9e5b51f11c09b643b053b2c81cb9abf6.s3tc.ctex"]
+dest_files=["res://.godot/imported/cornerPillarMetal_roughness.png-9e5b51f11c09b643b053b2c81cb9abf6.s3tc.ctex", "res://.godot/imported/cornerPillarMetal_roughness.png-9e5b51f11c09b643b053b2c81cb9abf6.etc2.ctex"]
 
 [params]
 

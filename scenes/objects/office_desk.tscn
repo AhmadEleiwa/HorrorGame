@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://of8f1ced3sk1"]
+
+[ext_resource type="PackedScene" uid="uid://54a3k6v7lpsn" path="res://assets/OFFICE/desks/desk1.glb" id="1_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dsk"]
+size = Vector3(2.21, 0.89, 1.09)
+
+[node name="OfficeDesk" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.446, 0)
+shape = SubResource("BoxShape3D_dsk")
+
+[node name="desk1" parent="." instance=ExtResource("1_mesh")]

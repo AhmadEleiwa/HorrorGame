@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjs3dsosfwja8"
 path.s3tc="res://.godot/imported/lock_Metal061B_2K-JPG_Metalness.png-636170d8127009ce723824edf4ad198e.s3tc.ctex"
+path.etc2="res://.godot/imported/lock_Metal061B_2K-JPG_Metalness.png-636170d8127009ce723824edf4ad198e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/my assets/lock_Metal061B_2K-JPG_Metalness.png"
-dest_files=["res://.godot/imported/lock_Metal061B_2K-JPG_Metalness.png-636170d8127009ce723824edf4ad198e.s3tc.ctex"]
+dest_files=["res://.godot/imported/lock_Metal061B_2K-JPG_Metalness.png-636170d8127009ce723824edf4ad198e.s3tc.ctex", "res://.godot/imported/lock_Metal061B_2K-JPG_Metalness.png-636170d8127009ce723824edf4ad198e.etc2.ctex"]
 
 [params]
 

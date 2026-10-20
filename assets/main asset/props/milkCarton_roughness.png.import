@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf05x0gdhh8vk"
 path.s3tc="res://.godot/imported/milkCarton_roughness.png-e9085c553ac1ef04647d1e3942e09c32.s3tc.ctex"
+path.etc2="res://.godot/imported/milkCarton_roughness.png-e9085c553ac1ef04647d1e3942e09c32.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/milkCarton_roughness.png"
-dest_files=["res://.godot/imported/milkCarton_roughness.png-e9085c553ac1ef04647d1e3942e09c32.s3tc.ctex"]
+dest_files=["res://.godot/imported/milkCarton_roughness.png-e9085c553ac1ef04647d1e3942e09c32.s3tc.ctex", "res://.godot/imported/milkCarton_roughness.png-e9085c553ac1ef04647d1e3942e09c32.etc2.ctex"]
 
 [params]
 

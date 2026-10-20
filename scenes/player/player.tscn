@@ -45,9 +45,9 @@ tags = {
 script = ExtResource("1_onrkg")
 
 [node name="Character_01" parent="." unique_id=880499678 instance=ExtResource("1_4flbx")]
-transform = Transform3D(-0.39999238, 0, 0.0024716824, 0, 0.4, 0, -0.0024716824, 0, -0.39999238, 0, 0, 0)
+transform = Transform3D(-0.3099941, 0, 0.0019155539, 0, 0.31, 0, -0.0019155539, 0, -0.3099941, 0, 0, 0)
 
-[node name="Skeleton3D" parent="Character_01/Armature" parent_id_path=PackedInt32Array(880499678, 213290725) index="0" unique_id=1062237029]
+[node name="Skeleton3D" parent="Character_01/Armature" parent_id_path=PackedInt32Array(880499678, 1745342722) index="0" unique_id=1784948476]
 bones/0/position = Vector3(-4.2185784e-05, 2.7363553, -0.0033301134)
 bones/1/position = Vector3(-0.032508716, 0.23767518, 8.228522e-15)
 bones/1/rotation = Quaternion(-0.005036678, -0.071527235, 0.06775178, 0.9951222)
@@ -146,7 +146,7 @@ bones/36/position = Vector3(-3.348552e-08, 0.15343657, -2.003269e-09)
 bones/36/rotation = Quaternion(-4.2812943e-08, -6.467764e-09, 1.47048755e-08, 1)
 bones/36/scale = Vector3(1, 1, 0.9999999)
 
-[node name="Character_01" parent="Character_01/Armature/Skeleton3D" index="0" unique_id=1845934699]
+[node name="Character_01" parent="Character_01/Armature/Skeleton3D" index="0" unique_id=850226701]
 material_override = SubResource("StandardMaterial3D_75vfm")
 cast_shadow = 3
 
@@ -160,7 +160,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00023031235, 0.9350078, -0
 shape = SubResource("CapsuleShape3D_0jmyi")
 
 [node name="head" type="Node3D" parent="." unique_id=1484739687]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09404957, 1.7398959, -0.3034656)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11445606, 1.5358306, -0.3034656)
 
 [node name="flashlight" type="SpotLight3D" parent="head" unique_id=392834258]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14111596, -0.3365109, -0.4802639)

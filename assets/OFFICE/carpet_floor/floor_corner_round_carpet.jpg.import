@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckiu7fye6upnn"
 path.s3tc="res://.godot/imported/floor_corner_round_carpet.jpg-324bcc85b8b33fa58b6e894061d501dc.s3tc.ctex"
+path.etc2="res://.godot/imported/floor_corner_round_carpet.jpg-324bcc85b8b33fa58b6e894061d501dc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/OFFICE/carpet_floor/floor_corner_round_carpet.jpg"
-dest_files=["res://.godot/imported/floor_corner_round_carpet.jpg-324bcc85b8b33fa58b6e894061d501dc.s3tc.ctex"]
+dest_files=["res://.godot/imported/floor_corner_round_carpet.jpg-324bcc85b8b33fa58b6e894061d501dc.s3tc.ctex", "res://.godot/imported/floor_corner_round_carpet.jpg-324bcc85b8b33fa58b6e894061d501dc.etc2.ctex"]
 
 [params]
 

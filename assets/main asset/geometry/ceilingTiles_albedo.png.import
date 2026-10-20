@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://3mplphats2vu"
 path.s3tc="res://.godot/imported/ceilingTiles_albedo.png-458d53111d3e3c660a5375f21dc1bf97.s3tc.ctex"
+path.etc2="res://.godot/imported/ceilingTiles_albedo.png-458d53111d3e3c660a5375f21dc1bf97.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/ceilingTiles_albedo.png"
-dest_files=["res://.godot/imported/ceilingTiles_albedo.png-458d53111d3e3c660a5375f21dc1bf97.s3tc.ctex"]
+dest_files=["res://.godot/imported/ceilingTiles_albedo.png-458d53111d3e3c660a5375f21dc1bf97.s3tc.ctex", "res://.godot/imported/ceilingTiles_albedo.png-458d53111d3e3c660a5375f21dc1bf97.etc2.ctex"]
 
 [params]
 

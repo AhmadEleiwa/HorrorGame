@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b4thtub0bj12"]
+
+[ext_resource type="PackedScene" uid="uid://f06vcelaw555" path="res://assets/main asset/props/bathtub.glb" id="1_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tub"]
+size = Vector3(1.514, 0.896, 2.807)
+
+[node name="Bathtub" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052, 0.448, 0)
+shape = SubResource("BoxShape3D_tub")
+
+[node name="bathtub" parent="." instance=ExtResource("1_mesh")]

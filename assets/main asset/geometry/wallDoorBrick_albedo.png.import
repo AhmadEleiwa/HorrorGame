@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdtcpricwqfrj"
 path.s3tc="res://.godot/imported/wallDoorBrick_albedo.png-4db2c3788cc5b1c1b9f9bc11f5c52874.s3tc.ctex"
+path.etc2="res://.godot/imported/wallDoorBrick_albedo.png-4db2c3788cc5b1c1b9f9bc11f5c52874.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallDoorBrick_albedo.png"
-dest_files=["res://.godot/imported/wallDoorBrick_albedo.png-4db2c3788cc5b1c1b9f9bc11f5c52874.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallDoorBrick_albedo.png-4db2c3788cc5b1c1b9f9bc11f5c52874.s3tc.ctex", "res://.godot/imported/wallDoorBrick_albedo.png-4db2c3788cc5b1c1b9f9bc11f5c52874.etc2.ctex"]
 
 [params]
 

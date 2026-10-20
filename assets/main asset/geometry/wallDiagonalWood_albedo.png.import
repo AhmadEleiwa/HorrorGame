@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxfuhrp2l0mw2"
 path.s3tc="res://.godot/imported/wallDiagonalWood_albedo.png-bc0bd7150cd64b5b27fe940f3a185bca.s3tc.ctex"
+path.etc2="res://.godot/imported/wallDiagonalWood_albedo.png-bc0bd7150cd64b5b27fe940f3a185bca.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallDiagonalWood_albedo.png"
-dest_files=["res://.godot/imported/wallDiagonalWood_albedo.png-bc0bd7150cd64b5b27fe940f3a185bca.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallDiagonalWood_albedo.png-bc0bd7150cd64b5b27fe940f3a185bca.s3tc.ctex", "res://.godot/imported/wallDiagonalWood_albedo.png-bc0bd7150cd64b5b27fe940f3a185bca.etc2.ctex"]
 
 [params]
 

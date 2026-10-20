@@ -8,7 +8,7 @@ signal item_added(item_id: String)
 signal item_removed(item_id: String)
 
 var _flags: Dictionary = {}       # String -> bool
-var _inventory: Array[String] = []
+var _inventory: Array[String] = ["key_1", "key_2", "kay_3"]
 
 
 # ============================================================

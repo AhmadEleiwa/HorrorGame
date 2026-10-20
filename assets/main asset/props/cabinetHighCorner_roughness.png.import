@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://8kc4k5d8udr4"
 path.s3tc="res://.godot/imported/cabinetHighCorner_roughness.png-69f58306bfd6f84fa71f33357533ec00.s3tc.ctex"
+path.etc2="res://.godot/imported/cabinetHighCorner_roughness.png-69f58306bfd6f84fa71f33357533ec00.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/cabinetHighCorner_roughness.png"
-dest_files=["res://.godot/imported/cabinetHighCorner_roughness.png-69f58306bfd6f84fa71f33357533ec00.s3tc.ctex"]
+dest_files=["res://.godot/imported/cabinetHighCorner_roughness.png-69f58306bfd6f84fa71f33357533ec00.s3tc.ctex", "res://.godot/imported/cabinetHighCorner_roughness.png-69f58306bfd6f84fa71f33357533ec00.etc2.ctex"]
 
 [params]
 

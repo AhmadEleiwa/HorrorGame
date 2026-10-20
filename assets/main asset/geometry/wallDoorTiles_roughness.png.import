@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwuorsh4yf5n"
 path.s3tc="res://.godot/imported/wallDoorTiles_roughness.png-a233f0b688b538309073159f647b74ee.s3tc.ctex"
+path.etc2="res://.godot/imported/wallDoorTiles_roughness.png-a233f0b688b538309073159f647b74ee.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallDoorTiles_roughness.png"
-dest_files=["res://.godot/imported/wallDoorTiles_roughness.png-a233f0b688b538309073159f647b74ee.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallDoorTiles_roughness.png-a233f0b688b538309073159f647b74ee.s3tc.ctex", "res://.godot/imported/wallDoorTiles_roughness.png-a233f0b688b538309073159f647b74ee.etc2.ctex"]
 
 [params]
 

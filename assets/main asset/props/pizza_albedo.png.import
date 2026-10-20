@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb6d8ysryrfce"
 path.s3tc="res://.godot/imported/pizza_albedo.png-085e93f0d9e5a0e7cd7074fa981e23ac.s3tc.ctex"
+path.etc2="res://.godot/imported/pizza_albedo.png-085e93f0d9e5a0e7cd7074fa981e23ac.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/pizza_albedo.png"
-dest_files=["res://.godot/imported/pizza_albedo.png-085e93f0d9e5a0e7cd7074fa981e23ac.s3tc.ctex"]
+dest_files=["res://.godot/imported/pizza_albedo.png-085e93f0d9e5a0e7cd7074fa981e23ac.s3tc.ctex", "res://.godot/imported/pizza_albedo.png-085e93f0d9e5a0e7cd7074fa981e23ac.etc2.ctex"]
 
 [params]
 

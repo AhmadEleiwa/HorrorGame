@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://k1tch3nc0unt1"]
+
+[ext_resource type="PackedScene" uid="uid://chdbf76cipdpf" path="res://assets/main asset/props/cabinetLow.glb" id="1_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cnt"]
+size = Vector3(0.82, 0.9, 1.0)
+
+[node name="KitchenCounter" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.508, 0.45, 0)
+shape = SubResource("BoxShape3D_cnt")
+
+[node name="cabinetLow" parent="." instance=ExtResource("1_mesh")]

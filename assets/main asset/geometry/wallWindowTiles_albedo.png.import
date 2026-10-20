@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://enwbba6il1gr"
 path.s3tc="res://.godot/imported/wallWindowTiles_albedo.png-62b018610ccd10d53ccd2f11c0024efa.s3tc.ctex"
+path.etc2="res://.godot/imported/wallWindowTiles_albedo.png-62b018610ccd10d53ccd2f11c0024efa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallWindowTiles_albedo.png"
-dest_files=["res://.godot/imported/wallWindowTiles_albedo.png-62b018610ccd10d53ccd2f11c0024efa.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallWindowTiles_albedo.png-62b018610ccd10d53ccd2f11c0024efa.s3tc.ctex", "res://.godot/imported/wallWindowTiles_albedo.png-62b018610ccd10d53ccd2f11c0024efa.etc2.ctex"]
 
 [params]
 

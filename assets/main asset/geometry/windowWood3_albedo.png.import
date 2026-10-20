@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvdtqd18gpay3"
 path.s3tc="res://.godot/imported/windowWood3_albedo.png-e4007bf8c1d8190f5510b4a8cfaac219.s3tc.ctex"
+path.etc2="res://.godot/imported/windowWood3_albedo.png-e4007bf8c1d8190f5510b4a8cfaac219.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/windowWood3_albedo.png"
-dest_files=["res://.godot/imported/windowWood3_albedo.png-e4007bf8c1d8190f5510b4a8cfaac219.s3tc.ctex"]
+dest_files=["res://.godot/imported/windowWood3_albedo.png-e4007bf8c1d8190f5510b4a8cfaac219.s3tc.ctex", "res://.godot/imported/windowWood3_albedo.png-e4007bf8c1d8190f5510b4a8cfaac219.etc2.ctex"]
 
 [params]
 

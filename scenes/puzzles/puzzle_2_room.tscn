@@ -1,0 +1,178 @@
+[gd_scene format=3 uid="uid://bv2n3m4k5l6p7"]
+
+[ext_resource type="Script" uid="uid://dakefxcfi52py" path="res://scripts/puzzlis_logic/puzzle_2.gd" id="1_p2"]
+[ext_resource type="PackedScene" uid="uid://blvee7hiro8q6" path="res://scenes/objects/slot.tscn" id="2_slot"]
+[ext_resource type="PackedScene" uid="uid://df5g6h7j8lal0" path="res://scenes/objects/teddy_bear.tscn" id="3_teddy"]
+[ext_resource type="PackedScene" uid="uid://b3n4m5k6l7j8h" path="res://scenes/objects/clock.tscn" id="4_clock"]
+[ext_resource type="PackedScene" uid="uid://5cljii0avnq0" path="res://scenes/objects/trunk.tscn" id="5_trunk"]
+[ext_resource type="PackedScene" uid="uid://c7v8can0m1k2l" path="res://scenes/objects/vhs_tape.tscn" id="6_vhs"]
+[ext_resource type="PackedScene" uid="uid://dg74ip6rv1atp" path="res://scenes/objects/key.tscn" id="7_key"]
+[ext_resource type="AudioStream" uid="uid://cyd6d8tbnbuap" path="res://assets/sounds/freesound_community-creepy-ring-around-the-rosie-33890.mp3" id="8_lullaby"]
+[ext_resource type="AudioStream" uid="uid://cxa4kqfw4yp8g" path="res://assets/sounds/chest_opening.mp3" id="9_solve"]
+[ext_resource type="FontFile" uid="uid://kov7h0v13c1s" path="res://assets/my assets/fonts/PatrickHand-Regular.ttf" id="10_font"]
+[ext_resource type="PackedScene" uid="uid://dppsr4yo1ibjp" path="res://assets/main asset/props/table3.glb" id="11_table"]
+[ext_resource type="PackedScene" uid="uid://ds4mgg7f3p0ku" path="res://assets/main asset/props/bed3.glb" id="12_bed"]
+[ext_resource type="PackedScene" uid="uid://cr3f2hciuofky" path="res://assets/main asset/props/bookshelf.glb" id="13_shelf"]
+[ext_resource type="PackedScene" uid="uid://drecurd0e8jph" path="res://assets/main asset/props/tableSmall.glb" id="14_nightstand"]
+[ext_resource type="PackedScene" uid="uid://bm6lr0s1p2r5g" path="res://assets/main asset/props/carpet2.glb" id="15_carpet"]
+[ext_resource type="PackedScene" uid="uid://22a7o10yeyny" path="res://assets/main asset/props/chair.glb" id="16_chair"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_table"]
+size = Vector3(1.8, 0.85, 0.9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bed"]
+size = Vector3(1.3, 0.8, 2.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_shelf"]
+size = Vector3(1.2, 1.9, 0.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nightstand"]
+size = Vector3(0.6, 0.6, 0.6)
+
+[node name="Puzzle2Room" type="Node3D" unique_id=388624626]
+script = ExtResource("1_p2")
+door_path = NodePath("../House/wall_doors/DoorWall9")
+key_2_path = NodePath("AltarTable/Key2")
+slot_teddy_path = NodePath("AltarTable/SlotTeddy")
+slot_vhs_path = NodePath("AltarTable/SlotVHS")
+slot_clock_path = NodePath("AltarTable/SlotClock")
+radio_audio_path = NodePath("RadioAudio")
+solve_audio_path = NodePath("SolveAudio")
+trunk_path = NodePath("Trunk")
+
+[node name="AltarTable" type="StaticBody3D" parent="." unique_id=677845721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.84, -35.2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AltarTable" unique_id=1225462810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.425, 0)
+shape = SubResource("BoxShape3D_table")
+
+[node name="table3" parent="AltarTable" unique_id=1535971559 instance=ExtResource("11_table")]
+
+[node name="Carpet" parent="AltarTable" unique_id=373977178 instance=ExtResource("15_carpet")]
+transform = Transform3D(1.2, 0, 0, 0, 1, 0, 0, 0, 1.2, 0, 0.01, 0.8)
+
+[node name="SlotTeddy" parent="AltarTable" unique_id=1783010833 node_paths=PackedStringArray("parent_drop") instance=ExtResource("2_slot")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0.86, 0)
+group_name = "teddy"
+slot_label = "Teddy Bear"
+parent_drop = NodePath("..")
+
+[node name="SlotClock" parent="AltarTable" unique_id=681367908 node_paths=PackedStringArray("parent_drop") instance=ExtResource("2_slot")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.86, 0)
+group_name = "clock"
+slot_label = "Antique Clock"
+parent_drop = NodePath("..")
+
+[node name="SlotVHS" parent="AltarTable" unique_id=489928349 node_paths=PackedStringArray("parent_drop") instance=ExtResource("2_slot")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 0.86, 0)
+group_name = "vhs"
+slot_label = "VHS Tape"
+parent_drop = NodePath("..")
+
+[node name="Key2" parent="AltarTable" unique_id=1574804277 instance=ExtResource("7_key")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07323265, 0.95, 0.49430466)
+visible = false
+freeze = true
+key_name = "key_2"
+display_title = "Father's Silver Key (Upstairs Study)"
+
+[node name="AltarLight" type="OmniLight3D" parent="." unique_id=111298560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2.5, -34.8)
+light_color = Color(1, 0.8, 0.5, 1)
+light_energy = 0.9
+omni_range = 6.0
+
+[node name="ClueNote" type="Label3D" parent="." unique_id=300937188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2.5, -35.85)
+modulate = Color(0.85, 0.15, 0.15, 1)
+text = "THE NURSERY RITUAL
+Return her three lost keepsakes to break the seal:
+[1] Barnaby the Little Bear  - from her cold bed
+[2] The Stopped Clock       - from the high shelf
+[3] The Lost VHS Tape       - locked in her memory chest"
+font = ExtResource("10_font")
+font_size = 26
+outline_size = 0
+
+[node name="BedsideArea" type="Node3D" parent="." unique_id=342556068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2, 0.84, -31.5)
+
+[node name="BedStatic" type="StaticBody3D" parent="BedsideArea" unique_id=225049796]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BedsideArea/BedStatic" unique_id=402416475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+shape = SubResource("BoxShape3D_bed")
+
+[node name="bed3" parent="BedsideArea/BedStatic" unique_id=1964387721 instance=ExtResource("12_bed")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="TeddyBear" parent="." unique_id=1008433310 instance=ExtResource("3_teddy")]
+transform = Transform3D(0.9659258, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.9659258, -7.2, 1.4, -32.2)
+collision_layer = 2
+
+[node name="BedLight" type="OmniLight3D" parent="." unique_id=1682553173]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2, 2.2, -32)
+light_color = Color(0.55, 0.72, 1, 1)
+light_energy = 0.5
+
+[node name="ShelfArea" type="Node3D" parent="." unique_id=1551906846]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2, 0.84, -31.5)
+
+[node name="ShelfStatic" type="StaticBody3D" parent="ShelfArea" unique_id=1891081056]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ShelfArea/ShelfStatic" unique_id=952962347]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0)
+shape = SubResource("BoxShape3D_shelf")
+
+[node name="bookshelf" parent="ShelfArea/ShelfStatic" unique_id=1403064027 instance=ExtResource("13_shelf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="chair" parent="ShelfArea" unique_id=1143596346 instance=ExtResource("16_chair")]
+transform = Transform3D(0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0, 1, 0.8, 0.1, -0.6)
+
+[node name="AntiqueClock" parent="." unique_id=815873883 instance=ExtResource("4_clock")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13, 1.7, -31.5)
+collision_layer = 2
+
+[node name="ChestArea" type="Node3D" parent="." unique_id=412408028]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2, 0.84, -34.5)
+
+[node name="NightstandStatic" type="StaticBody3D" parent="ChestArea" unique_id=477037983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChestArea/NightstandStatic" unique_id=469893561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+shape = SubResource("BoxShape3D_nightstand")
+
+[node name="tableSmall" parent="ChestArea/NightstandStatic" unique_id=78212010 instance=ExtResource("14_nightstand")]
+
+[node name="DiaryNote" type="Label3D" parent="ChestArea" unique_id=273497153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0.8, -0.1)
+modulate = Color(0.9, 0.7, 0.3, 1)
+text = "Torn Diary Page:
+\"Bedtime was 3 o'clock...
+ 7 days all alone...
+ 1 candle still left.\""
+font = ExtResource("10_font")
+font_size = 20
+outline_size = 0
+
+[node name="Trunk" parent="." unique_id=1290120746 instance=ExtResource("5_trunk")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.2, 0.84, -34.5)
+secret_code = Array[int]([3, 7, 1])
+
+[node name="VHSTape" parent="." unique_id=1243323988 instance=ExtResource("6_vhs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2, 1.05, -34.5)
+collision_layer = 2
+
+[node name="RadioAudio" type="AudioStreamPlayer3D" parent="." unique_id=1004946562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.5, -33)
+stream = ExtResource("8_lullaby")
+volume_db = -6.0
+max_distance = 25.0
+
+[node name="SolveAudio" type="AudioStreamPlayer3D" parent="." unique_id=98719493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.5, -35)
+stream = ExtResource("9_solve")
+max_distance = 20.0

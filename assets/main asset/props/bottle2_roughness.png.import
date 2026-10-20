@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmdb4oxe6wdbn"
 path.s3tc="res://.godot/imported/bottle2_roughness.png-d45815c3ed4012dcc23149c7e4ddfa43.s3tc.ctex"
+path.etc2="res://.godot/imported/bottle2_roughness.png-d45815c3ed4012dcc23149c7e4ddfa43.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/bottle2_roughness.png"
-dest_files=["res://.godot/imported/bottle2_roughness.png-d45815c3ed4012dcc23149c7e4ddfa43.s3tc.ctex"]
+dest_files=["res://.godot/imported/bottle2_roughness.png-d45815c3ed4012dcc23149c7e4ddfa43.s3tc.ctex", "res://.godot/imported/bottle2_roughness.png-d45815c3ed4012dcc23149c7e4ddfa43.etc2.ctex"]
 
 [params]
 

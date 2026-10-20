@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ciw5dr650u5ix"
 path.s3tc="res://.godot/imported/wallTurnMarble_albedo.png-736b3be4706e1af8f7bdeea7dec55bc2.s3tc.ctex"
+path.etc2="res://.godot/imported/wallTurnMarble_albedo.png-736b3be4706e1af8f7bdeea7dec55bc2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallTurnMarble_albedo.png"
-dest_files=["res://.godot/imported/wallTurnMarble_albedo.png-736b3be4706e1af8f7bdeea7dec55bc2.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallTurnMarble_albedo.png-736b3be4706e1af8f7bdeea7dec55bc2.s3tc.ctex", "res://.godot/imported/wallTurnMarble_albedo.png-736b3be4706e1af8f7bdeea7dec55bc2.etc2.ctex"]
 
 [params]
 

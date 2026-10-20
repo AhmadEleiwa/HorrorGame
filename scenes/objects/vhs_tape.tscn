@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c7v8b9n0m1k2l"]
+
+[ext_resource type="Script" path="res://scripts/objects/interactive_relic.gd" id="1_relic"]
+[ext_resource type="PackedScene" uid="uid://5mvxttyb3ixr" path="res://assets/main asset/props/vhs.glb" id="2_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vhs"]
+size = Vector3(0.3, 0.1, 0.45)
+
+[node name="VHSTape" type="RigidBody3D" groups=["relic", "vhs"]]
+script = ExtResource("1_relic")
+title = "Home Tape '89"
+pickup_message = "\"Label: Family Trip - August 14th. Why is it stained?\""
+hold_local_position = Vector3(0.15, -0.2, -0.4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("BoxShape3D_vhs")
+
+[node name="vhs" parent="." instance=ExtResource("2_mesh")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)

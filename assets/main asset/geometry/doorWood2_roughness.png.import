@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwb61r0l580vy"
 path.s3tc="res://.godot/imported/doorWood2_roughness.png-3c6469aa7714d421954c28dd4a2b2857.s3tc.ctex"
+path.etc2="res://.godot/imported/doorWood2_roughness.png-3c6469aa7714d421954c28dd4a2b2857.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/doorWood2_roughness.png"
-dest_files=["res://.godot/imported/doorWood2_roughness.png-3c6469aa7714d421954c28dd4a2b2857.s3tc.ctex"]
+dest_files=["res://.godot/imported/doorWood2_roughness.png-3c6469aa7714d421954c28dd4a2b2857.s3tc.ctex", "res://.godot/imported/doorWood2_roughness.png-3c6469aa7714d421954c28dd4a2b2857.etc2.ctex"]
 
 [params]
 

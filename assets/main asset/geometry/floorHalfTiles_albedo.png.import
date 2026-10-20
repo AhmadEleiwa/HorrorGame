@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhf8r24qnexfj"
 path.s3tc="res://.godot/imported/floorHalfTiles_albedo.png-862ec790bc4baf86d64f7d99455a31ee.s3tc.ctex"
+path.etc2="res://.godot/imported/floorHalfTiles_albedo.png-862ec790bc4baf86d64f7d99455a31ee.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/floorHalfTiles_albedo.png"
-dest_files=["res://.godot/imported/floorHalfTiles_albedo.png-862ec790bc4baf86d64f7d99455a31ee.s3tc.ctex"]
+dest_files=["res://.godot/imported/floorHalfTiles_albedo.png-862ec790bc4baf86d64f7d99455a31ee.s3tc.ctex", "res://.godot/imported/floorHalfTiles_albedo.png-862ec790bc4baf86d64f7d99455a31ee.etc2.ctex"]
 
 [params]
 

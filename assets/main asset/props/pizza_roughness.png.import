@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://30v74q4356s3"
 path.s3tc="res://.godot/imported/pizza_roughness.png-fe72b61b8fe4cc1c907b5354ea8a4f45.s3tc.ctex"
+path.etc2="res://.godot/imported/pizza_roughness.png-fe72b61b8fe4cc1c907b5354ea8a4f45.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/pizza_roughness.png"
-dest_files=["res://.godot/imported/pizza_roughness.png-fe72b61b8fe4cc1c907b5354ea8a4f45.s3tc.ctex"]
+dest_files=["res://.godot/imported/pizza_roughness.png-fe72b61b8fe4cc1c907b5354ea8a4f45.s3tc.ctex", "res://.godot/imported/pizza_roughness.png-fe72b61b8fe4cc1c907b5354ea8a4f45.etc2.ctex"]
 
 [params]
 

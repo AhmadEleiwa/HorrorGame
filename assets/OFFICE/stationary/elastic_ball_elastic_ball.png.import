@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://hrnnk4jp44gu"
 path.s3tc="res://.godot/imported/elastic_ball_elastic_ball.png-6b12b848b39dc1dc1b4fd465b9a12d52.s3tc.ctex"
+path.etc2="res://.godot/imported/elastic_ball_elastic_ball.png-6b12b848b39dc1dc1b4fd465b9a12d52.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/OFFICE/stationary/elastic_ball_elastic_ball.png"
-dest_files=["res://.godot/imported/elastic_ball_elastic_ball.png-6b12b848b39dc1dc1b4fd465b9a12d52.s3tc.ctex"]
+dest_files=["res://.godot/imported/elastic_ball_elastic_ball.png-6b12b848b39dc1dc1b4fd465b9a12d52.s3tc.ctex", "res://.godot/imported/elastic_ball_elastic_ball.png-6b12b848b39dc1dc1b4fd465b9a12d52.etc2.ctex"]
 
 [params]
 

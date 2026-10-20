@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdsohd7msf062"
 path.s3tc="res://.godot/imported/lock_text-1781212228169.png-b254eeb8cd5cb81aad6bbd54bb64af84.s3tc.ctex"
+path.etc2="res://.godot/imported/lock_text-1781212228169.png-b254eeb8cd5cb81aad6bbd54bb64af84.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/my assets/lock_text-1781212228169.png"
-dest_files=["res://.godot/imported/lock_text-1781212228169.png-b254eeb8cd5cb81aad6bbd54bb64af84.s3tc.ctex"]
+dest_files=["res://.godot/imported/lock_text-1781212228169.png-b254eeb8cd5cb81aad6bbd54bb64af84.s3tc.ctex", "res://.godot/imported/lock_text-1781212228169.png-b254eeb8cd5cb81aad6bbd54bb64af84.etc2.ctex"]
 
 [params]
 

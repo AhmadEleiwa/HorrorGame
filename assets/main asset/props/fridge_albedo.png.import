@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://mwekijisob8f"
 path.s3tc="res://.godot/imported/fridge_albedo.png-35d53c8345a46118ad2669df948b83ca.s3tc.ctex"
+path.etc2="res://.godot/imported/fridge_albedo.png-35d53c8345a46118ad2669df948b83ca.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/fridge_albedo.png"
-dest_files=["res://.godot/imported/fridge_albedo.png-35d53c8345a46118ad2669df948b83ca.s3tc.ctex"]
+dest_files=["res://.godot/imported/fridge_albedo.png-35d53c8345a46118ad2669df948b83ca.s3tc.ctex", "res://.godot/imported/fridge_albedo.png-35d53c8345a46118ad2669df948b83ca.etc2.ctex"]
 
 [params]
 

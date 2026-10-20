@@ -8,10 +8,6 @@ size = Vector3(0.6639404, 3.5464478, 0.1772461)
 
 [node name="arch" type="StaticBody3D" unique_id=1307573247]
 
-[node name="archWood2" parent="." unique_id=1924990346 instance=ExtResource("1_l7c33")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0075858943, -1.804103)
-visible = false
-
 [node name="archWood3" parent="." unique_id=39704507 instance=ExtResource("1_l7c33")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.0075858943, 1.8014773)
 visible = false

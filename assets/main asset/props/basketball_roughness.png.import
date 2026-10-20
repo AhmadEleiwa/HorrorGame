@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://prndls1n5s2y"
 path.s3tc="res://.godot/imported/basketball_roughness.png-471c17d43aef9ee4f85f5bc4158eaae6.s3tc.ctex"
+path.etc2="res://.godot/imported/basketball_roughness.png-471c17d43aef9ee4f85f5bc4158eaae6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/basketball_roughness.png"
-dest_files=["res://.godot/imported/basketball_roughness.png-471c17d43aef9ee4f85f5bc4158eaae6.s3tc.ctex"]
+dest_files=["res://.godot/imported/basketball_roughness.png-471c17d43aef9ee4f85f5bc4158eaae6.s3tc.ctex", "res://.godot/imported/basketball_roughness.png-471c17d43aef9ee4f85f5bc4158eaae6.etc2.ctex"]
 
 [params]
 

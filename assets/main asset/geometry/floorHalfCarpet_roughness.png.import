@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp5uvojg5ihls"
 path.s3tc="res://.godot/imported/floorHalfCarpet_roughness.png-fb2f84f4b3f0690b14ca0fa5fa1bf71c.s3tc.ctex"
+path.etc2="res://.godot/imported/floorHalfCarpet_roughness.png-fb2f84f4b3f0690b14ca0fa5fa1bf71c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/floorHalfCarpet_roughness.png"
-dest_files=["res://.godot/imported/floorHalfCarpet_roughness.png-fb2f84f4b3f0690b14ca0fa5fa1bf71c.s3tc.ctex"]
+dest_files=["res://.godot/imported/floorHalfCarpet_roughness.png-fb2f84f4b3f0690b14ca0fa5fa1bf71c.s3tc.ctex", "res://.godot/imported/floorHalfCarpet_roughness.png-fb2f84f4b3f0690b14ca0fa5fa1bf71c.etc2.ctex"]
 
 [params]
 

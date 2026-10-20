@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://8b71281ki4kg"
 path.s3tc="res://.godot/imported/conference_desk_squared_mahogony-table.png-42996a0046fc9ddb8b070f94e931b87d.s3tc.ctex"
+path.etc2="res://.godot/imported/conference_desk_squared_mahogony-table.png-42996a0046fc9ddb8b070f94e931b87d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/OFFICE/desks/conference_desk_squared_mahogony-table.png"
-dest_files=["res://.godot/imported/conference_desk_squared_mahogony-table.png-42996a0046fc9ddb8b070f94e931b87d.s3tc.ctex"]
+dest_files=["res://.godot/imported/conference_desk_squared_mahogony-table.png-42996a0046fc9ddb8b070f94e931b87d.s3tc.ctex", "res://.godot/imported/conference_desk_squared_mahogony-table.png-42996a0046fc9ddb8b070f94e931b87d.etc2.ctex"]
 
 [params]
 

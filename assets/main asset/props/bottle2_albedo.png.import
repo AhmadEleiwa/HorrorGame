@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dby7i6iboup38"
 path.s3tc="res://.godot/imported/bottle2_albedo.png-dfc060fde91e37960a4b0a0dce146feb.s3tc.ctex"
+path.etc2="res://.godot/imported/bottle2_albedo.png-dfc060fde91e37960a4b0a0dce146feb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/bottle2_albedo.png"
-dest_files=["res://.godot/imported/bottle2_albedo.png-dfc060fde91e37960a4b0a0dce146feb.s3tc.ctex"]
+dest_files=["res://.godot/imported/bottle2_albedo.png-dfc060fde91e37960a4b0a0dce146feb.s3tc.ctex", "res://.godot/imported/bottle2_albedo.png-dfc060fde91e37960a4b0a0dce146feb.etc2.ctex"]
 
 [params]
 

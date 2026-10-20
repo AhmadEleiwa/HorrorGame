@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmrsqa6fa42ue"
 path.s3tc="res://.godot/imported/wallPlaster3_albedo.png-e9a917dbbf9e6c9896c8a3453b272bae.s3tc.ctex"
+path.etc2="res://.godot/imported/wallPlaster3_albedo.png-e9a917dbbf9e6c9896c8a3453b272bae.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/wallPlaster3_albedo.png"
-dest_files=["res://.godot/imported/wallPlaster3_albedo.png-e9a917dbbf9e6c9896c8a3453b272bae.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallPlaster3_albedo.png-e9a917dbbf9e6c9896c8a3453b272bae.s3tc.ctex", "res://.godot/imported/wallPlaster3_albedo.png-e9a917dbbf9e6c9896c8a3453b272bae.etc2.ctex"]
 
 [params]
 

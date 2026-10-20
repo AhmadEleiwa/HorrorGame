@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqctj0flfxir0"
 path.s3tc="res://.godot/imported/stairsStone_roughness.png-f6a68eb5fcee1203ff9bcfd6f8863226.s3tc.ctex"
+path.etc2="res://.godot/imported/stairsStone_roughness.png-f6a68eb5fcee1203ff9bcfd6f8863226.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/stairsStone_roughness.png"
-dest_files=["res://.godot/imported/stairsStone_roughness.png-f6a68eb5fcee1203ff9bcfd6f8863226.s3tc.ctex"]
+dest_files=["res://.godot/imported/stairsStone_roughness.png-f6a68eb5fcee1203ff9bcfd6f8863226.s3tc.ctex", "res://.godot/imported/stairsStone_roughness.png-f6a68eb5fcee1203ff9bcfd6f8863226.etc2.ctex"]
 
 [params]
 

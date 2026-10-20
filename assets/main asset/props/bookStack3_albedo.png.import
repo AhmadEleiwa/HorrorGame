@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://drjn2q6pfpmax"
 path.s3tc="res://.godot/imported/bookStack3_albedo.png-92e61219efd109929e29a8b7d755b158.s3tc.ctex"
+path.etc2="res://.godot/imported/bookStack3_albedo.png-92e61219efd109929e29a8b7d755b158.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/bookStack3_albedo.png"
-dest_files=["res://.godot/imported/bookStack3_albedo.png-92e61219efd109929e29a8b7d755b158.s3tc.ctex"]
+dest_files=["res://.godot/imported/bookStack3_albedo.png-92e61219efd109929e29a8b7d755b158.s3tc.ctex", "res://.godot/imported/bookStack3_albedo.png-92e61219efd109929e29a8b7d755b158.etc2.ctex"]
 
 [params]
 

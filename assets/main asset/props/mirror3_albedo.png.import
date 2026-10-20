@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjf77q04yakte"
 path.s3tc="res://.godot/imported/mirror3_albedo.png-536a45d73c1700316d37886c5215b77d.s3tc.ctex"
+path.etc2="res://.godot/imported/mirror3_albedo.png-536a45d73c1700316d37886c5215b77d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/mirror3_albedo.png"
-dest_files=["res://.godot/imported/mirror3_albedo.png-536a45d73c1700316d37886c5215b77d.s3tc.ctex"]
+dest_files=["res://.godot/imported/mirror3_albedo.png-536a45d73c1700316d37886c5215b77d.s3tc.ctex", "res://.godot/imported/mirror3_albedo.png-536a45d73c1700316d37886c5215b77d.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp7pu60j85pn0"
 path.s3tc="res://.godot/imported/desk2_alt4_weathered_desk_2_dirty.jpg-933c73d4951cc1edcb9ffb7c91102ec3.s3tc.ctex"
+path.etc2="res://.godot/imported/desk2_alt4_weathered_desk_2_dirty.jpg-933c73d4951cc1edcb9ffb7c91102ec3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/OFFICE/desks/desk2_alt4_weathered_desk_2_dirty.jpg"
-dest_files=["res://.godot/imported/desk2_alt4_weathered_desk_2_dirty.jpg-933c73d4951cc1edcb9ffb7c91102ec3.s3tc.ctex"]
+dest_files=["res://.godot/imported/desk2_alt4_weathered_desk_2_dirty.jpg-933c73d4951cc1edcb9ffb7c91102ec3.s3tc.ctex", "res://.godot/imported/desk2_alt4_weathered_desk_2_dirty.jpg-933c73d4951cc1edcb9ffb7c91102ec3.etc2.ctex"]
 
 [params]
 

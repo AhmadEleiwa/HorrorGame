@@ -61,6 +61,7 @@ func mini_puzzle_1_logic():
 		lamp.hide()
 		puzzles_stats[0].solved = true
 		animation_player.play("puzzle_1_mini_puzzle_1")
+		CrazyGamesSDK.happy_time()
 		paper.enable_interactivity = false
 		paper_2.enable_interactivity = false
 		paper_3.enable_interactivity = false

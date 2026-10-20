@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3on250kj3q7w"
 path.s3tc="res://.godot/imported/capRoofWallWood_roughness.png-5a3d1becbe3b13fa98d01c8a21c42ef6.s3tc.ctex"
+path.etc2="res://.godot/imported/capRoofWallWood_roughness.png-5a3d1becbe3b13fa98d01c8a21c42ef6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/geometry/capRoofWallWood_roughness.png"
-dest_files=["res://.godot/imported/capRoofWallWood_roughness.png-5a3d1becbe3b13fa98d01c8a21c42ef6.s3tc.ctex"]
+dest_files=["res://.godot/imported/capRoofWallWood_roughness.png-5a3d1becbe3b13fa98d01c8a21c42ef6.s3tc.ctex", "res://.godot/imported/capRoofWallWood_roughness.png-5a3d1becbe3b13fa98d01c8a21c42ef6.etc2.ctex"]
 
 [params]
 

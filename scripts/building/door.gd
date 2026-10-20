@@ -22,6 +22,8 @@ func update() -> void:
 		wall = _find_parent_wall(get_parent())
 	if not wall or not wall.anim_player:
 		return
+	if "is_slow_opening" in wall and wall.is_slow_opening:
+		return
 	if wall.is_open:
 		wall.anim_player.play("open")
 	else:

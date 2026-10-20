@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://brkvxhlgosm7m"
 path.s3tc="res://.godot/imported/couch-big_Image_0.png-a8ac9313b1f8f3cf482b263fddec7914.s3tc.ctex"
+path.etc2="res://.godot/imported/couch-big_Image_0.png-a8ac9313b1f8f3cf482b263fddec7914.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/my assets/couch-big_Image_0.png"
-dest_files=["res://.godot/imported/couch-big_Image_0.png-a8ac9313b1f8f3cf482b263fddec7914.s3tc.ctex"]
+dest_files=["res://.godot/imported/couch-big_Image_0.png-a8ac9313b1f8f3cf482b263fddec7914.s3tc.ctex", "res://.godot/imported/couch-big_Image_0.png-a8ac9313b1f8f3cf482b263fddec7914.etc2.ctex"]
 
 [params]
 

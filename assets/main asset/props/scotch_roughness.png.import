@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://7jk2t2jkgsph"
 path.s3tc="res://.godot/imported/scotch_roughness.png-817252bba4a89c37bd65a66c35441f14.s3tc.ctex"
+path.etc2="res://.godot/imported/scotch_roughness.png-817252bba4a89c37bd65a66c35441f14.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/main asset/props/scotch_roughness.png"
-dest_files=["res://.godot/imported/scotch_roughness.png-817252bba4a89c37bd65a66c35441f14.s3tc.ctex"]
+dest_files=["res://.godot/imported/scotch_roughness.png-817252bba4a89c37bd65a66c35441f14.s3tc.ctex", "res://.godot/imported/scotch_roughness.png-817252bba4a89c37bd65a66c35441f14.etc2.ctex"]
 
 [params]
 

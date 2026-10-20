@@ -27,12 +27,9 @@ func ui_interaction() -> void:
 func hide_ui_interaction() -> void:
 	UiManager.hide_interaction()
 func _on_lock_combination_changed(combination: Array[int]) -> void:
-	if lock_2.wheel_values[0] < combination[0]:
-		lock_2._handle_row_click(0)
-	if lock_2.wheel_values[1] < combination[1]:
-		lock_2._handle_row_click(1)
-	if lock_2.wheel_values[2] < combination[2]:
-		lock_2._handle_row_click(2)
+	for i in range(combination.size()):
+		if i < lock_2.wheel_values.size():
+			lock_2.set_wheel_value(i, combination[i])
 	
 func _on_lock_lock_unlocked() -> void:
 	lock_2.freeze = false

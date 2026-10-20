@@ -25,6 +25,22 @@ class_name DoorWall
 			is_open = false
 			_sync_state()
 @export var open_with_key:String = ""
+var is_slow_opening: bool = false
+
+func open_slowly(duration: float = 3.5) -> void:
+	if is_open:
+		return
+	is_slow_opening = true
+	locked = false
+	is_open = true
+	is_slow_opening = false
+	if anim_player and anim_player.has_animation("open"):
+		var speed = 0.333 / max(duration, 0.1)
+		anim_player.play("open", -1, speed)
+		var audio = get_node_or_null("audio/AudioStreamPlayer3D") as AudioStreamPlayer3D
+		if audio:
+			audio.pitch_scale = 0.65
+			audio.play()
 func _ready() -> void:
 	# Fallback auto-discovery if exports aren't manually set
 	if not door_node:
